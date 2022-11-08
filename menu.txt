@@ -1,3 +1,4 @@
 Ristorante Gruppo 4 Java 8
 Tipo di menu: pesce
 Bevande: vino rosso
+Secondo piatto: orata al forno (il cameriere vi sostituirà il vino rosso con un bel bianco dell'Etna, scusandosi)
