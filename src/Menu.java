@@ -1,13 +1,15 @@
 
 public class Menu {
-    private String nameMenu;
-    private String menuType;
     private String restaurantName;
+    private String menuType;
+    //private First mainCourse;
+    //private Second secondCourse;
+    private Dessert dessert;
 
-    public Menu(String nameMenu, String menuType, String restaurantName) {
-        this.nameMenu = nameMenu;
+    public Menu(String menuType, String restaurantName) {
         this.menuType = menuType;
         this.restaurantName = restaurantName;
-
     }
+
+
 }

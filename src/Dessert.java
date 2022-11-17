@@ -1,4 +1,4 @@
 public class Dessert {
     public String name;
-    public String
+    public String dessertIngredients;
 }
