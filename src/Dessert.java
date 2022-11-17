@@ -9,7 +9,7 @@ public class Dessert extends Goods {
     @Override
     public String toString() {
         System.out.println("### Dessert ###");
-        return "Type: " + super.getGoodType() + "\nDish: " + super.getGoodName() + "\nIngredients: " + dessertIngredients + "\nPrice: " + super.getPrice();
+        return "Type: " + super.getGoodType() + "\nDish: " + super.getGoodName() + "\nIngredients: " + dessertIngredients + "\nPrice: " + super.getPrice()+"\n";
     }
 
 }

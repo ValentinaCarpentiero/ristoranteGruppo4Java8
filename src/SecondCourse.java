@@ -10,6 +10,6 @@ public class SecondCourse extends Goods{
     @Override
     public String toString() {
         System.out.println ("### Second Course ###");
-        return "Type: " + super.getGoodType ()+" Dish: " + super.getGoodName ()+ "Ingredients: " +secondIngredients + " Price: " + super.getPrice () ;
+        return "Type: " + super.getGoodType ()+"\nDish: " + super.getGoodName ()+ "\nIngredients: " +secondIngredients + "\nPrice: " + super.getPrice()+"\n";
     }
 }

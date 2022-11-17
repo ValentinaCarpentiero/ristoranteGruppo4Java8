@@ -12,7 +12,7 @@ public class FirstCourse extends Goods  {
     @Override
     public String toString() {
         System.out.println("### First Course ###");
-        return "Type: "+super.getGoodType()+"\nDish: "+super.getGoodName()+"\nIngredients: "+this.ingredients+"\nPrice: "+super.getPrice();
+        return "Type: "+super.getGoodType()+"\nDish: "+super.getGoodName()+"\nIngredients: "+this.ingredients+"\nPrice: "+super.getPrice()+"\n";
     }
 
 }
