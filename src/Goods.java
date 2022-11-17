@@ -8,4 +8,17 @@ public abstract class Goods {
         this.goodName = goodName;
         this.goodType = goodType;
     }
+
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getGoodName() {
+        return goodName;
+    }
+
+    public String getGoodType() {
+        return goodType;
+    }
 }
