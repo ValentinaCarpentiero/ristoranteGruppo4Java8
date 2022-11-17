@@ -6,10 +6,14 @@ public class Menu {
     //private Second secondCourse;
     private Dessert dessert;
 
-    public Menu(String menuType, String restaurantName) {
+    public Menu(String menuType, String restaurantName, Dessert dessert) {
         this.menuType = menuType;
         this.restaurantName = restaurantName;
+        this.dessert = dessert;
     }
 
-
+    public void print(){
+        System.out.println("Restaurant name: " + this.restaurantName + " Menu type: " + this.menuType);
+        System.out.println(dessert);
+    }
 }

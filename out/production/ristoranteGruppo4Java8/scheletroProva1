@@ -1,0 +1,44 @@
+interface IPrintable: { print }
+
+AbstractGoods class:
+	private double price;
+	private String name;
+	private String type;
+
+//public abstract void gnegne() la mettiamo nell'interface
+
+Menu class:
+	public String restaurantName;
+	public String menuType;
+
+	public First mainCourse;
+	public Second secondCourse;
+	public Dessert dessert;
+
+	@print from interface lol
+
+
+First class extends AbstractGoods, implements IPrintable:
+
+	[abstract stuff...]
+
+	public String mainIngredients;
+
+Second class extends AbstractGoods, implements IPrintable:
+
+	[abstract stuff...]
+
+	public String secondIngredientsEasy;
+
+Dessert class extends AbstractGoods, implements IPrintable:
+
+	[abstract stuff...]
+
+	public String dessertIngredientsEasy;
+
+
+Drink class extends AbstractGoods, implements IPrintable:
+
+	[abstract stuff...]
+
+	public String typeOfDrink;
