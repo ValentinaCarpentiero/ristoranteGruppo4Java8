@@ -1,23 +1,29 @@
+import java.util.ArrayList;
 
 public class Menu {
     private String restaurantName;
     private String menuType;
-    private FirstCourse firstCourse;
-    private SecondCourse secondCourse;
-    private Dessert dessert;
 
-    public Menu(String menuType, String restaurantName, FirstCourse firstCourse, SecondCourse secondCourse, Dessert dessert) {
+    private ArrayList<Goods> goodsList;
+
+    public Menu(String menuType, String restaurantName) {
         this.menuType = menuType;
         this.restaurantName = restaurantName;
-        this.firstCourse = firstCourse;
-        this.secondCourse = secondCourse;
-        this.dessert = dessert;
+        this.goodsList = new ArrayList<>();
     }
+
+    public void addGoods(Goods goods){
+        if (goods != null){
+            goodsList.add(goods);
+        }
+    }
+
+
 
     public void print(){
         System.out.println("@@@ Restaurant name: " + this.restaurantName + " - Menu type: " + this.menuType+" @@@ \n");
-        System.out.println(firstCourse);
-        System.out.println(secondCourse);
-        System.out.println(dessert);
+        for (int i=0; i<goodsList.size();i++){
+            System.out.println(goodsList.get(i));
+        }
     }
 }
