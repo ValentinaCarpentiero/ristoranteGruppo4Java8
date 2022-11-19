@@ -4,17 +4,17 @@ public class Menu {
     private String restaurantName;
     private String menuType;
 
-    private ArrayList<Goods> goodsList;
+    private ArrayList<MenuItem> menuItemList;
 
     public Menu(String menuType, String restaurantName) {
         this.menuType = menuType;
         this.restaurantName = restaurantName;
-        this.goodsList = new ArrayList<>();
+        this.menuItemList = new ArrayList<>();
     }
 
-    public void addGoods(Goods goods){
-        if (goods != null){
-            goodsList.add(goods);
+    public void addMenuItem(MenuItem menuItem){
+        if (menuItem != null){
+            menuItemList.add(menuItem);
         }
     }
 
@@ -22,8 +22,8 @@ public class Menu {
 
     public void print(){
         System.out.println("@@@ Restaurant name: " + this.restaurantName + " - Menu type: " + this.menuType+" @@@ \n");
-        for (int i=0; i<goodsList.size();i++){
-            System.out.println(goodsList.get(i));
+        for (int i = 0; i< menuItemList.size(); i++){
+            System.out.println(menuItemList.get(i));
         }
     }
 }

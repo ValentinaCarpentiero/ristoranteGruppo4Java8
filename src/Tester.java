@@ -8,10 +8,10 @@ public class Tester {
         Drink drink1 = new Drink(6.00,"Lapilli","Vino","Bianco");
         Menu menu = new Menu("Pesce", "Restaurant Java 8 [Gruppo 4]");
 
-        menu.addGoods(firstCourse1);
-        menu.addGoods(secondCourse1);
-        menu.addGoods(dessert1);
-        menu.addGoods(drink1);
+        menu.addMenuItem(firstCourse1);
+        menu.addMenuItem(secondCourse1);
+        menu.addMenuItem(dessert1);
+        menu.addMenuItem(drink1);
         menu.print();
     }
 }

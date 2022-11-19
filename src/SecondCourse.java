@@ -1,4 +1,4 @@
-public class SecondCourse extends Goods{
+public class SecondCourse extends MenuItem {
 
     public String secondIngredients;
 
@@ -10,6 +10,6 @@ public class SecondCourse extends Goods{
     @Override
     public String toString() {
         System.out.println ("### Second Course ###");
-        return "Type: " + super.getGoodType ()+"\nDish: " + super.getGoodName ()+ "\nIngredients: " +secondIngredients + "\nPrice: " + super.getPrice()+"\n";
+        return "Type: " + super.getItemType()+"\nDish: " + super.getItemName()+ "\nIngredients: " +secondIngredients + "\nPrice: " + super.getItemPrice()+"\n";
     }
 }

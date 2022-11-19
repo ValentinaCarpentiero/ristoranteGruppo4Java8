@@ -1,4 +1,4 @@
-public class Dessert extends Goods {
+public class Dessert extends MenuItem {
     public String dessertIngredients;
 
     public Dessert(double price, String goodName, String goodType, String dessertIngredients) {
@@ -9,7 +9,7 @@ public class Dessert extends Goods {
     @Override
     public String toString() {
         System.out.println("### Dessert ###");
-        return "Type: " + super.getGoodType() + "\nDish: " + super.getGoodName() + "\nIngredients: " + dessertIngredients + "\nPrice: " + super.getPrice()+"\n";
+        return "Type: " + super.getItemType() + "\nDish: " + super.getItemName() + "\nIngredients: " + dessertIngredients + "\nPrice: " + super.getItemPrice()+"\n";
     }
 
 }
