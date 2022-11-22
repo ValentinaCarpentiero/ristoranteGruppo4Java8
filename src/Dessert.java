@@ -1,4 +1,4 @@
-public class Dessert extends MenuItem {
+public class Dessert extends Dish {
     public String dessertIngredients;
 
     public Dessert(double price, String goodName, String goodType, String dessertIngredients) {

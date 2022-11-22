@@ -1,10 +1,10 @@
-public abstract class MenuItem {
+public class Dish {
     private double itemPrice;
     private String itemName;
     private String itemType;
 
 
-    public MenuItem(double itemPrice, String itemName, String itemType){
+    public Dish(double itemPrice, String itemName, String itemType){
         this.itemPrice = itemPrice;
         this.itemName = itemName;
         this.itemType = itemType;
@@ -21,5 +21,10 @@ public abstract class MenuItem {
 
     public String getItemType() {
         return itemType;
+    }
+
+    public void printDishDetail() {
+        //stampo i dettagli della portata
+        System.out.println("### First Course ###");
     }
 }

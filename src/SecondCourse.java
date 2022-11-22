@@ -1,4 +1,4 @@
-public class SecondCourse extends MenuItem {
+public class SecondCourse extends Dish {
 
     public String secondIngredients;
 
