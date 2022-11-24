@@ -10,11 +10,10 @@ public class FirstCourse extends Dish {
 
 
     @Override
-    public String toString() {
-        System.out.println("### First Course ###");
-        return "Type: "+super.getItemType()+"\nDish: "+super.getItemName()+"\nIngredients: "+this.ingredients+"\nPrice: "+super.getItemPrice()+"\n";
+    public void printDishDetail() {
+        super.printDishDetail();
+        System.out.println("Ingredients: " +this.ingredients+"\n");
     }
-
 }
 
 

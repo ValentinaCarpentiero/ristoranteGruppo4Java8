@@ -9,5 +9,6 @@ public class Drink extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
+        System.out.println("Type of drink : "+this.typeOfDrink+"\n");
     }
 }

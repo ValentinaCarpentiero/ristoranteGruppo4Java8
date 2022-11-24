@@ -24,7 +24,6 @@ public class Dish {
     }
 
     public void printDishDetail() {
-        //stampo i dettagli della portata
-        System.out.println("### First Course ###");
+        System.out.println("### "+this.itemType+" ###"+"\n"+this.itemName+" - Price: "+this.itemPrice);
     }
 }

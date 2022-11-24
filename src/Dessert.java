@@ -7,9 +7,9 @@ public class Dessert extends Dish {
     }
 
     @Override
-    public String toString() {
-        System.out.println("### Dessert ###");
-        return "Type: " + super.getItemType() + "\nDish: " + super.getItemName() + "\nIngredients: " + dessertIngredients + "\nPrice: " + super.getItemPrice()+"\n";
+    public void printDishDetail() {
+        super.printDishDetail();
+        System.out.println("Ingredients: " +this.dessertIngredients+"\n");
     }
 
 }

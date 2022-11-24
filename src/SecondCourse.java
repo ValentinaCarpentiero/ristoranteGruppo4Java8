@@ -8,8 +8,8 @@ public class SecondCourse extends Dish {
     }
 
     @Override
-    public String toString() {
-        System.out.println ("### Second Course ###");
-        return "Type: " + super.getItemType()+"\nDish: " + super.getItemName()+ "\nIngredients: " +secondIngredients + "\nPrice: " + super.getItemPrice()+"\n";
+    public void printDishDetail() {
+        super.printDishDetail();
+        System.out.println("Ingredients: " +this.secondIngredients+"\n");
     }
 }
