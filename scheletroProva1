@@ -42,3 +42,24 @@ Drink class extends AbstractGoods, implements IPrintable:
 	[abstract stuff...]
 
 	public String typeOfDrink;
+
+
+--------------------------------------------------------------------------------------------------------------
+
+1) - Sistemare il print della classe Dish
+
+
+2) - Togliere il toString in D,D,F,S.
+   - Overridare il print della classe Dish.
+       -- Sotto al super di questo print aggiungere il field specifico della classe
+
+3) - Sistemare il print nella classe Menu
+
+
+Compiti:
+
+Drink, Dessert: ALVISE 2)
+
+FirstCourse, SecondCourse: DANIELE 2)
+
+Menu, Dish: Valentina 1), 3)
