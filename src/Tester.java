@@ -14,5 +14,9 @@ public class Tester {
         menu.addDish(dessert1);
         menu.addDish(drink1);
         menu.print();
+
+        Table table1 = new Table(1,"4 posti");
+        Table table2 = new Table(2,"2 posti");
+
     }
 }
