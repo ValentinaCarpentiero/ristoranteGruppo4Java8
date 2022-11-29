@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Menu {
     private String restaurantName;
+    //TODO mettiamo un enumerato?
     private String menuType;
     private ArrayList<Dish> dishList;
 
@@ -11,6 +12,7 @@ public class Menu {
         this.dishList = new ArrayList<>();
     }
 
+    //TODO il metodo remove?
     public void addDish(Dish dish){
             dishList.add(dish);
         }
