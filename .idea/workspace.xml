@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Tester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SecondCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tester.java" afterDir="false" />
-    </list>
+    <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed TODO in Menu class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +41,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669743076979</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fixed TODO in Menu class">
+      <created>1669993660716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669993660716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,5 +73,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed TODO in Menu class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed TODO in Menu class" />
   </component>
 </project>
