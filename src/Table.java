@@ -1,21 +1,21 @@
 
 
 public class Table {
-    private int idTable;
 
-    //TODO tipo di tavolo, interno, vista mare, ecc ecc
-    private String typeOfTable;
+    protected enum TablePosition{
+        INDOOR, OUTDOOR
+    }
+    private TablePosition tablePosition;
+    private int idTable;
+    private int seatsNumber;
     private boolean isAvailable;
 
+    //LocalDate (Orario prenotazione)
 
-    //TODO quanti posti abbiamo nel tavolo
-    public Table(int idTable, String typeOfTable){
+    public Table(int idTable, int seatsNumber, TablePosition tablePosition){
         this.idTable=idTable;
-        this.typeOfTable=typeOfTable;
+        this.seatsNumber=seatsNumber;
+        this.tablePosition=tablePosition;
         this.isAvailable=true;
     }
-
-    //TODO getter setter
-
-
 }
