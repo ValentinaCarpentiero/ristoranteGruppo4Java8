@@ -10,6 +10,6 @@ public class SecondCourse extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredients: " +this.secondIngredients+"\n");
+        System.out.println("Ingredienti: " +this.secondIngredients+"\n");
     }
 }

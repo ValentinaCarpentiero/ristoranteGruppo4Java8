@@ -7,7 +7,6 @@ public class Table {
     private String typeOfTable;
     private boolean isAvailable;
 
-    //LocalDate (Orario prenotazione)
 
     //TODO quanti posti abbiamo nel tavolo
     public Table(int idTable, String typeOfTable){

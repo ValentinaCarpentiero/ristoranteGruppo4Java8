@@ -1,24 +1,25 @@
 import java.util.ArrayList;
 
 public class Menu {
-    private String restaurantName;
-    //TODO mettiamo un enumerato?
-    private String menuType;
+    public enum MenuType{
+    Carne,
+    Pesce
+}
+    private MenuType menuType;
     private ArrayList<Dish> dishList;
 
-    public Menu(String menuType, String restaurantName) {
+    public Menu(MenuType menuType) {
         this.menuType = menuType;
-        this.restaurantName = restaurantName;
         this.dishList = new ArrayList<>();
     }
 
-    //TODO il metodo remove?
     public void addDish(Dish dish){
             dishList.add(dish);
         }
+    public void removeDish(Dish dish){ dishList.remove(dish);}
 
     public void print(){
-        System.out.println("@@@ Restaurant name: " + this.restaurantName + " - Menu type: " + this.menuType+" @@@ \n");
+        System.out.println("Menu di " + this.menuType+" \n");
         for (Dish dish : dishList) {
             dish.printDishDetail();
         }

@@ -9,7 +9,7 @@ public class Dessert extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredients: " +this.dessertIngredients+"\n");
+        System.out.println("Ingredienti: " +this.dessertIngredients+"\n");
     }
 
 }

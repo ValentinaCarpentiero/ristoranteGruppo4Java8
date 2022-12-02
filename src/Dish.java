@@ -24,6 +24,6 @@ public class Dish {
     }
 
     public void printDishDetail() {
-        System.out.println("### "+this.itemType+" ###"+"\n"+this.itemName+" - Price: "+this.itemPrice);
+        System.out.println("### "+this.itemType+" ###"+"\n"+this.itemName+" - Prezzo: "+this.itemPrice);
     }
 }

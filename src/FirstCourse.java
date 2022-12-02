@@ -12,7 +12,7 @@ public class FirstCourse extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredients: " +this.ingredients+"\n");
+        System.out.println("Ingredienti: " +this.ingredients+"\n");
     }
 }
 
