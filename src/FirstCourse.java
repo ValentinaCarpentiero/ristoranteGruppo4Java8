@@ -3,8 +3,8 @@ public class FirstCourse extends Dish {
     private String ingredients;
 
 
-    public FirstCourse(double price, String goodName, String goodType, String ingredients) {
-        super(price, goodName, goodType);
+    public FirstCourse(String dishType, String dishName, double price,  String ingredients) {
+        super(dishType, dishName, price);
         this.ingredients = ingredients;
     }
 

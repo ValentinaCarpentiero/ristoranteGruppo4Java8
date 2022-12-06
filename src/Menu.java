@@ -2,8 +2,7 @@ import java.util.ArrayList;
 
 public class Menu {
     public enum MenuType{
-    Carne,
-    Pesce
+    Carne, Pesce
 }
     private MenuType menuType;
     private ArrayList<Dish> dishList;
@@ -16,9 +15,11 @@ public class Menu {
     public void addDish(Dish dish){
             dishList.add(dish);
         }
-    public void removeDish(Dish dish){ dishList.remove(dish);}
+    public void removeDish(Dish dish){
+        dishList.remove(dish);
+    }
 
-    public void print(){
+    public void printMenu(){
         System.out.println("Menu di " + this.menuType+" \n");
         for (Dish dish : dishList) {
             dish.printDishDetail();

@@ -1,0 +1,23 @@
+Index: src/Restaurant.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Restaurant.java b/src/Restaurant.java
+new file mode 100644
+--- /dev/null	(date 1669996132638)
++++ b/src/Restaurant.java	(date 1669996132638)
+@@ -0,0 +1,13 @@
++public class Restaurant {
++    private String restaurantName;
++    private String address;
++    private Menu menu;
++
++    public Restaurant(String restaurantName, String address, Menu menu) {
++        this.restaurantName = restaurantName;
++        this.address = address;
++        this.menu = menu;
++    }
++
++
++}

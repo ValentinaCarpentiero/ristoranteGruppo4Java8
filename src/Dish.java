@@ -1,29 +1,18 @@
 public class Dish {
-    private double itemPrice;
-    private String itemName;
-    private String itemType;
+    private double dishPrice;
+    private String dishName;
+    private String dishType;
 
 
-    public Dish(double itemPrice, String itemName, String itemType){
-        this.itemPrice = itemPrice;
-        this.itemName = itemName;
-        this.itemType = itemType;
+    public Dish(String dishType, String dishName, double dishPrice){
+        this.dishPrice = dishPrice;
+        this.dishName = dishName;
+        this.dishType = dishType;
     }
 
 
-    public double getItemPrice() {
-        return itemPrice;
-    }
-
-    public String getItemName() {
-        return itemName;
-    }
-
-    public String getItemType() {
-        return itemType;
-    }
 
     public void printDishDetail() {
-        System.out.println("### "+this.itemType+" ###"+"\n"+this.itemName+" - Prezzo: "+this.itemPrice);
+        System.out.println("### "+this.dishType+" ###"+"\n"+this.dishName+" - Prezzo: "+this.dishPrice);
     }
 }
