@@ -1,0 +1,66 @@
+Index: src/Tester.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\npublic class Tester {\r\n    public static void main(String[] args) {\r\n\r\n        Dish firstCourse1 =new FirstCourse(12.55, \"Spaghetti allo scoglio\",\"Primo piatto\", \"Spaghetti con vongole, cozze, calamari\");\r\n        Dish secondCourse1 = new SecondCourse(17.00, \"Orata al forno con patate\", \"Secondo piatto\",\"Orata, patate, rosmarino, aglio\");\r\n        Dish dessert1 = new Dessert(6.50, \"Torta al cioccolato\", \"Dessert\", \"Cioccolato fondente, farina 00, uova\");\r\n        Dish drink1 = new Drink(6.00,\"Lapilli\",\"Vino\",\"Bianco\");\r\n        Menu menu = new Menu( Menu.MenuType.Pesce);\r\n\r\n\r\n        menu.addDish(firstCourse1);\r\n        menu.addDish(secondCourse1);\r\n        menu.addDish(dessert1);\r\n        menu.addDish(drink1);\r\n        menu.print();\r\n\r\n        Table table1 = new Table(1,\"4 posti\");\r\n        Table table2 = new Table(2,\"2 posti\");\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Tester.java b/src/Tester.java
+--- a/src/Tester.java	(revision 82a8d3dd19ab350215948f1a01739335b159b9a0)
++++ b/src/Tester.java	(date 1669996784534)
+@@ -6,14 +6,18 @@
+         Dish secondCourse1 = new SecondCourse(17.00, "Orata al forno con patate", "Secondo piatto","Orata, patate, rosmarino, aglio");
+         Dish dessert1 = new Dessert(6.50, "Torta al cioccolato", "Dessert", "Cioccolato fondente, farina 00, uova");
+         Dish drink1 = new Drink(6.00,"Lapilli","Vino","Bianco");
+-        Menu menu = new Menu( Menu.MenuType.Pesce);
++
++        Menu menu1 = new Menu(Menu.MenuType.Pesce);
+ 
+ 
+-        menu.addDish(firstCourse1);
+-        menu.addDish(secondCourse1);
+-        menu.addDish(dessert1);
+-        menu.addDish(drink1);
+-        menu.print();
++        menu1.addDish(firstCourse1);
++        menu1.addDish(secondCourse1);
++        menu1.addDish(dessert1);
++        menu1.addDish(drink1);
++        menu1.print();
++
++        Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", Restaurant.RestaurantType.Ristorante,"Java 8",menu1);
++
+ 
+         Table table1 = new Table(1,"4 posti");
+         Table table2 = new Table(2,"2 posti");
+Index: src/Restaurant.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Restaurant.java b/src/Restaurant.java
+new file mode 100644
+--- /dev/null	(date 1669996993319)
++++ b/src/Restaurant.java	(date 1669996993319)
+@@ -0,0 +1,21 @@
++public class Restaurant {
++    enum RestaurantType{
++        Pizzeria, Ristorante, Trattoria, Bistrot, Sushi, Hamburgheria
++    }
++
++    private String restaurantName;
++    private String address;
++    private RestaurantType restaurantType;
++    private Menu menu;
++    boolean isOpen;
++
++    public Restaurant(String restaurantName, RestaurantType restaurantType,String address, Menu menu) {
++        this.restaurantName = restaurantName;
++        this.restaurantType = restaurantType;
++        this.address = address;
++        this.menu = menu;
++        this.isOpen = true;
++    }
++
++
++}
