@@ -5,36 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed TODO in Menu class">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_12_22_17_05_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_12_22_17_08_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_12_22_16_50_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Dessert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Dessert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Dish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Dish.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Drink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Drink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/FirstCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/FirstCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Menu$MenuType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Menu$MenuType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/SecondCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/SecondCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/Tester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dessert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SecondCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="featurePrenotazione" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,6 +45,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\valen\IdeaProjects\ristoranteGruppo4Java8\.idea" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -82,19 +76,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="feature/Menu" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
