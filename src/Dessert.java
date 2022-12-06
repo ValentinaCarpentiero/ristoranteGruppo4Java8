@@ -1,9 +1,9 @@
 public class Dessert extends Dish {
     public String dessertIngredients;
 
-    public Dessert(double price, String goodName, String goodType, String dessertIngredients) {
-        super(price, goodName, goodType);
-        this.dessertIngredients = dessertIngredients;
+    public Dessert(String dishType, String dishName, double price,  String ingredients) {
+        super(dishType, dishName, price);
+        this.dessertIngredients = ingredients;
     }
 
     @Override

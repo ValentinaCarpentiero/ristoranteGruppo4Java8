@@ -1,16 +1,14 @@
 
-
 public class Table {
 
     protected enum TablePosition{
         INDOOR, OUTDOOR
     }
-    private TablePosition tablePosition;
     private int idTable;
     private int seatsNumber;
+    private TablePosition tablePosition;
     private boolean isAvailable;
 
-    //LocalDate (Orario prenotazione)
 
     public Table(int idTable, int seatsNumber, TablePosition tablePosition){
         this.idTable=idTable;
@@ -18,4 +16,14 @@ public class Table {
         this.tablePosition=tablePosition;
         this.isAvailable=true;
     }
+
+
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+
+    public void setAvailable(boolean available) {
+        isAvailable = available;
+    }
 }
+

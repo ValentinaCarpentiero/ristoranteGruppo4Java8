@@ -2,9 +2,9 @@ public class SecondCourse extends Dish {
 
     public String secondIngredients;
 
-    public SecondCourse(double price, String goodName, String goodType, String secondIngredients) {
-        super ( price, goodName, goodType);
-        this.secondIngredients=secondIngredients;
+    public SecondCourse(String dishType, String dishName, double price,  String ingredients) {
+        super(dishType, dishName, price);
+        this.secondIngredients = ingredients;
     }
 
     @Override

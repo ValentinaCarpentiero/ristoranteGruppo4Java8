@@ -1,8 +1,8 @@
 public class Drink extends Dish {
     private String typeOfDrink;
 
-    public Drink(double price, String goodName, String goodType, String typeOfDrink) {
-        super(price, goodName, goodType);
+    public Drink(String dishType,String dishName, double price,  String typeOfDrink) {
+        super(dishType, dishName, price);
         this.typeOfDrink = typeOfDrink;
     }
 
