@@ -1,19 +1,14 @@
 
 public class Table {
 
-    protected enum TablePosition{
-        INDOOR, OUTDOOR
-    }
     private int idTable;
     private int seatsNumber;
-    private TablePosition tablePosition;
     private boolean isAvailable;
 
 
-    public Table(int idTable, int seatsNumber, TablePosition tablePosition){
+    public Table(int idTable, int seatsNumber){
         this.idTable=idTable;
         this.seatsNumber=seatsNumber;
-        this.tablePosition=tablePosition;
         this.isAvailable=true;
     }
 

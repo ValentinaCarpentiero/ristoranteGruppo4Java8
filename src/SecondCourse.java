@@ -1,6 +1,6 @@
 public class SecondCourse extends Dish {
 
-    public String secondIngredients;
+    private String secondIngredients;
 
     public SecondCourse(String dishType, String dishName, double price,  String ingredients) {
         super(dishType, dishName, price);

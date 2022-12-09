@@ -6,7 +6,7 @@ public class Restaurant {
     private String address;
     private Menu menu;
     private List<Table> tableList;
-    boolean isOpen;
+    private boolean isOpen;
 
     public Restaurant(String restaurantName, String address, Menu menu) {
         this.restaurantName = restaurantName;

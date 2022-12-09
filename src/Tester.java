@@ -13,8 +13,8 @@ public class Tester {
 
 //      Creazione ristoranti
         Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", "Java 8",menu1);
-        restaurant1.addTable(new Table(1, 4, Table.TablePosition.INDOOR));
-        restaurant1.addTable(new Table(2,4, Table.TablePosition.INDOOR));
+        restaurant1.addTable(new Table(1, 4));
+        restaurant1.addTable(new Table(2,4));
         restaurant1.getMenu().printMenu();
     }
 }
