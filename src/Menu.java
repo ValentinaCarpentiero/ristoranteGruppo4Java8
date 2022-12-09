@@ -1,14 +1,10 @@
 import java.util.ArrayList;
 
 public class Menu {
-    public enum MenuType{
-    Carne, Pesce
-}
-    private MenuType menuType;
+
     private ArrayList<Dish> dishList;
 
-    public Menu(MenuType menuType) {
-        this.menuType = menuType;
+    public Menu() {
         this.dishList = new ArrayList<>();
     }
 
@@ -19,8 +15,16 @@ public class Menu {
         dishList.remove(dish);
     }
 
+    public ArrayList<Dish> getDishList() {
+        return dishList;
+    }
+
+    public void setDishList(ArrayList<Dish> dishList) {
+        this.dishList = dishList;
+    }
+
     public void printMenu(){
-        System.out.println("Menu di " + this.menuType+" \n");
+        //System.out.println("Menu di " + this.menuType+" \n");
         for (Dish dish : dishList) {
             dish.printDishDetail();
         }

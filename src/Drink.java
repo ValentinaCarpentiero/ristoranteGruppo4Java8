@@ -6,6 +6,14 @@ public class Drink extends Dish {
         this.typeOfDrink = typeOfDrink;
     }
 
+    public String getTypeOfDrink() {
+        return typeOfDrink;
+    }
+
+    public void setTypeOfDrink(String typeOfDrink) {
+        this.typeOfDrink = typeOfDrink;
+    }
+
     @Override
     public void printDishDetail() {
         super.printDishDetail();

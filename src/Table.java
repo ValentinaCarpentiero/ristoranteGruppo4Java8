@@ -12,12 +12,27 @@ public class Table {
         this.isAvailable=true;
     }
 
+    public int getIdTable() {
+        return idTable;
+    }
 
-    public boolean isAvailable() {
+    public void setIdTable(int idTable) {
+        this.idTable = idTable;
+    }
+
+    public int getSeatsNumber() {
+        return seatsNumber;
+    }
+
+    public void setSeatsNumber(int seatsNumber) {
+        this.seatsNumber = seatsNumber;
+    }
+
+    public boolean getIsAvailable() {
         return isAvailable;
     }
 
-    public void setAvailable(boolean available) {
+    public void setIsAvailable(boolean available) {
         isAvailable = available;
     }
 }

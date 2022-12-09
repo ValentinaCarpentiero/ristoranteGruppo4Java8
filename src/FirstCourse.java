@@ -1,18 +1,24 @@
 public class FirstCourse extends Dish {
 
-    private String ingredients;
+    private String firstIngredients;
 
-
-    public FirstCourse(String dishType, String dishName, double price,  String ingredients) {
+    public FirstCourse(String dishType, String dishName, double price,  String firstIngredients) {
         super(dishType, dishName, price);
-        this.ingredients = ingredients;
+        this.firstIngredients = firstIngredients;
     }
 
+    public String getFirstIngredients() {
+        return firstIngredients;
+    }
+
+    public void setFirstIngredients(String firstIngredients) {
+        this.firstIngredients = firstIngredients;
+    }
 
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredienti: " +this.ingredients+"\n");
+        System.out.println("Ingredienti: " +this.firstIngredients +"\n");
     }
 }
 

@@ -7,6 +7,14 @@ public class SecondCourse extends Dish {
         this.secondIngredients = ingredients;
     }
 
+    public String getSecondIngredients() {
+        return secondIngredients;
+    }
+
+    public void setSecondIngredients(String secondIngredients) {
+        this.secondIngredients = secondIngredients;
+    }
+
     @Override
     public void printDishDetail() {
         super.printDishDetail();

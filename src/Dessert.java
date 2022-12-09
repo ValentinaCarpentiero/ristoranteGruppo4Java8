@@ -1,9 +1,17 @@
 public class Dessert extends Dish {
-    public String dessertIngredients;
+    private String dessertIngredients;
 
     public Dessert(String dishType, String dishName, double price,  String ingredients) {
         super(dishType, dishName, price);
         this.dessertIngredients = ingredients;
+    }
+
+    public String getDessertIngredients() {
+        return dessertIngredients;
+    }
+
+    public void setDessertIngredients(String dessertIngredients) {
+        this.dessertIngredients = dessertIngredients;
     }
 
     @Override
