@@ -1,3 +1,5 @@
+package dishes;
+
 public class Dessert extends Dish {
     private String dessertIngredients;
 

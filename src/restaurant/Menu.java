@@ -1,3 +1,7 @@
+package restaurant;
+
+import dishes.Dish;
+
 import java.util.ArrayList;
 
 public class Menu {
@@ -24,7 +28,7 @@ public class Menu {
     }
 
     public void printMenu(){
-        //System.out.println("Menu di " + this.menuType+" \n");
+        //System.out.println("restaurant.Menu di " + this.menuType+" \n");
         for (Dish dish : dishList) {
             dish.printDishDetail();
         }

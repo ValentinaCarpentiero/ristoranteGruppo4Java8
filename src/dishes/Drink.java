@@ -1,3 +1,5 @@
+package dishes;
+
 public class Drink extends Dish {
     private String typeOfDrink;
 

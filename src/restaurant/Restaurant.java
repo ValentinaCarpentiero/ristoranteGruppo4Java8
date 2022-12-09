@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package restaurant;
 
 public class Restaurant {
     private String restaurantName;

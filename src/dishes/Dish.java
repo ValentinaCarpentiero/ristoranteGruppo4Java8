@@ -1,3 +1,5 @@
+package dishes;
+
 public class Dish {
     private double dishPrice;
     private String dishName;

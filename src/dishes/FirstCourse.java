@@ -1,3 +1,5 @@
+package dishes;
+
 public class FirstCourse extends Dish {
 
     private String firstIngredients;
