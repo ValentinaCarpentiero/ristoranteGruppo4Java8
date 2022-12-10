@@ -13,9 +13,6 @@ public class SecondCourse extends Dish {
         return secondIngredients;
     }
 
-    public void setSecondIngredients(String secondIngredients) {
-        this.secondIngredients = secondIngredients;
-    }
 
     @Override
     public void printDishDetail() {

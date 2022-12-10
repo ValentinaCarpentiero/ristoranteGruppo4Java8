@@ -12,9 +12,6 @@ public class Dessert extends Dish {
         return dessertIngredients;
     }
 
-    public void setDessertIngredients(String dessertIngredients) {
-        this.dessertIngredients = dessertIngredients;
-    }
 
     @Override
     public void printDishDetail() {

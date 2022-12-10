@@ -1,18 +1,19 @@
 package restaurant;
 
-import java.util.ArrayList;
-import java.util.List;
+import dishes.Dish;
+
 
 public class Restaurant {
     private String restaurantName;
     private String address;
-    private List<Menu> menuList;
+    private Menu menu;
+
     private boolean isOpen;
 
     public Restaurant(String restaurantName, String address, Menu menu) {
         this.restaurantName = restaurantName;
         this.address = address;
-        this.menuList = new ArrayList<>();
+        this.menu = menu;
         this.isOpen = true;
     }
 
@@ -20,25 +21,10 @@ public class Restaurant {
         return restaurantName;
     }
 
-    public void setRestaurantName(String restaurantName) {
-        this.restaurantName = restaurantName;
-    }
-
     public String getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public List<Menu> getMenu() {
-        return menuList;
-    }
-
-    public void setMenu(List<Menu> menu) {
-        this.menuList = menu;
-    }
 
     public boolean getIsOpen() {
         return isOpen;
@@ -49,8 +35,11 @@ public class Restaurant {
     }
 
     public void printMenu(){
-
+        for (Dish dish : menu.getDishList()) {
+            dish.printDishDetail();
         }
+
+    }
 }
 
 

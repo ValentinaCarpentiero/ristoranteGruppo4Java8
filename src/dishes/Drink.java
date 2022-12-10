@@ -12,9 +12,6 @@ public class Drink extends Dish {
         return typeOfDrink;
     }
 
-    public void setTypeOfDrink(String typeOfDrink) {
-        this.typeOfDrink = typeOfDrink;
-    }
 
     @Override
     public void printDishDetail() {

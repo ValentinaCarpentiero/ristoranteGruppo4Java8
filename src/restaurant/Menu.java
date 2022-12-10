@@ -5,22 +5,18 @@ import dishes.Dish;
 import java.util.ArrayList;
 
 public class Menu {
-     public enum BasedOn{
-        FISH, MEAT, VEGETABLE
-    }
-    private Enum menuType;
-    private BasedOn base;
+
+    private Category menuType;
     private ArrayList<Dish> dishList;
 
-    public Menu(Enum menuType,BasedOn base) {
+    public Menu(Category menuType) {
         this.dishList = new ArrayList<>();
-        this.base = base;
         this.menuType = menuType;
     }
 
     public void addDish(Dish dish){
-            dishList.add(dish);
-        }
+        dishList.add(dish);
+    }
     public void removeDish(Dish dish){
         dishList.remove(dish);
     }
@@ -33,10 +29,18 @@ public class Menu {
         this.dishList = dishList;
     }
 
+    public Category getMenuType() {
+        return menuType;
+    }
+
+    public void setMenuType(Category menuType) {
+        this.menuType = menuType;
+    }
+
     public void printMenu(){
-        System.out.println("Menu di " + this.base+" \n");
+        System.out.println("Menu di " + this.menuType+" \n");
         for (Dish dish : dishList) {
             dish.printDishDetail();
+            }
         }
     }
-}

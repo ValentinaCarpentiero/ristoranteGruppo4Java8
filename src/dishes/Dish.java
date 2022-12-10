@@ -16,7 +16,6 @@ public class Dish {
     public double getDishPrice() {
         return dishPrice;
     }
-
     public void setDishPrice(double dishPrice) {
         this.dishPrice = dishPrice;
     }
@@ -24,18 +23,17 @@ public class Dish {
     public String getDishName() {
         return dishName;
     }
-
-    public void setDishName(String dishName) {
-        this.dishName = dishName;
-    }
-
     public String getCourse() {
         return course;
     }
-
-    public void setCourse(String course) {
-        this.course = course;
+    public Enum getDishType() {
+        return dishType;
     }
+
+    public void setDishType(Enum dishType) {
+        this.dishType = dishType;
+    }
+
 
     public void printDishDetail() {
         System.out.println("### "+this.course +" ###"+"\n"+this.dishName+" - Prezzo: "+this.dishPrice);
