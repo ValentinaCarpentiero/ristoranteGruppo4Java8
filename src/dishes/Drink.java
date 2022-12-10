@@ -3,8 +3,8 @@ package dishes;
 public class Drink extends Dish {
     private String typeOfDrink;
 
-    public Drink(String dishType,String dishName, double price,  String typeOfDrink) {
-        super(dishType, dishName, price);
+    public Drink(String course,String dishName,Enum dishType, double price,  String typeOfDrink) {
+        super(course, dishName, dishType,price);
         this.typeOfDrink = typeOfDrink;
     }
 

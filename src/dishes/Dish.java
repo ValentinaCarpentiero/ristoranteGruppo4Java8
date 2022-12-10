@@ -3,13 +3,14 @@ package dishes;
 public class Dish {
     private double dishPrice;
     private String dishName;
-    private String dishType;
+    private String course;
+    private Enum dishType;
 
-
-    public Dish(String dishType, String dishName, double dishPrice){
+    public Dish(String course, String dishName, Enum dishType, double dishPrice){
         this.dishPrice = dishPrice;
         this.dishName = dishName;
         this.dishType = dishType;
+        this.course = course;
     }
 
     public double getDishPrice() {
@@ -28,15 +29,15 @@ public class Dish {
         this.dishName = dishName;
     }
 
-    public String getDishType() {
-        return dishType;
+    public String getCourse() {
+        return course;
     }
 
-    public void setDishType(String dishType) {
-        this.dishType = dishType;
+    public void setCourse(String course) {
+        this.course = course;
     }
 
     public void printDishDetail() {
-        System.out.println("### "+this.dishType+" ###"+"\n"+this.dishName+" - Prezzo: "+this.dishPrice);
+        System.out.println("### "+this.course +" ###"+"\n"+this.dishName+" - Prezzo: "+this.dishPrice);
     }
 }

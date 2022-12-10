@@ -4,8 +4,8 @@ public class FirstCourse extends Dish {
 
     private String firstIngredients;
 
-    public FirstCourse(String dishType, String dishName, double price,  String firstIngredients) {
-        super(dishType, dishName, price);
+    public FirstCourse(String course, String dishName,Enum dishType, double price,  String firstIngredients) {
+        super(course, dishName,dishType, price);
         this.firstIngredients = firstIngredients;
     }
 

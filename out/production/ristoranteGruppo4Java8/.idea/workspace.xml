@@ -5,26 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_16_28_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_16_28_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_16_28__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_12_2022_16_28__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2022_16_39_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2022_16_39__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_12_2022_12_26_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_12_2022_12_26__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/restaurant/Enum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/menu.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scheletroProva1" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/scheletroProva1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dessert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/FirstCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SecondCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/SecondCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dessert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/FirstCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/FirstCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/SecondCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/SecondCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/menu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes/menu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/scheletroProva1" beforeDir="false" afterPath="$PROJECT_DIR$/notes/scheletroProva1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/restaurant/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>

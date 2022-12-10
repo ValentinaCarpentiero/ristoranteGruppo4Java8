@@ -5,11 +5,17 @@ import dishes.Dish;
 import java.util.ArrayList;
 
 public class Menu {
-
+     public enum BasedOn{
+        FISH, MEAT, VEGETABLE
+    }
+    private Enum menuType;
+    private BasedOn base;
     private ArrayList<Dish> dishList;
 
-    public Menu() {
+    public Menu(Enum menuType,BasedOn base) {
         this.dishList = new ArrayList<>();
+        this.base = base;
+        this.menuType = menuType;
     }
 
     public void addDish(Dish dish){
@@ -28,7 +34,7 @@ public class Menu {
     }
 
     public void printMenu(){
-        //System.out.println("restaurant.Menu di " + this.menuType+" \n");
+        System.out.println("Menu di " + this.base+" \n");
         for (Dish dish : dishList) {
             dish.printDishDetail();
         }
