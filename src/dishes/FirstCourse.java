@@ -9,7 +9,11 @@ import restaurant.Preferences;
 
 public class FirstCourse extends Dish {
 
+
+    //TODO setter, ingredients può essere a comune?
     private String firstIngredients;
+
+    private TypeOfFirstEnum typeOfFirstEnum;
 
     /**
      * First course constructor that takes the following parameters:

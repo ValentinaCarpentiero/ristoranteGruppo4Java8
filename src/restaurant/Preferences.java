@@ -4,5 +4,19 @@ package restaurant;
  * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
  */
 public enum Preferences {
-    CARNIVOROUS, VEGETARIAN, VEGAN, MIXED
+    CARNIVOROUS("Questo menù è di carne"),
+    VEGETARIAN,
+    VEGAN,
+    MIXED;
+
+    private final String descripition;
+
+    Preferences(String description) {
+
+        this.descripition = description;
+    }
+
+    public String getDescripition() {
+        return descripition;
+    }
 }

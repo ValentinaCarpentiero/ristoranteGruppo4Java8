@@ -9,6 +9,8 @@ import java.util.ArrayList;
  */
 public class Menu {
 
+    //TODO che nome ha il menù? booleano per indicare il menù nei giorni di festa
+
     private Preferences menuType;
     private ArrayList<Dish> dishList;
 
@@ -58,6 +60,7 @@ public class Menu {
      * This method prints each Dish's course
      */
     public void printMenu(){
+        //TODO nome, e tutti i dettagli del menù
         System.out.println("Menu di " + this.menuType+" \n");
         for (Dish dish : dishList) {
             dish.printDishDetail();

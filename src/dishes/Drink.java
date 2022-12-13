@@ -8,6 +8,9 @@ import restaurant.Preferences;
  */
 public class Drink extends Dish {
 
+
+    //TODO fare un enumerato, con descrizione e grado alcolico
+    //TODO mettere il setter
     private String typeOfDrink;
     /**
      * First course constructor that takes the following parameters:

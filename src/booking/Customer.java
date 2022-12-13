@@ -9,6 +9,8 @@ import restaurant.Preferences;
 
 public class Customer {
 
+
+    //TODO getter e setter? metodi per stampare informazioni del customer? e altro da pensare!
     private String fullName;
     private String email;
     private String telephoneNumber;
@@ -16,7 +18,7 @@ public class Customer {
      * This variable represent a customer id
      */
 
-    private static int customerId;
+    private static int customerId = 0;
     private Preferences customerType;
 
     /**
@@ -27,6 +29,7 @@ public class Customer {
      * @param customerType Customer's food preferences
      */
 
+    //TODO nome cognome telefono email e customerid
     public Customer(String fullName, String email, String telephoneNumber, Preferences customerType) {
         this.fullName = fullName;
         this.email = email;

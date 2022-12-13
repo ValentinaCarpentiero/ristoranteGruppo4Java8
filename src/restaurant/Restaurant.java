@@ -1,6 +1,9 @@
 package restaurant;
 
+import booking.Customer;
 import dishes.Dish;
+
+import java.util.List;
 
 /**
  * This class represents a Restaurant
@@ -9,7 +12,9 @@ import dishes.Dish;
 public class Restaurant {
     private String restaurantName;
     private String address;
-    private Menu menu;
+
+
+    private List<Menu> menu;
 
     private boolean isOpen;
     /**
@@ -47,8 +52,10 @@ public class Restaurant {
     /**
      * This method prints each Dish's course
      */
-    public void printMenu(){
+    //TODO sistemare
+    public void printMenu(Customer customer){
         for (Dish dish : menu.getDishList()) {
+            if(dish.getDishType() == )
             dish.printDishDetail();
         }
 

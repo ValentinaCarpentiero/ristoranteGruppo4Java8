@@ -8,6 +8,8 @@ import restaurant.Preferences;
  */
 public class SecondCourse extends Dish {
 
+
+
     private String secondIngredients;
     /**
      * Second course constructor that takes the following parameters:

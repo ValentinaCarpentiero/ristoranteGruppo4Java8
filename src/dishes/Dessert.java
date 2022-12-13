@@ -7,6 +7,8 @@ import restaurant.Preferences;
  * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
  */
 public class Dessert extends Dish {
+
+    //TODO prima i field statici, i field le liste il costruttore i metodi in overrride i getter e i setter e poi gli altri metodi
     private String dessertIngredients;
 
     /**
@@ -17,6 +19,8 @@ public class Dessert extends Dish {
      * @param price Dessert price
      * @param ingredients Dessert ingredients
      */
+
+    //TODO i field da assegnare è meglio chiamarli con lo stesso nome altrimenti possiamo anche non mettere il this, quindi dessertIngredients
     public Dessert(String course, String dishName, Preferences dishType, double price, String ingredients) {
         super(course, dishName,dishType, price);
         this.dessertIngredients = ingredients;
