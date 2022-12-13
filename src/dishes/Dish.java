@@ -40,12 +40,23 @@ public class Dish {
     public String getDishName() {
         return dishName;
     }
+
+    public void setDishName(String dishName) {
+        this.dishName = dishName;
+    }
+
     public String getCourse() {
         return course;
     }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
     public Preferences getDishType() {
         return dishType;
     }
+
 
     public void setDishType(Preferences dishType) {
         this.dishType = dishType;

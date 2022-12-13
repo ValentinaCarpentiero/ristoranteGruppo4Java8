@@ -27,11 +27,15 @@ public class Dessert extends Dish {
     }
 
     /**
-     * This is a getter that returns the ingredients
+     * Getter and Setter
      * @return String with dessert ingredients
      */
     public String getDessertIngredients() {
         return dessertIngredients;
+    }
+
+    public void setDessertIngredients(String dessertIngredients) {
+        this.dessertIngredients = dessertIngredients;
     }
 
     /**

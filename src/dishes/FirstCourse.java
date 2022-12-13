@@ -29,11 +29,15 @@ public class FirstCourse extends Dish {
         this.firstIngredients = firstIngredients;
     }
     /**
-     * This is a getter that returns the ingredients
+     * Getter and Setter of firstIngredent
      * @return String with first course ingredients
      */
     public String getFirstIngredients() {
         return firstIngredients;
+    }
+
+    public void setFirstIngredients(String firstIngredients) {
+        this.firstIngredients = firstIngredients;
     }
 
     /**

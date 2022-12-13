@@ -25,11 +25,15 @@ public class SecondCourse extends Dish {
         this.secondIngredients = secondIngredients;
     }
     /**
-     * This is a getter that returns the ingredients
+     * Getter and Setter of secondIngredient
      * @return String with second course ingredients
      */
     public String getSecondIngredients() {
         return secondIngredients;
+    }
+
+    public void setSecondIngredients(String secondIngredients) {
+        this.secondIngredients = secondIngredients;
     }
 
     /**

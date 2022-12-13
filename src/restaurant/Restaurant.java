@@ -37,13 +37,24 @@ public class Restaurant {
         return restaurantName;
     }
 
+    public void setRestaurantName(String restaurantName) {
+        this.restaurantName = restaurantName;
+    }
+
     public String getAddress() {
         return address;
     }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public boolean getIsOpen() {
         return isOpen;
+    }
+
+    public void setOpen(boolean open) {
+        isOpen = open;
     }
 
     public void setIsOpen(boolean open) {
