@@ -6,10 +6,10 @@ import java.util.ArrayList;
 
 public class Menu {
 
-    private Category menuType;
+    private Preferences menuType;
     private ArrayList<Dish> dishList;
 
-    public Menu(Category menuType) {
+    public Menu(Preferences menuType) {
         this.dishList = new ArrayList<>();
         this.menuType = menuType;
     }
@@ -29,11 +29,11 @@ public class Menu {
         this.dishList = dishList;
     }
 
-    public Category getMenuType() {
+    public Preferences getMenuType() {
         return menuType;
     }
 
-    public void setMenuType(Category menuType) {
+    public void setMenuType(Preferences menuType) {
         this.menuType = menuType;
     }
 

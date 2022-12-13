@@ -1,5 +1,5 @@
 package restaurant;
 
-public enum Category {
+public enum Preferences {
     CARNIVOROUS, VEGETARIAN, VEGAN, MIXED
 }
