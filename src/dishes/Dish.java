@@ -1,18 +1,35 @@
 package dishes;
 
+import restaurant.Preferences;
+
+/**
+ * This class represents a general Dish
+ * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
+ */
 public class Dish {
     private double dishPrice;
     private String dishName;
     private String course;
-    private Enum dishType;
+    private Preferences dishType;
 
-    public Dish(String course, String dishName, Enum dishType, double dishPrice){
+    /**
+     * First course constructor that takes the following parameters:
+     * @param course Course type
+     * @param dishName Dish name
+     * @param dishType Dish type
+     * @param dishPrice Dish price
+     */
+
+    public Dish(String course, String dishName, Preferences dishType, double dishPrice){
         this.dishPrice = dishPrice;
         this.dishName = dishName;
         this.dishType = dishType;
         this.course = course;
     }
 
+    /**
+     *The following methods are getters and setters for each instance variables
+     */
     public double getDishPrice() {
         return dishPrice;
     }
@@ -26,15 +43,17 @@ public class Dish {
     public String getCourse() {
         return course;
     }
-    public Enum getDishType() {
+    public Preferences getDishType() {
         return dishType;
     }
 
-    public void setDishType(Enum dishType) {
+    public void setDishType(Preferences dishType) {
         this.dishType = dishType;
     }
 
-
+    /**
+     * This is a method that prints the details of the dish that will be overridden
+     */
     public void printDishDetail() {
         System.out.println("### "+this.course +" ###"+"\n"+this.dishName+" - Prezzo: "+this.dishPrice);
     }

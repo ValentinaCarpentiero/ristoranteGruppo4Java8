@@ -3,9 +3,16 @@ package main;
 import restaurant.*;
 import restaurant.Preferences;
 
-
-
+/**
+ * This is the Tester class with a main method
+ * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
+ */
 public class Tester {
+
+    /**
+     * Main method from where the Java program starts.
+     * @param args for all the parameters from command line
+     */
     public static void main(String[] args) {
 
 
