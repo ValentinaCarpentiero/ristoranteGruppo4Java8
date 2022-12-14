@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dessert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/FirstCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/FirstCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/SecondCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/SecondCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restaurant/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Restaurant.java" afterDir="false" />
-    </list>
+    <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="featurePrenotazione" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -105,5 +97,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed TODO in Menu class" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixed TODO in Menu class" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="restaurant.Restaurant" memberName="menu" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

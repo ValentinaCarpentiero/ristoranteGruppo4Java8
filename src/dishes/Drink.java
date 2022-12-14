@@ -25,8 +25,8 @@ public class Drink extends Dish {
         this.typeOfDrink = typeOfDrink;
     }
     /**
-     * This is a getter that returns the ingredients
-     * @return String with second course ingredients
+     * Getter and setter
+     * @return String with type of drink
      */
     public String getTypeOfDrink() {
         return typeOfDrink;
