@@ -59,4 +59,12 @@ public class Customer {
     public void setTelephoneNumber(String telephoneNumber) {
         this.telephoneNumber = telephoneNumber;
     }
+
+    public Preferences getCustomerType() {
+        return customerType;
+    }
+
+    public void setCustomerType(Preferences customerType) {
+        this.customerType = customerType;
+    }
 }

@@ -9,7 +9,7 @@ import restaurant.Preferences;
 public class Dessert extends Dish {
 
     //TODO prima i field statici, i field le liste il costruttore i metodi in overrride i getter e i setter e poi gli altri metodi
-    private String dessertIngredients;
+
 
     /**
      * Dessert constructor that takes the following parameters:
@@ -20,22 +20,11 @@ public class Dessert extends Dish {
      */
 
     //TODO i field da assegnare è meglio chiamarli con lo stesso nome altrimenti possiamo anche non mettere il this, quindi dessertIngredients
-    public Dessert(String course, String dishName, Preferences dishType, double price) {
-        super(course, dishName,dishType, price);
+    public Dessert(String course, String dishName, Preferences dishType, double price, String ingredients) {
+        super(course, dishName,dishType, price, ingredients);
 
     }
 
-    /**
-     * Getter and Setter
-     * @return String with dessert ingredients
-     */
-    public String getDessertIngredients() {
-        return dessertIngredients;
-    }
-
-    public void setDessertIngredients(String dessertIngredients) {
-        this.dessertIngredients = dessertIngredients;
-    }
 
     /**
      * This is an override method from the Dish class that prints the details of the dish
@@ -43,7 +32,7 @@ public class Dessert extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredienti: " +this.dessertIngredients+"\n");
+        System.out.println("Ingredienti: " +this.getIngredients()+"\n");
     }
 
 }

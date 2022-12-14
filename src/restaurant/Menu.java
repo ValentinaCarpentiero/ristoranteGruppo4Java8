@@ -10,6 +10,8 @@ import java.util.ArrayList;
 public class Menu {
 
     //TODO che nome ha il menù? booleano per indicare il menù nei giorni di festa
+    private String menuName;
+    private boolean isMenuSpecial;
 
     private Preferences menuType;
     private ArrayList<Dish> dishList;
@@ -37,9 +39,28 @@ public class Menu {
     public void removeDish(Dish dish){
         dishList.remove(dish);
     }
+
+    public String getMenuName() {
+        return menuName;
+    }
+
+    public void setMenuName(String menuName) {
+        this.menuName = menuName;
+    }
+
+    public boolean isMenuSpecial() {
+        return isMenuSpecial;
+    }
+
+    public void setMenuSpecial(boolean menuSpecial) {
+        isMenuSpecial = menuSpecial;
+    }
+
     /**
      *The following methods are getters and setters for each instance variables
      */
+
+
     public ArrayList<Dish> getDishList() {
         return dishList;
     }

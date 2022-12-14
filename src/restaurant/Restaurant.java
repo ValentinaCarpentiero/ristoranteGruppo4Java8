@@ -2,6 +2,7 @@ package restaurant;
 
 import booking.Customer;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -13,11 +14,13 @@ public class Restaurant {
     private String address;
     private List<Menu> menu;
     private boolean isOpen;
+
     /**
      * Restaurant constructor that takes the following parameters and assigns the true value to the boolean isOpen:
+     *
      * @param restaurantName Restaurant name
-     * @param address Restaurant address
-     * @param menu Restaurant menu
+     * @param address        Restaurant address
+     * @param menu           Restaurant menu
      */
     public Restaurant(String restaurantName, String address, List<Menu> menu) {
         this.restaurantName = restaurantName;
@@ -27,7 +30,7 @@ public class Restaurant {
     }
 
     /**
-     *The following methods are getters and setters for each instance variables
+     * The following methods are getters and setters for each instance variables
      */
     public String getRestaurantName() {
         return restaurantName;
@@ -53,12 +56,18 @@ public class Restaurant {
     public void setIsOpen(boolean open) {
         isOpen = open;
     }
+
     /**
      * This method prints each Dish's course
      */
     //TODO sistemare
-    public void printMenu(Customer customer){
-        for()
+    public void printMenu(Customer customer) {
+        for (Menu singleMenu : menu) {
+            if (singleMenu.getMenuType ()== customer.getCustomerType ()) {
+                singleMenu.printMenu();
+            } else {
+                System.out.println ("***ERROR****");
+            }
         }
     }
 }
