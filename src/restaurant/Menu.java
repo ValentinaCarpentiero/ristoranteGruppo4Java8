@@ -84,7 +84,7 @@ public class Menu {
      */
     public void printMenu(){
         //TODO nome, e tutti i dettagli del menù
-        System.out.println(this.menuType + " MENU " +" \n");
+        System.out.println(this.menuType + " MENU " + " \n" + this.menuName + " \n");
         for (Dish dish : dishList) {
             dish.printDishDetail();
         }
