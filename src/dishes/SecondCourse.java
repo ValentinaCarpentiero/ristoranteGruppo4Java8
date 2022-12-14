@@ -10,30 +10,17 @@ public class SecondCourse extends Dish {
 
 
 
-    private String secondIngredients;
+
     /**
      * Second course constructor that takes the following parameters:
      * @param course Course type
      * @param dishName Second course name
      * @param dishType Second course type
      * @param price Second course price
-     * @param secondIngredients Second course ingredients
      */
 
-    public SecondCourse(String course, String dishName, Preferences dishType, double price, String secondIngredients) {
-        super(course, dishName,dishType, price);
-        this.secondIngredients = secondIngredients;
-    }
-    /**
-     * Getter and Setter of secondIngredient
-     * @return String with second course ingredients
-     */
-    public String getSecondIngredients() {
-        return secondIngredients;
-    }
-
-    public void setSecondIngredients(String secondIngredients) {
-        this.secondIngredients = secondIngredients;
+    public SecondCourse(String course, String dishName, Preferences dishType, double price, String ingredients) {
+        super(course, dishName,dishType, price, ingredients);
     }
 
     /**
@@ -42,6 +29,6 @@ public class SecondCourse extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredienti: " +this.secondIngredients+"\n");
+        System.out.println("Ingredienti: " +this.getIngredients()+"\n");
     }
 }

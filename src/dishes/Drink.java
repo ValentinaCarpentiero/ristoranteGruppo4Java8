@@ -25,7 +25,7 @@ public class Drink extends Dish {
         this.typeOfDrink = typeOfDrink;
     }
     /**
-     * Getter and setter
+     * Getter and Setter of the instance variable
      * @return String with type of drink
      */
     public String getTypeOfDrink() {

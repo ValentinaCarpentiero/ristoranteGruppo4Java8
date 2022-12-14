@@ -20,7 +20,9 @@ public class Menu {
      * Menu constructor that takes a parameter and initializes a dish list
      * @param menuType Type of menu
      */
-    public Menu(Preferences menuType) {
+    public Menu(String menuName, boolean isMenuSpecial, Preferences menuType) {
+        this.menuName=menuName;
+        this.isMenuSpecial=isMenuSpecial;
         this.dishList = new ArrayList<>();
         this.menuType = menuType;
     }

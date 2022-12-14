@@ -11,8 +11,8 @@ public class Customer {
 
     //TODO getter e setter? metodi per stampare informazioni del customer? e altro da pensare!
     /**
-    /*This variable represent a customer id
-    */
+     * /*This variable represent a customer id
+     */
     private static int customerId = 0;
     private String fullName;
     private String email;
@@ -21,10 +21,11 @@ public class Customer {
 
     /**
      * Customer constructor that takes the following parameters:
-     * @param fullName Customer name and surname
-     * @param email Customer email
+     *
+     * @param fullName        Customer name and surname
+     * @param email           Customer email
      * @param telephoneNumber Customer telephone number
-     * @param customerType Customer's food preferences
+     * @param customerType    Customer's food preferences
      */
 
     //TODO nome cognome telefono email e customerid
@@ -66,5 +67,9 @@ public class Customer {
 
     public void setCustomerType(Preferences customerType) {
         this.customerType = customerType;
+    }
+
+    public void printCustomerDetails() {
+        System.out.println ( "Name: " + this.fullName + " Email: " + this.email + " Telephone-number: " + this.telephoneNumber + " Preferences: " + this.customerType /*" -" + customerId++*/ );
     }
 }

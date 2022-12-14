@@ -14,6 +14,13 @@ public class Dish {
     private String ingredients;
     private Preferences dishType;
 
+    /**
+     * First course constructor that takes the following parameters:
+     * @param course Course type
+     * @param dishName Dish name
+     * @param dishType Dish type
+     * @param dishPrice Dish price
+     */
     public Dish(String course,String dishName, Preferences dishType, double dishPrice){
         this.course=course;
         this.dishName=dishName;
@@ -27,6 +34,7 @@ public class Dish {
      * @param dishName Dish name
      * @param dishType Dish type
      * @param dishPrice Dish price
+     * @param ingredients Dish ingredients
      */
 
     public Dish(String course, String dishName,Preferences dishType, double dishPrice,String ingredients){
