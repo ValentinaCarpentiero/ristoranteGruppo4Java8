@@ -48,12 +48,12 @@ public class Restaurant {
         this.address = address;
     }
 
-    public boolean getIsOpen() {
+    public boolean getIsOpen(){
         return isOpen;
     }
 
 
-    public void setIsOpen(boolean open) {
+    public void setIsOpen(boolean open){
         isOpen = open;
     }
 
@@ -63,7 +63,7 @@ public class Restaurant {
     //TODO sistemare
     public void printMenu(Customer customer) {
         for (Menu singleMenu : menu){
-            if (singleMenu.getMenuType ()== customer.getCustomerType ()) {
+            if (singleMenu.getMenuType() == customer.getCustomerType()) {
                 singleMenu.printMenu();
             }
         }

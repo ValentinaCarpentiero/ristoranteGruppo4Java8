@@ -92,6 +92,6 @@ public class Dish {
      * This is a method that prints the details of the dish that will be overridden
      */
     public void printDishDetail() {
-        System.out.println("### "+this.course +" ###"+"\n"+this.dishName+" - Prezzo: "+this.dishPrice);
+        System.out.println("### "+this.course +" ###"+"\n"+this.dishName+"\nPrezzo: "+this.dishPrice + "€ ");
     }
 }

@@ -30,13 +30,13 @@ public class Tester {
         menu1.addDish(new dishes.Drink("Drink", "Vino Lapilli", Preferences.MIXED, 6.00, "Bianco"));
 
         menu2.addDish(new dishes.FirstCourse("Primo Piatto", "Orecchiette Cime di Rapa", Preferences.VEGETARIAN, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco"));
-        menu2.addDish(new dishes.SecondCourse("Secondo Piatto", "Burger di Soia", Preferences.VEGETARIAN, 7, "Burger Vegetale alla Soia"));
+        menu2.addDish(new dishes.SecondCourse("Secondo Piatto", "Burger di Soia", Preferences.VEGETARIAN, 7.00, "Burger Vegetale alla Soia"));
         menu2.addDish(new dishes.Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, 6.50,"zucchero"));
         menu2.addDish(new dishes.Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, "0 Zuccheri aggiunti"));
 
         menu3.addDish(new dishes.FirstCourse("Primo Piatto", "Paccheri zucca e mandorle ", Preferences.VEGETARIAN, 10.50, "Paccheri , zucca, mandorle"));
-        menu3.addDish(new dishes.SecondCourse("Secondo Piatto", "Sushi avocado", Preferences.VEGAN, 7.5, "Riso, avocado, Spalmabile alla Soia"));
-        menu3.addDish(new dishes.Dessert("Dessert", "Vegan Souffle", Preferences.MIXED, 6.2,"Zucchero"));
+        menu3.addDish(new dishes.SecondCourse("Secondo Piatto", "Sushi avocado", Preferences.VEGAN, 7.50, "Riso, avocado, Spalmabile alla Soia"));
+        menu3.addDish(new dishes.Dessert("Dessert", "Vegan Souffle", Preferences.MIXED, 6.20,"Zucchero"));
         menu3.addDish(new dishes.Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, "0 Zuccheri aggiunti"));
 
 
@@ -47,14 +47,14 @@ public class Tester {
         menu.add (menu3);
         Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", "Java 8",menu);
 
-        Customer customer = new Customer("Lebron James","TacoThursday66@gmail.com", "345545741",Preferences.VEGETARIAN);
+        Customer customer = new Customer("Lebron James","TacoThursday66@gmail.com","345545741",Preferences.VEGETARIAN);
         Customer customer1= new Customer ( "Roger Federer","backmaster@gmail.nadal","334525458",Preferences.CARNIVOROUS);
         Customer customer2= new Customer ( "Ciro Mertens","ciro@hotmail.com","332253545",Preferences.VEGAN);
 
 
         System.out.println("*_*_*_**_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*");
 
-        restaurant1.printMenu(customer1);
+        restaurant1.printMenu(customer2);
 
         System.out.println("*_*_*_**_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*");
 
