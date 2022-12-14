@@ -10,7 +10,16 @@ public class Dish {
     private double dishPrice;
     private String dishName;
     private String course;
+
+    private String ingredients;
     private Preferences dishType;
+
+    public Dish(String course,String dishName, Preferences dishType, double dishPrice){
+        this.course=course;
+        this.dishName=dishName;
+        this.dishType=dishType;
+        this.dishPrice=dishPrice;
+    }
 
     /**
      * First course constructor that takes the following parameters:
@@ -20,11 +29,12 @@ public class Dish {
      * @param dishPrice Dish price
      */
 
-    public Dish(String course, String dishName, Preferences dishType, double dishPrice){
+    public Dish(String course, String dishName,Preferences dishType, double dishPrice,String ingredients){
         this.dishPrice = dishPrice;
         this.dishName = dishName;
         this.dishType = dishType;
         this.course = course;
+        this.ingredients=ingredients;
     }
 
     /**
@@ -51,6 +61,14 @@ public class Dish {
 
     public void setCourse(String course) {
         this.course = course;
+    }
+
+    public String getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(String ingredients) {
+        this.ingredients = ingredients;
     }
 
     public Preferences getDishType() {

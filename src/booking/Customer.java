@@ -9,16 +9,14 @@ import restaurant.Preferences;
 
 public class Customer {
 
-
     //TODO getter e setter? metodi per stampare informazioni del customer? e altro da pensare!
+    /**
+    /*This variable represent a customer id
+    */
+    private static int customerId = 0;
     private String fullName;
     private String email;
     private String telephoneNumber;
-    /**
-     * This variable represent a customer id
-     */
-
-    private static int customerId = 0;
     private Preferences customerType;
 
     /**

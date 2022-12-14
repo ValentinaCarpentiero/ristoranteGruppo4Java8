@@ -1,7 +1,6 @@
 package restaurant;
 
 import booking.Customer;
-import dishes.Dish;
 
 import java.util.List;
 
@@ -12,10 +11,7 @@ import java.util.List;
 public class Restaurant {
     private String restaurantName;
     private String address;
-
-
     private List<Menu> menu;
-
     private boolean isOpen;
     /**
      * Restaurant constructor that takes the following parameters and assigns the true value to the boolean isOpen:
@@ -23,7 +19,7 @@ public class Restaurant {
      * @param address Restaurant address
      * @param menu Restaurant menu
      */
-    public Restaurant(String restaurantName, String address, Menu menu) {
+    public Restaurant(String restaurantName, String address, List<Menu> menu) {
         this.restaurantName = restaurantName;
         this.address = address;
         this.menu = menu;
@@ -62,12 +58,11 @@ public class Restaurant {
      */
     //TODO sistemare
     public void printMenu(Customer customer){
-        for (Dish dish : menu.getDishList()) {
-            if(dish.getDishType() == )
-            dish.printDishDetail();
+        for()
         }
-
     }
 }
+
+
 
 

@@ -9,11 +9,7 @@ import restaurant.Preferences;
 
 public class FirstCourse extends Dish {
 
-
     //TODO setter, ingredients può essere a comune?
-    private String firstIngredients;
-
-    private TypeOfFirstEnum typeOfFirstEnum;
 
     /**
      * First course constructor that takes the following parameters:
@@ -21,23 +17,12 @@ public class FirstCourse extends Dish {
      * @param dishName First Course name
      * @param dishType First Course type
      * @param price First Course price
-     * @param firstIngredients Dish ingredients
+     * @param ingredients Dish ingredients
      */
 
-    public FirstCourse(String course, String dishName, Preferences dishType, double price, String firstIngredients) {
-        super(course, dishName,dishType, price);
-        this.firstIngredients = firstIngredients;
-    }
-    /**
-     * Getter and Setter of firstIngredent
-     * @return String with first course ingredients
-     */
-    public String getFirstIngredients() {
-        return firstIngredients;
-    }
+    public FirstCourse(String course, String dishName, Preferences dishType, double price, String ingredients){
+        super(course, dishName,dishType, price,ingredients);
 
-    public void setFirstIngredients(String firstIngredients) {
-        this.firstIngredients = firstIngredients;
     }
 
     /**
@@ -46,7 +31,7 @@ public class FirstCourse extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredienti: " +this.firstIngredients +"\n");
+        System.out.println("Ingredienti: " +this.getIngredients() +"\n");
     }
 }
 

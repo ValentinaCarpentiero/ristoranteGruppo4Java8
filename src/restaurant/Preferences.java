@@ -5,9 +5,9 @@ package restaurant;
  */
 public enum Preferences {
     CARNIVOROUS("Questo menù è di carne"),
-    VEGETARIAN,
-    VEGAN,
-    MIXED;
+    VEGETARIAN("Questo menù è vegetariano"),
+    VEGAN("Questo menù è vegano"),
+    MIXED("Menu misto");
 
     private final String descripition;
 
