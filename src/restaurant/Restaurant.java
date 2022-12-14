@@ -58,7 +58,8 @@ public class Restaurant {
     }
 
     /**
-     * This method prints each Dish's course
+     * This method prints each Menu in a List<Menu> for preferences
+     * @param customer need to compare and print  if the preferences of single menu and customer are equals
      */
     //TODO sistemare
     public void printMenu(Customer customer) {

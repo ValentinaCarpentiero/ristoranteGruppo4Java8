@@ -37,6 +37,9 @@ public class Customer {
         customerId++;
     }
 
+    /**
+     *The following methods are getters and setters for each instance variables
+     */
     public String getFullName() {
         return fullName;
     }
@@ -69,6 +72,9 @@ public class Customer {
         this.customerType = customerType;
     }
 
+    /**
+     * This is a method that prints the details of the customer
+     */
     public void printCustomerDetails() {
         System.out.println ( "Name: " + this.fullName + " Email: " + this.email + " Telephone-number: " + this.telephoneNumber + " Preferences: " + this.customerType /*" -" + customerId++*/ );
     }
