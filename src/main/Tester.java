@@ -23,6 +23,7 @@ public class Tester {
         Menu menu1 = new Menu(Preferences.CARNIVOROUS);
         Menu menu2 = new Menu(Preferences.VEGETARIAN);
 
+
         menu1.addDish(new dishes.FirstCourse("Primo Piatto", "Spaghetti allo scoglio", Preferences.CARNIVOROUS, 12.55, "Spaghetti con vongole, cozze, calamari"));
         menu1.addDish(new dishes.SecondCourse("Secondo Piatto", "Orata al forno con patate", Preferences.CARNIVOROUS, 17.00, "Orata, patate, rosmarino, aglio"));
         menu1.addDish(new dishes.Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, 6.50,"zucchero"));
@@ -33,14 +34,22 @@ public class Tester {
         menu2.addDish(new dishes.Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, 6.50,"zucchero"));
         menu2.addDish(new dishes.Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, "0 Zuccheri aggiunti"));
 
+
+
         List<Menu> menu = new ArrayList<>();
         menu.add (menu1);
         menu.add (menu2);
         Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", "Java 8",menu);
 
         Customer customer = new Customer("baudo","pippobaudocapellone@gmail.com", "6656565",Preferences.VEGETARIAN);
+        Customer customer1= new Customer ( "Gioffolo","hsghsg@mail","767667",Preferences.CARNIVOROUS);
 
         restaurant1.printMenu(customer);
+
+        System.out.println("*_*_*_**_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*");
+
+        restaurant1.printMenu(customer1);
+
 
 
 

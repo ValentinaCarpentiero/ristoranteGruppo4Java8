@@ -62,11 +62,9 @@ public class Restaurant {
      */
     //TODO sistemare
     public void printMenu(Customer customer) {
-        for (Menu singleMenu : menu) {
+        for (Menu singleMenu : menu){
             if (singleMenu.getMenuType ()== customer.getCustomerType ()) {
                 singleMenu.printMenu();
-            } else {
-                System.out.println ("***ERROR****");
             }
         }
     }
