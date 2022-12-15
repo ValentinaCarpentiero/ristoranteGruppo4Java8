@@ -9,7 +9,7 @@ import restaurant.Preferences;
 
 public class FirstCourse extends Dish {
 
-    //TODO setter, ingredients può essere a comune?
+    private boolean isPastaFresca;
 
     /**
      * First course constructor that takes the following parameters:
@@ -18,21 +18,36 @@ public class FirstCourse extends Dish {
      * @param dishType First Course type
      * @param price First Course price
      * @param ingredients Dish ingredients
+     * @param isPastaFresca Boolean
      */
 
-    public FirstCourse(String course, String dishName, Preferences dishType, double price, String ingredients){
+    public FirstCourse(String course, String dishName, Preferences dishType, double price, String ingredients, boolean isPastaFresca){
         super(course, dishName,dishType, price,ingredients);
+        this.isPastaFresca=isPastaFresca;
 
     }
 
-    /**
-     * This is an override method from the Dish class that prints the details of the dish
-     */
     @Override
     public void printDishDetail() {
         super.printDishDetail();
         System.out.println("Ingredienti: " +this.getIngredients() +"\n");
     }
+    /**
+     * Getter and Setter of the instance variable
+     * @return boolean isPastaFresca?
+     */
+    public boolean isPastaFresca() {
+        return isPastaFresca;
+    }
+
+    public void setPastaFresca(boolean pastaFresca) {
+        isPastaFresca = pastaFresca;
+    }
+
+    /**
+     * This is an override method from the Dish class that prints the details of the dish
+     */
+
 }
 
 

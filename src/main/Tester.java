@@ -24,19 +24,19 @@ public class Tester {
         Menu menu2 = new Menu("Menu del giorno/Menu of the day",false, Preferences.VEGETARIAN);
         Menu menu3 = new Menu ("Menu del giorno/Menu of the day",false, Preferences.VEGAN);
 
-        menu1.addDish(new dishes.FirstCourse("Primo Piatto", "Spaghetti allo scoglio", Preferences.CARNIVOROUS, 12.55, "Spaghetti con vongole, cozze, calamari"));
+        menu1.addDish(new dishes.FirstCourse("Primo Piatto", "Spaghetti allo scoglio", Preferences.CARNIVOROUS, 12.55, "Spaghetti con vongole, cozze, calamari",true));
         menu1.addDish(new dishes.SecondCourse("Secondo Piatto", "Orata al forno con patate", Preferences.CARNIVOROUS, 17.00, "Orata, patate, rosmarino, aglio"));
-        menu1.addDish(new dishes.Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, 6.50,"zucchero"));
+        menu1.addDish(new dishes.Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, 6.50,"zucchero",false));
         menu1.addDish(new dishes.Drink("Drink", "Vino Lapilli", Preferences.MIXED, 6.00, "Bianco"));
 
-        menu2.addDish(new dishes.FirstCourse("Primo Piatto", "Orecchiette Cime di Rapa", Preferences.VEGETARIAN, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco"));
+        menu2.addDish(new dishes.FirstCourse("Primo Piatto", "Orecchiette Cime di Rapa", Preferences.VEGETARIAN, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco",true));
         menu2.addDish(new dishes.SecondCourse("Secondo Piatto", "Burger di Soia", Preferences.VEGETARIAN, 7.00, "Burger Vegetale alla Soia"));
-        menu2.addDish(new dishes.Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, 6.50,"zucchero"));
+        menu2.addDish(new dishes.Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, 6.50,"zucchero",false));
         menu2.addDish(new dishes.Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, "0 Zuccheri aggiunti"));
 
-        menu3.addDish(new dishes.FirstCourse("Primo Piatto", "Paccheri zucca e mandorle ", Preferences.VEGETARIAN, 10.50, "Paccheri , zucca, mandorle"));
+        menu3.addDish(new dishes.FirstCourse("Primo Piatto", "Paccheri zucca e mandorle ", Preferences.VEGAN, 10.50, "Paccheri , zucca, mandorle",true));
         menu3.addDish(new dishes.SecondCourse("Secondo Piatto", "Sushi avocado", Preferences.VEGAN, 7.50, "Riso, avocado, Spalmabile alla Soia"));
-        menu3.addDish(new dishes.Dessert("Dessert", "Vegan Souffle", Preferences.MIXED, 6.20,"Zucchero"));
+        menu3.addDish(new dishes.Dessert("Dessert", "Vegan Souffle", Preferences.VEGAN, 6.20,"Zucchero",false));
         menu3.addDish(new dishes.Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, "0 Zuccheri aggiunti"));
 
 

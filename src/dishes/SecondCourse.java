@@ -8,7 +8,7 @@ import restaurant.Preferences;
  */
 public class SecondCourse extends Dish {
 
-
+    //variables
 
 
     /**

@@ -8,6 +8,8 @@ import restaurant.Preferences;
  */
 public class Dessert extends Dish {
 
+    private boolean glutenFree;
+
     //TODO prima i field statici, i field le liste il costruttore i metodi in overrride i getter e i setter e poi gli altri metodi
 
 
@@ -20,11 +22,23 @@ public class Dessert extends Dish {
      */
 
     //TODO i field da assegnare è meglio chiamarli con lo stesso nome altrimenti possiamo anche non mettere il this, quindi dessertIngredients
-    public Dessert(String course, String dishName, Preferences dishType, double price, String ingredients) {
+    public Dessert(String course, String dishName, Preferences dishType, double price, String ingredients, boolean glutenFree) {
         super(course, dishName,dishType, price, ingredients);
+        this.glutenFree=glutenFree;
 
     }
 
+    /**
+     * Getter and Setter of the instance variable
+     * @return boolean is glutenfree?
+     */
+    public boolean isGlutenFree() {
+        return glutenFree;
+    }
+
+    public void setGlutenFree(boolean glutenFree) {
+        this.glutenFree = glutenFree;
+    }
 
     /**
      * This is an override method from the Dish class that prints the details of the dish
