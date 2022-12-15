@@ -1,4 +1,7 @@
 package restaurant;
+
+import booking.Customer;
+
 /**
  * This class represents a Table
  * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
@@ -8,6 +11,7 @@ public class Table {
     private int idTable;
     private int seatsNumber;
     private boolean isAvailable;
+
 
     /**
      * Table constructor that takes the following parameters and assigns the true value to the boolean isAvailable:

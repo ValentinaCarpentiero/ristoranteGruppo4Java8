@@ -8,7 +8,7 @@ import restaurant.Preferences;
  */
 public class SecondCourse extends Dish {
 
-    //variables
+    private boolean sideDishIncluded;
 
 
     /**
@@ -19,8 +19,9 @@ public class SecondCourse extends Dish {
      * @param price Second course price
      */
 
-    public SecondCourse(String course, String dishName, Preferences dishType, double price, String ingredients) {
+    public SecondCourse(String course, String dishName, Preferences dishType, double price, String ingredients, boolean sideDishIncluded) {
         super(course, dishName,dishType, price, ingredients);
+        this.sideDishIncluded=sideDishIncluded;
     }
 
     /**
@@ -30,5 +31,16 @@ public class SecondCourse extends Dish {
     public void printDishDetail() {
         super.printDishDetail();
         System.out.println("Ingredienti: " +this.getIngredients()+"\n");
+    }
+    /**
+     * Getter and Setter of the instance variable
+     * @return boolean side is included
+     */
+    public boolean isSideDishIncluded() {
+        return sideDishIncluded;
+    }
+
+    public void setSideDishIncluded(boolean sideDishIncluded) {
+        this.sideDishIncluded = sideDishIncluded;
     }
 }
