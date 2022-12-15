@@ -10,7 +10,7 @@ public class Dessert extends Dish {
 
     private boolean glutenFree;
 
-    //TODO prima i field statici, i field le liste il costruttore i metodi in overrride i getter e i setter e poi gli altri metodi
+    //TODO prima i field statici, i field le liste il costruttore i metodi in overrride(ok) i getter e i setter e poi gli altri metodi
 
 
     /**
@@ -27,6 +27,14 @@ public class Dessert extends Dish {
         this.glutenFree=glutenFree;
 
     }
+    /**
+     * This is an override method from the Dish class that prints the details of the dish
+     */
+    @Override
+    public void printDishDetail() {
+        super.printDishDetail();
+        System.out.println("Ingredienti: " +this.getIngredients()+"\n");
+    }
 
     /**
      * Getter and Setter of the instance variable
@@ -40,13 +48,6 @@ public class Dessert extends Dish {
         this.glutenFree = glutenFree;
     }
 
-    /**
-     * This is an override method from the Dish class that prints the details of the dish
-     */
-    @Override
-    public void printDishDetail() {
-        super.printDishDetail();
-        System.out.println("Ingredienti: " +this.getIngredients()+"\n");
-    }
+
 
 }

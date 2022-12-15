@@ -1,6 +1,7 @@
 package restaurant;
 
 import booking.Customer;
+import dishes.Dish;
 
 import java.util.Arrays;
 import java.util.List;
@@ -30,8 +31,16 @@ public class Restaurant {
     }
 
     /**
-     * The following methods are getters and setters for each instance variables
+     *The following methods are getters and setters for each instance variables
      */
+    public List<Menu> getMenu() {
+        return menu;
+    }
+
+    public void setMenu(List<Menu> menu) {
+        this.menu = menu;
+    }
+
     public String getRestaurantName() {
         return restaurantName;
     }

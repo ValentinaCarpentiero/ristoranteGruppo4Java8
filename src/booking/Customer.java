@@ -9,7 +9,7 @@ import restaurant.Preferences;
 
 public class Customer {
 
-    //TODO getter e setter? metodi per stampare informazioni del customer? e altro da pensare!
+    //TODO getter e setter? metodi per stampare informazioni del customer?(fatto) e altro da pensare!
     /**
      * /*This variable represent a customer id
      */
@@ -28,7 +28,6 @@ public class Customer {
      * @param customerType    Customer's food preferences
      */
 
-    //TODO nome cognome telefono email e customerid
     public Customer(String fullName, String email, String telephoneNumber, Preferences customerType) {
         this.fullName = fullName;
         this.email = email;

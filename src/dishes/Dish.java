@@ -10,7 +10,6 @@ public class Dish {
     private double dishPrice;
     private String dishName;
     private String course;
-
     private String ingredients;
     private Preferences dishType;
 

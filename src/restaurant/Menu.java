@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Menu {
 
-    //TODO che nome ha il menù? booleano per indicare il menù nei giorni di festa
+    //TODO che nome ha il menù?(fatto) booleano per indicare il menù nei giorni di festa(fatto)
     private String menuName;
     private boolean isMenuSpecial;
 

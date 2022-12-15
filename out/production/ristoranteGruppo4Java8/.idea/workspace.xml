@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source" />
+    <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
+      <change beforePath="$PROJECT_DIR$/src/booking/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/booking/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dessert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/restaurant/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/restaurant/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Restaurant.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
