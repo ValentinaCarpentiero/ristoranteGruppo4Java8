@@ -19,10 +19,16 @@ public class Tester {
      */
     public static void main(String[] args) {
 
-
+/**
+ * Create 3 Menu Object that represent menu of the day
+ */
         Menu menu1 = new Menu("Menu del giorno/Menu of the day",false, Preferences.CARNIVOROUS);
         Menu menu2 = new Menu("Menu del giorno/Menu of the day",false, Preferences.VEGETARIAN);
         Menu menu3 = new Menu ("Menu del giorno/Menu of the day",false, Preferences.VEGAN);
+
+ /**
+ *  Added dishes to menu, based on preferences (CARNIVOROUS,VEGETARIAN,VEGAN)
+ */
 
         menu1.addDish(new dishes.FirstCourse("Primo Piatto", "Spaghetti allo scoglio", Preferences.CARNIVOROUS, 12.55, "Spaghetti con vongole, cozze, calamari",true));
         menu1.addDish(new dishes.SecondCourse("Secondo Piatto", "Orata al forno con patate", Preferences.CARNIVOROUS, 17.00, "Orata, patate, rosmarino, aglio",true));
@@ -39,13 +45,18 @@ public class Tester {
         menu3.addDish(new dishes.Dessert("Dessert", "Vegan Souffle", Preferences.VEGAN, 6.20,"Zucchero",false));
         menu3.addDish(new dishes.Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, "0 Zuccheri aggiunti"));
 
-
+/**
+ * Created a List of Menu menuOfTheDay, added in Restaurant;
+ */
 
         List<Menu> menuOfTheDay = new ArrayList<>();
         menuOfTheDay.add (menu1);
         menuOfTheDay.add (menu2);
         menuOfTheDay.add (menu3);
         Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", "Java 8", menuOfTheDay );
+/**
+ * Create 3 Customer Objects with 3 different PREFERENCES for test the printMenu method in restaurant
+ */
 
         Customer customer = new Customer("Lebron James","TacoThursday66@gmail.com","345545741",Preferences.VEGETARIAN);
         Customer customer1= new Customer ( "Roger Federer","backmaster@gmail.nadal","334525458",Preferences.CARNIVOROUS);
@@ -53,7 +64,9 @@ public class Tester {
 
 
         System.out.println("*_*_*_**_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*");
-
+ /**
+ * Get the method that print menu from List for Customer
+ */
         restaurant1.printMenu(customer2);
 
         System.out.println("*_*_*_**_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*");
