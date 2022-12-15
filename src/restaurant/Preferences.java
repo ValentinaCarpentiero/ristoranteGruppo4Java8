@@ -9,14 +9,14 @@ public enum Preferences {
     VEGAN("Questo menù è vegano"),
     MIXED("Menu misto");
 
-    private final String descripition;
+    private final String description;
 
-    Preferences(String description) {
+    Preferences(String descrption) {
 
-        this.descripition = description;
+        this.description = descrption;
     }
 
     public String getDescripition() {
-        return descripition;
+        return description;
     }
 }

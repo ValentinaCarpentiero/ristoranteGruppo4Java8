@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
-      <change beforePath="$PROJECT_DIR$/src/main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restaurant/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Table.java" afterDir="false" />
-    </list>
+    <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

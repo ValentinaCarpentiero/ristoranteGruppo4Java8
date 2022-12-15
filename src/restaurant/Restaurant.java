@@ -20,7 +20,7 @@ public class Restaurant {
      *
      * @param restaurantName Restaurant name
      * @param address        Restaurant address
-     * @param menu           Restaurant menu
+     * @param menu           Restaurant menu List
      */
     public Restaurant(String restaurantName, String address, List<Menu> menu) {
         this.restaurantName = restaurantName;
