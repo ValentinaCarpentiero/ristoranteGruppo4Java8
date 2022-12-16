@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
-      <change beforePath="$PROJECT_DIR$/src/booking/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/booking/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dessert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restaurant/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/main/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/main/Tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/restaurant/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Restaurant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

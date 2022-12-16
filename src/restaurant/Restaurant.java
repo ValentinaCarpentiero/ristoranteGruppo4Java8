@@ -67,8 +67,8 @@ public class Restaurant {
     }
 
     /**
-     * This method prints each Menu in a List<Menu> for preferences
-     * @param customer need to compare and print  if the preferences of single menu and customer are equals
+     * This method prints each Menu from List<Menu> in relations to the preferences
+     * @param customer provides the customer's preferences to compare with the menu type
      */
 
     public void printMenu(Customer customer) {
