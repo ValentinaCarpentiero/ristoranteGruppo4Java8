@@ -8,40 +8,39 @@ import restaurant.Preferences;
  */
 public class Drink extends Dish {
 
+    private int alcoholicVolume;
 
-    //TODO fare un enumerato, con descrizione e grado alcolico
-    //TODO mettere il setter
-    private String typeOfDrink;
     /**
      * First course constructor that takes the following parameters:
      * @param course Course type
      * @param dishName Drink name
-     * @param dishType Drink type (MIXED from Preferences ENUM)
+     * @param dishType Drink type
      * @param price Drink price
-     * @param typeOfDrink Drink type
+     * @param alcoholicVolume Drink's alcohol content
      */
-    public Drink(String course, String dishName, Preferences dishType, double price, String typeOfDrink) {
+    public Drink(String course, String dishName, Preferences dishType, double price, int alcoholicVolume) {
         super(course, dishName, dishType,price);
-        this.typeOfDrink = typeOfDrink;
+        this.alcoholicVolume = alcoholicVolume;
     }
     /**
-     * Getter and Setter of the instance variable
-     * @return String with type of drink
+     * Getter and Setter of the variable
      */
-    public String getTypeOfDrink() {
-        return typeOfDrink;
+    public int getAlcoholicVolume() {
+        return alcoholicVolume;
     }
 
-    public void setTypeOfDrink(String typeOfDrink) {
-        this.typeOfDrink = typeOfDrink;
+    public void setAlcoholicVolume(int alcoholicVolume) {
+        this.alcoholicVolume = alcoholicVolume;
     }
 
     /**
-     * This is an override method from the Dish class that prints the details of the dish
+     * This is an override method from the Dish class that prints the details of the drink
      */
     @Override
     public void printDishDetail() {
-        super.printDishDetail();
-        System.out.println("Tipo : "+this.typeOfDrink+"\n");
+        System.out.println("### "+super.getCourse()
+                +" ###"+"\n"+super.getDishName()
+                +"\nvol % : "+this.alcoholicVolume
+                +"\nPrice: "+this.getDishPrice());
     }
 }

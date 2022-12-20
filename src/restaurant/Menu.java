@@ -9,11 +9,10 @@ import java.util.List;
  * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 public class Menu {
+
     /**
      * This enum describes the base of the menu
-     * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
      */
-
     public enum BasedOn{
         FISH,
         MEAT,
@@ -21,7 +20,6 @@ public class Menu {
     }
     /**
      * This enum describes the type of menu
-     * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
      */
     public enum Type {
         SPECIAL("Special Menu"),
@@ -111,13 +109,16 @@ public class Menu {
      * This method add a dish to the dish list and takes a parameter
      * @param dish dish to add
      */
+
     public void addDish(Dish dish){
         dishList.add(dish);
     }
+
     /**
      * This method remove a dish to the dish list and takes a parameter
      * @param dish dish to remove
      */
+
     public void removeDish(Dish dish){
         dishList.remove(dish);
     }
@@ -125,14 +126,16 @@ public class Menu {
     /**
      * This method prints all menu's details and each dish
      */
+
     public void printMenu(){
         System.out.println(this.menuType
                            +"\n"+ this.menuType.getDescription()
-                           +"\nThis menu is based on "+this.basedOn.toString().toLowerCase()
-                           +"\nDietary option: "+this.dietaryOptions+"\n"
+                           +"\nMenu based on "+this.basedOn.toString().toLowerCase()
+                           +"\nDietary options: "+this.dietaryOptions.toString().toLowerCase()+"\n"
                            );
         for (Dish dish : dishList) {
             dish.printDishDetail();
+            System.out.println();
         }
     }
 }

@@ -8,20 +8,31 @@ import booking.Customer;
  */
 public class Table {
 
+    /**
+     * This enum provides the position of the table
+     */
+    public enum Type{
+        INDOOR,
+        OUTDOOR
+    }
+
     private int idTable;
     private int seatsNumber;
+    private Type type;
     private boolean isAvailable;
 
 
     /**
      * Table constructor that takes the following parameters and assigns the true value to the boolean isAvailable:
-     * @param idTable Restaurant name
-     * @param seatsNumber Restaurant address
+     * @param idTable Table ID
+     * @param seatsNumber Table's number of seats
+     * @param type Type of table
      */
-    public Table(int idTable, int seatsNumber){
-        this.idTable=idTable;
-        this.seatsNumber=seatsNumber;
-        this.isAvailable=true;
+    public Table(int idTable, int seatsNumber,Type type){
+        this.idTable = idTable;
+        this.seatsNumber = seatsNumber;
+        this.type = type;
+        this.isAvailable = true;
     }
     /**
      *The following methods are getters and setters for each instance variables
@@ -48,6 +59,14 @@ public class Table {
 
     public void setIsAvailable(boolean available) {
         isAvailable = available;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
     }
 }
 

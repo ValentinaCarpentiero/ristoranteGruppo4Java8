@@ -11,9 +11,9 @@ import java.util.List;
  * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 public class Restaurant {
+
     /**
      * This enum describes how restaurant serves dishes
-     * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
      */
 
     public enum TableService {

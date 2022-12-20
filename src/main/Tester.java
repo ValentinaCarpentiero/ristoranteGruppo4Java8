@@ -1,11 +1,9 @@
 package main;
 
 import booking.Customer;
-import dishes.Dessert;
-import dishes.Drink;
-import dishes.FirstCourse;
-import dishes.SecondCourse;
+import dishes.*;
 import restaurant.*;
+import dishes.Dish.DietaryOptions;
 import restaurant.Preferences;
 
 import java.util.ArrayList;
@@ -28,21 +26,20 @@ public class Tester {
         Menu menu2 = new Menu(Preferences.VEGETARIAN, Menu.Type.DAILY, Menu.BasedOn.VEGETABLES,false);
         Menu menu3 = new Menu(Preferences.VEGAN, Menu.Type.DAILY, Menu.BasedOn.VEGETABLES,false);
 
+        menu1.addDish(new FirstCourse("First Course", "Spaghetti allo scoglio", Preferences.CARNIVOROUS, DietaryOptions.LOCALLY_PRODUCED, 12.55, "Spaghetti con vongole, cozze, calamari",true));
+        menu1.addDish(new SecondCourse("Second Course", "Orata al forno con patate", Preferences.CARNIVOROUS,DietaryOptions.LOCALLY_PRODUCED, 17.00, "Orata","patate, rosmarino, aglio"));
+        menu1.addDish(new Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, DietaryOptions.NUT_ALLERGIES, 6.50,"panna, zucchero",true));
+        menu1.addDish(new Drink("Drink", "Vino Lapilli", Preferences.MIXED, 6.00, 15));
 
-        menu1.addDish(new FirstCourse("Primo Piatto", "Spaghetti allo scoglio", Preferences.CARNIVOROUS, 12.55, "Spaghetti con vongole, cozze, calamari",true));
-        menu1.addDish(new SecondCourse("Secondo Piatto", "Orata al forno con patate", Preferences.CARNIVOROUS, 17.00, "Orata, patate, rosmarino, aglio",true));
-        menu1.addDish(new Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, 6.50,"zucchero",false));
-        menu1.addDish(new Drink("Drink", "Vino Lapilli", Preferences.MIXED, 6.00, "Bianco"));
+        menu2.addDish(new FirstCourse("First Course", "Orecchiette alle cime di rapa", Preferences.VEGETARIAN, DietaryOptions.LOCALLY_PRODUCED, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco",true));
+        menu2.addDish(new SecondCourse("Second Course", "Burger di Soia", Preferences.VEGETARIAN, DietaryOptions.LACTOSE_INTOLERANCE, 7.00, "Burger Vegetale alla Soia","Erba"));
+        menu2.addDish(new Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, DietaryOptions.PEANUT_ALLERGY ,6.50,"Frutti di bosco",false));
+        menu2.addDish(new Drink("Drink", "Coca Zero", Preferences.MIXED, 6.00, 0));
 
-        menu2.addDish(new FirstCourse("Primo Piatto", "Orecchiette Cime di Rapa", Preferences.VEGETARIAN, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco",true));
-        menu2.addDish(new SecondCourse("Secondo Piatto", "Burger di Soia", Preferences.VEGETARIAN, 7.00, "Burger Vegetale alla Soia",true));
-        menu2.addDish(new Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, 6.50,"zucchero",false));
-        menu2.addDish(new Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, "0 Zuccheri aggiunti"));
-
-        menu3.addDish(new FirstCourse("Primo Piatto", "Paccheri zucca e mandorle ", Preferences.VEGAN, 10.50, "Paccheri , zucca, mandorle",true));
-        menu3.addDish(new SecondCourse("Secondo Piatto", "Sushi avocado", Preferences.VEGAN, 7.50, "Riso, avocado, Spalmabile alla Soia",false));
-        menu3.addDish(new Dessert("Dessert", "Vegan Souffle", Preferences.VEGAN, 6.20,"Zucchero",false));
-        menu3.addDish(new Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, "0 Zuccheri aggiunti"));
+        menu3.addDish(new FirstCourse("First Course", "Paccheri zucca e mandorle ", Preferences.VEGAN, DietaryOptions.LACTOSE_INTOLERANCE, 10.50, "Paccheri , zucca, mandorle",true));
+        menu3.addDish(new SecondCourse("Second Course", "Sushi avocado", Preferences.VEGAN, DietaryOptions.GLUTEN_FREE,7.50, "Riso, avocado, Spalmabile alla Soia","Alghe"));
+        menu3.addDish(new Dessert("Dessert", "Vegan Souffle", Preferences.VEGAN,DietaryOptions.LACTOSE_INTOLERANCE, 6.20,"Zucchero",false));
+        menu3.addDish(new Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, 0));
 
         List<Menu> menus = new ArrayList<>();
         menus.add (menu1);
@@ -55,7 +52,7 @@ public class Tester {
         Customer customer = new Customer("Lebron", "James","345545741","TacoThursday66@gmail.com",Preferences.VEGETARIAN, 12);
         Customer customer1= new Customer ( "Roger","Federer","334525458", "backmaster@gmail.nadal",Preferences.CARNIVOROUS,342);
         Customer customer2= new Customer ( "Ciro","Mertens","332253545","ciro@hotmail.com",Preferences.VEGAN,666);
-
+        System.out.println();
         System.out.println("✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩");
 
         restaurant1.printMenu(customer);

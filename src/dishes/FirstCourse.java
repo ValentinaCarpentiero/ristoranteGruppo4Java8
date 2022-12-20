@@ -21,17 +21,20 @@ public class FirstCourse extends Dish {
      * @param isPastaFresca Boolean
      */
 
-    public FirstCourse(String course, String dishName, Preferences dishType, double price, String ingredients, boolean isPastaFresca){
-        super(course, dishName,dishType, price,ingredients);
+    public FirstCourse(String course, String dishName, Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, boolean isPastaFresca){
+        super(course, dishName,dishType,dietaryOptions, price,ingredients);
         this.isPastaFresca=isPastaFresca;
 
     }
-
+    /**
+     * This is an override method from the Dish class that prints the details of the dish
+     */
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredienti: " +this.getIngredients() +"\n");
+        System.out.println("Type of pasta: "+((isPastaFresca)? "Pasta fresca":"Not home made pasta"));
     }
+
     /**
      * Getter and Setter of the instance variable
      * @return boolean isPastaFresca?
@@ -44,9 +47,6 @@ public class FirstCourse extends Dish {
         isPastaFresca = pastaFresca;
     }
 
-    /**
-     * This is an override method from the Dish class that prints the details of the dish
-     */
 
 }
 

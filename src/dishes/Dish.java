@@ -1,6 +1,5 @@
 package dishes;
 
-import restaurant.Menu;
 import restaurant.Preferences;
 
 /**
@@ -8,6 +7,11 @@ import restaurant.Preferences;
  * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
  */
 public class Dish {
+
+    /**
+     * This enum provides type of special diets
+     */
+
     public enum DietaryOptions{
         LACTOSE_INTOLERANCE,
         GLUTEN_FREE,
@@ -15,7 +19,6 @@ public class Dish {
         LOCALLY_PRODUCED,
         PEANUT_ALLERGY,
         FISH_ALLERGIES
-
     }
 
     private double dishPrice;
@@ -33,27 +36,25 @@ public class Dish {
      * @param dishPrice Dish price
      */
     public Dish(String course,String dishName, Preferences dishType, double dishPrice){
-        this.course=course;
-        this.dishName=dishName;
-        this.dishType=dishType;
-        this.dishPrice=dishPrice;
+        this.course = course;
+        this.dishName = dishName;
+        this.dishType = dishType;
+        this.dishPrice = dishPrice;
     }
 
     /**
-     * First course constructor that takes the following parameters:
-     * @param course Course type
-     * @param dishName Dish name
-     * @param dishType Dish type
-     * @param dishPrice Dish price
+     * First course overloaded constructor that takes this different parameter:
+     * @param dietaryOptions type of special diets
      * @param ingredients Dish ingredients
      */
 
-    public Dish(String course, String dishName,Preferences dishType, double dishPrice,String ingredients){
+    public Dish(String course, String dishName,Preferences dishType, DietaryOptions dietaryOptions, double dishPrice,String ingredients){
         this.dishPrice = dishPrice;
         this.dishName = dishName;
         this.dishType = dishType;
         this.course = course;
-        this.ingredients=ingredients;
+        this.dietaryOptions = dietaryOptions;
+        this.ingredients = ingredients;
     }
 
     /**
@@ -94,15 +95,26 @@ public class Dish {
         return dishType;
     }
 
-
     public void setDishType(Preferences dishType) {
         this.dishType = dishType;
+    }
+
+    public DietaryOptions getDietaryOptions() {
+        return dietaryOptions;
+    }
+
+    public void setDietaryOptions(DietaryOptions dietaryOptions) {
+        this.dietaryOptions = dietaryOptions;
     }
 
     /**
      * This is a method that prints the details of the dish that will be overridden
      */
     public void printDishDetail() {
-        System.out.println("### "+this.course +" ###"+"\n"+this.dishName+"\nPrezzo: "+this.dishPrice + "€ ");
+        System.out.println("### "+this.course
+                          +" ###"+"\n"+this.dishName
+                          +"\nIngredients: "+this.ingredients
+                          +"\nDietary options: "+this.dietaryOptions
+                          +"\nPrice: "+this.dishPrice+ "€");
     }
 }

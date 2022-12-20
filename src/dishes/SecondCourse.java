@@ -8,8 +8,7 @@ import restaurant.Preferences;
  */
 public class SecondCourse extends Dish {
 
-    private boolean sideDishIncluded;
-
+    private String sideDish;
 
     /**
      * Second course constructor that takes the following parameters:
@@ -17,11 +16,12 @@ public class SecondCourse extends Dish {
      * @param dishName Second course name
      * @param dishType Second course type
      * @param price Second course price
+     * @param sideDish Course's side dish
      */
 
-    public SecondCourse(String course, String dishName, Preferences dishType, double price, String ingredients, boolean sideDishIncluded) {
-        super(course, dishName,dishType, price, ingredients);
-        this.sideDishIncluded=sideDishIncluded;
+    public SecondCourse(String course, String dishName,Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, String sideDish) {
+        super(course, dishName,dishType,dietaryOptions, price, ingredients);
+        this.sideDish = sideDish;
     }
 
     /**
@@ -30,17 +30,16 @@ public class SecondCourse extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredienti: " +this.getIngredients()+"\n");
+        System.out.println("Side dish: " +this.sideDish);
     }
     /**
-     * Getter and Setter of the instance variable
-     * @return boolean side is included
+     * Getter and Setter of the variable
      */
-    public boolean isSideDishIncluded() {
-        return sideDishIncluded;
+    public String getSideDish() {
+        return sideDish;
     }
 
-    public void setSideDishIncluded(boolean sideDishIncluded) {
-        this.sideDishIncluded = sideDishIncluded;
+    public void setSideDish(String sideDish) {
+        this.sideDish = sideDish;
     }
 }

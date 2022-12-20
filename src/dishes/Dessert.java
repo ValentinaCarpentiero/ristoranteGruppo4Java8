@@ -8,46 +8,41 @@ import restaurant.Preferences;
  */
 public class Dessert extends Dish {
 
-    private boolean glutenFree;
-
-    //TODO prima i field statici, i field le liste il costruttore i metodi in overrride(ok) i getter e i setter e poi gli altri metodi
-
+private boolean isHomeMade;
 
     /**
      * Dessert constructor that takes the following parameters:
      * @param course Course type
      * @param dishName Dessert name
      * @param dishType Dessert type
+     * @param dietaryOptions type of special diets
      * @param price Dessert price
+     * @param isHomeMade Type of Dessert's production
      */
 
-    //TODO i field da assegnare è meglio chiamarli con lo stesso nome altrimenti possiamo anche non mettere il this, quindi dessertIngredients
-    public Dessert(String course, String dishName, Preferences dishType, double price, String ingredients, boolean glutenFree) {
-        super(course, dishName,dishType, price, ingredients);
-        this.glutenFree=glutenFree;
-
+    public Dessert(String course, String dishName, Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, boolean isHomeMade) {
+        super(course, dishName,dishType,dietaryOptions, price, ingredients);
+        this.isHomeMade = isHomeMade;
     }
+
     /**
      * This is an override method from the Dish class that prints the details of the dish
      */
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Ingredienti: " +this.getIngredients()+"\n");
+        System.out.println(this.isHomeMade ? "Home made" : "Not home made product");
     }
 
     /**
-     * Getter and Setter of the instance variable
-     * @return boolean is glutenfree?
+     * Getter and Setter of the variable
      */
-    public boolean isGlutenFree() {
-        return glutenFree;
+
+    public boolean isHomeMade() {
+        return isHomeMade;
     }
 
-    public void setGlutenFree(boolean glutenFree) {
-        this.glutenFree = glutenFree;
+    public void setHomeMade(boolean homeMade) {
+        isHomeMade = homeMade;
     }
-
-
-
 }
