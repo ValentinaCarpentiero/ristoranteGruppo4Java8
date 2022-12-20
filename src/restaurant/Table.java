@@ -24,9 +24,9 @@ public class Table {
 
     /**
      * Table constructor that takes the following parameters and assigns the true value to the boolean isAvailable:
-     * @param idTable Table ID
+     * @param idTable     Table ID
      * @param seatsNumber Table's number of seats
-     * @param type Type of table
+     * @param type        Type of table
      */
     public Table(int idTable, int seatsNumber,Type type){
         this.idTable = idTable;

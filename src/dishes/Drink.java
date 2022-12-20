@@ -4,7 +4,7 @@ import restaurant.Preferences;
 
 /**
  * This class represents a drink and extends the Dish class
- * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
+ * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 public class Drink extends Dish {
 
@@ -12,14 +12,14 @@ public class Drink extends Dish {
 
     /**
      * First course constructor that takes the following parameters:
-     * @param course Course type
-     * @param dishName Drink name
-     * @param dishType Drink type
-     * @param price Drink price
+     * @param course          Course type
+     * @param dishName        Drink name
+     * @param dishType        Drink type
+     * @param price           Drink price
      * @param alcoholicVolume Drink's alcohol content
      */
     public Drink(String course, String dishName, Preferences dishType, double price, int alcoholicVolume) {
-        super(course, dishName, dishType,price);
+        super(course, dishName, dishType, price);
         this.alcoholicVolume = alcoholicVolume;
     }
     /**

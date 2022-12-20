@@ -22,9 +22,9 @@ public class Tester {
     public static void main(String[] args) {
 
 
-        Menu menu1 = new Menu(Preferences.CARNIVOROUS, Menu.Type.DAILY, Menu.BasedOn.FISH,false);
-        Menu menu2 = new Menu(Preferences.VEGETARIAN, Menu.Type.DAILY, Menu.BasedOn.VEGETABLES,false);
-        Menu menu3 = new Menu(Preferences.VEGAN, Menu.Type.DAILY, Menu.BasedOn.VEGETABLES,false);
+        Menu menu1 = new Menu(Preferences.CARNIVOROUS, Menu.Type.DAILY, Menu.BasedOn.FISH);
+        Menu menu2 = new Menu(Preferences.VEGETARIAN, Menu.Type.SPECIAL, Menu.BasedOn.VEGETABLES);
+        Menu menu3 = new Menu(Preferences.VEGAN, Menu.Type.TASTING, Menu.BasedOn.VEGETABLES);
 
         menu1.addDish(new FirstCourse("First Course", "Spaghetti allo scoglio", Preferences.CARNIVOROUS, DietaryOptions.LOCALLY_PRODUCED, 12.55, "Spaghetti con vongole, cozze, calamari",true));
         menu1.addDish(new SecondCourse("Second Course", "Orata al forno con patate", Preferences.CARNIVOROUS,DietaryOptions.LOCALLY_PRODUCED, 17.00, "Orata","patate, rosmarino, aglio"));

@@ -48,12 +48,12 @@ public class Restaurant {
      * @param restaurantName  Restaurant name
      * @param address         Restaurant address
      * @param menu            Restaurant menu list
-     * @param recommendedDish Chef's choice
-     * @param tableService    How plates are served
-     * @param averagePrice    Average bill's cost
+     * @param recommendedDish Restaurant chef's choice
+     * @param tableService    Restaurant plates service
+     * @param averagePrice    Restaurant average bill's cost
      * @param services        Restaurant's services
-     * @param hasHomeDelivery Restaurant's delivery
-     * @param hasAllYouCanEat Restaurant all-you-can-eat form
+     * @param hasHomeDelivery Boolean about restaurant's delivery
+     * @param hasAllYouCanEat Boolean about restaurant all-you-can-eat form
      */
 
     public Restaurant(String restaurantName, String address, List<Menu> menu, String recommendedDish, TableService tableService, double averagePrice, String services, boolean hasHomeDelivery, boolean hasAllYouCanEat) {

@@ -4,7 +4,7 @@ import restaurant.Preferences;
 
 /**
  * This class represents a second course and extends the Dish class
- * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
+ * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 public class SecondCourse extends Dish {
 
@@ -12,15 +12,15 @@ public class SecondCourse extends Dish {
 
     /**
      * Second course constructor that takes the following parameters:
-     * @param course Course type
-     * @param dishName Second course name
-     * @param dishType Second course type
-     * @param price Second course price
-     * @param sideDish Course's side dish
+     * @param course    Course type
+     * @param dishName  Second course name
+     * @param dishType  Second course type
+     * @param price     Second course price
+     * @param sideDish  Second's side dish
      */
 
     public SecondCourse(String course, String dishName,Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, String sideDish) {
-        super(course, dishName,dishType,dietaryOptions, price, ingredients);
+        super(course, dishName, dishType, dietaryOptions, price, ingredients);
         this.sideDish = sideDish;
     }
 

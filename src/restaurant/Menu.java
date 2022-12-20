@@ -18,9 +18,11 @@ public class Menu {
         MEAT,
         VEGETABLES
     }
+
     /**
      * This enum describes the type of menu
      */
+
     public enum Type {
         SPECIAL("Special Menu"),
         CHILDREN("Children Menu"),
@@ -47,16 +49,14 @@ public class Menu {
 
     /**
      *
-     * @param dietaryOptions type of special diets
-     * @param menuType       type of menu
-     * @param basedOn        menu base
-     * @param isMenuSpecial  special menu
+     * @param dietaryOptions Type of special diets
+     * @param menuType       Type of menu
+     * @param basedOn        Menu base
      */
-    public Menu(Preferences dietaryOptions, Type menuType, BasedOn basedOn, boolean isMenuSpecial) {
+    public Menu(Preferences dietaryOptions, Type menuType, BasedOn basedOn) {
         this.dietaryOptions = dietaryOptions;
         this.menuType = menuType;
         this.basedOn = basedOn;
-        this.isMenuSpecial = isMenuSpecial;
         this.dishList = new ArrayList<>();
     }
 
@@ -79,15 +79,6 @@ public class Menu {
     public void setMenuType(Type menuType) {
         this.menuType = menuType;
     }
-
-    public boolean getIsMenuSpecial() {
-        return isMenuSpecial;
-    }
-
-    public void setIsMenuSpecial(boolean menuSpecial) {
-        isMenuSpecial = menuSpecial;
-    }
-
 
     public Preferences getDietaryOptions() {
         return dietaryOptions;

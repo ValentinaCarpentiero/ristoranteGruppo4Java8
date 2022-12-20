@@ -29,7 +29,7 @@ public class Dish {
     private DietaryOptions dietaryOptions;
 
     /**
-     * First course constructor that takes the following parameters:
+     * Dish constructor that takes the following parameters:
      * @param course Course type
      * @param dishName Dish name
      * @param dishType Dish type
@@ -43,9 +43,9 @@ public class Dish {
     }
 
     /**
-     * First course overloaded constructor that takes this different parameter:
-     * @param dietaryOptions type of special diets
-     * @param ingredients Dish ingredients
+     * Dish  overloaded constructor that takes this different parameter:
+     * @param dietaryOptions Type of special diets
+     * @param ingredients    Dish ingredients
      */
 
     public Dish(String course, String dishName,Preferences dishType, DietaryOptions dietaryOptions, double dishPrice,String ingredients){

@@ -90,6 +90,6 @@ public class Customer {
      * This is a method that prints all the customer's details
      */
     public void printCustomerDetails() {
-        System.out.println ("Customer ID "+this.customerId+" Name: " + this.name +" Surname: "+this.surname+ " Telephone-number: " + this.telephoneNumber +" Email: " + this.email + " Preferences: " + this.customerType);
+        System.out.println ("Customer ID "+this.customerId+"- Name: " + this.name +" Surname: "+this.surname+ " Telephone-number: " + this.telephoneNumber +" Email: " + this.email + " Preferences: " + this.customerType);
     }
 }

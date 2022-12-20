@@ -12,12 +12,12 @@ private boolean isHomeMade;
 
     /**
      * Dessert constructor that takes the following parameters:
-     * @param course Course type
-     * @param dishName Dessert name
-     * @param dishType Dessert type
-     * @param dietaryOptions type of special diets
-     * @param price Dessert price
-     * @param isHomeMade Type of Dessert's production
+     * @param course         Course type
+     * @param dishName       Dessert name
+     * @param dishType       Dessert type
+     * @param dietaryOptions Type of special diets
+     * @param price          Dessert price
+     * @param isHomeMade     Type of Dessert's production
      */
 
     public Dessert(String course, String dishName, Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, boolean isHomeMade) {
