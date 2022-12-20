@@ -34,6 +34,7 @@ public class Drink extends Dish {
      * @param price       Drink price
      *
     */
+    //TODO rivedere questi costruttori
     public Drink(String course, String drinkName, Preferences drinkType, double price, boolean isAlcoholic) {
         super(course, drinkName, drinkType, price);
         this.isAlcoholic = false;

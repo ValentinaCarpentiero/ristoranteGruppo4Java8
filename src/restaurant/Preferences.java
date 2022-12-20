@@ -4,8 +4,20 @@ package restaurant;
  * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 public enum Preferences {
-    CARNIVOROUS,
+
+    //TODO arricchiamo di informazioni
+    CARNIVOROUS("Carnivoro"),
     VEGETARIAN,
     VEGAN,
     MIXED,
+    ;
+
+    private String carnivoro;
+
+    Preferences(String carnivoro) {
+        this.carnivoro = carnivoro;
+    }
+    public String getCarnivoro() {
+        return carnivoro;
+    }
 }

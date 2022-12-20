@@ -12,6 +12,7 @@ public class Dish {
      * This enum provides type of special diets
      */
 
+    //TODO facciamo una classe apposita? e ci mettiamo la descrizione e altri parametri d'info ?
     public enum DietaryOptions{
         LACTOSE_INTOLERANCE,
         GLUTEN_FREE,
@@ -47,7 +48,7 @@ public class Dish {
      * @param dietaryOptions Type of special diets
      * @param ingredients    Dish ingredients
      */
-
+    //TODO siamo sicuri di fare due costruttori?
     public Dish(String course, String dishName,Preferences dishType, DietaryOptions dietaryOptions, double dishPrice,String ingredients){
         this.dishPrice = dishPrice;
         this.dishName = dishName;
