@@ -1,30 +1,110 @@
 package restaurant;
 
 import dishes.Dish;
-
 import java.util.ArrayList;
+import java.util.List;
+
 /**
  * This class represents a Restaurant menu
- * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
+ * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 public class Menu {
+    /**
+     * This enum describes the base of the menu
+     * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
+     */
 
-    //TODO che nome ha il menù?(fatto) booleano per indicare il menù nei giorni di festa(fatto)
-    private String menuName;
+    public enum BasedOn{
+        FISH,
+        MEAT,
+        VEGETABLES
+    }
+    /**
+     * This enum describes the type of menu
+     * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
+     */
+    public enum Type {
+        SPECIAL("Special Menu"),
+        CHILDREN("Children Menu"),
+        TASTING("Menu of several bite-sized dishes"),
+        DAILY("Menu of the day");
+
+        private final String description;
+
+        Type(String description) {
+
+            this.description = description;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+    }
+
+    private Preferences dietaryOptions;
+    private BasedOn basedOn;
+    private Type menuType;
     private boolean isMenuSpecial;
-
-    private Preferences menuType;
-    private ArrayList<Dish> dishList;
+    private List<Dish> dishList;
 
     /**
-     * Menu constructor that takes a parameter and initializes a dish list
-     * @param menuType Type of menu
+     *
+     * @param dietaryOptions type of special diets
+     * @param menuType       type of menu
+     * @param basedOn        menu base
+     * @param isMenuSpecial  special menu
      */
-    public Menu(String menuName, boolean isMenuSpecial, Preferences menuType) {
-        this.menuName=menuName;
-        this.isMenuSpecial=isMenuSpecial;
-        this.dishList = new ArrayList<>();
+    public Menu(Preferences dietaryOptions, Type menuType, BasedOn basedOn, boolean isMenuSpecial) {
+        this.dietaryOptions = dietaryOptions;
         this.menuType = menuType;
+        this.basedOn = basedOn;
+        this.isMenuSpecial = isMenuSpecial;
+        this.dishList = new ArrayList<>();
+    }
+
+    /**
+     *The following methods are getters and setters for each instance variables
+     */
+
+    public List<Dish> getDishList() {
+        return dishList;
+    }
+
+    public void setDishList(List<Dish> dishList) {
+        this.dishList = dishList;
+    }
+
+    public Type getMenuType() {
+        return menuType;
+    }
+
+    public void setMenuType(Type menuType) {
+        this.menuType = menuType;
+    }
+
+    public boolean getIsMenuSpecial() {
+        return isMenuSpecial;
+    }
+
+    public void setIsMenuSpecial(boolean menuSpecial) {
+        isMenuSpecial = menuSpecial;
+    }
+
+
+    public Preferences getDietaryOptions() {
+        return dietaryOptions;
+    }
+
+    public void setDietaryOptions(Preferences dietaryOptions) {
+        this.dietaryOptions = dietaryOptions;
+    }
+
+    public BasedOn getBasedOn() {
+        return basedOn;
+    }
+
+    public void setBasedOn(BasedOn basedOn) {
+        this.basedOn = basedOn;
     }
 
     /**
@@ -42,49 +122,15 @@ public class Menu {
         dishList.remove(dish);
     }
 
-    public String getMenuName() {
-        return menuName;
-    }
-
-    public void setMenuName(String menuName) {
-        this.menuName = menuName;
-    }
-
-    public boolean isMenuSpecial() {
-        return isMenuSpecial;
-    }
-
-    public void setMenuSpecial(boolean menuSpecial) {
-        isMenuSpecial = menuSpecial;
-    }
-
     /**
-     *The following methods are getters and setters for each instance variables
-     */
-
-
-    public ArrayList<Dish> getDishList() {
-        return dishList;
-    }
-
-    public void setDishList(ArrayList<Dish> dishList) {
-        this.dishList = dishList;
-    }
-
-    public Preferences getMenuType() {
-        return menuType;
-    }
-
-    public void setMenuType(Preferences menuType) {
-        this.menuType = menuType;
-    }
-
-    /**
-     * This method prints each Dish's course
+     * This method prints all menu's details and each dish
      */
     public void printMenu(){
-        //TODO nome, e tutti i dettagli del menù
-        System.out.println(this.menuType + " MENU " + " \n" + this.menuName + " \n");
+        System.out.println(this.menuType
+                           +"\n"+ this.menuType.getDescription()
+                           +"\nThis menu is based on "+this.basedOn.toString().toLowerCase()
+                           +"\nDietary option: "+this.dietaryOptions+"\n"
+                           );
         for (Dish dish : dishList) {
             dish.printDishDetail();
         }

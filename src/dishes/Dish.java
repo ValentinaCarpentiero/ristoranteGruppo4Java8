@@ -1,5 +1,6 @@
 package dishes;
 
+import restaurant.Menu;
 import restaurant.Preferences;
 
 /**
@@ -7,11 +8,22 @@ import restaurant.Preferences;
  * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
  */
 public class Dish {
+    public enum DietaryOptions{
+        LACTOSE_INTOLERANCE,
+        GLUTEN_FREE,
+        NUT_ALLERGIES,
+        LOCALLY_PRODUCED,
+        PEANUT_ALLERGY,
+        FISH_ALLERGIES
+
+    }
+
     private double dishPrice;
     private String dishName;
     private String course;
     private String ingredients;
     private Preferences dishType;
+    private DietaryOptions dietaryOptions;
 
     /**
      * First course constructor that takes the following parameters:

@@ -4,63 +4,70 @@ import restaurant.Preferences;
 
 /**
  * This class represents a Customer
- * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
+ * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 
 public class Customer {
 
-    //TODO getter e setter? metodi per stampare informazioni del customer?(fatto) e altro da pensare!
-    /**
-     * /*This variable represent a customer id
-     */
-    private static int customerId = 0;
-    private String fullName;
-    private String email;
+    private String name;
+    private String surname;
     private String telephoneNumber;
+    private String email;
     private Preferences customerType;
+    private int customerId;
 
     /**
      * Customer constructor that takes the following parameters:
      *
-     * @param fullName        Customer name and surname
-     * @param email           Customer email
+     * @param name            Customer name
+     * @param surname         Customer surname
      * @param telephoneNumber Customer telephone number
+     * @param email           Customer email
      * @param customerType    Customer's food preferences
+     * @param customerId      Customer identification number
      */
 
-    public Customer(String fullName, String email, String telephoneNumber, Preferences customerType) {
-        this.fullName = fullName;
-        this.email = email;
+    public Customer(String name, String surname, String telephoneNumber, String email, Preferences customerType, int customerId) {
+        this.name = name;
+        this.surname = surname;
         this.telephoneNumber = telephoneNumber;
+        this.email = email;
         this.customerType = customerType;
-        customerId++;
+        this.customerId = customerId;
     }
 
     /**
-     *The following methods are getters and setters for each instance variables
+     *The following methods are getters and setters for each variable
      */
-    public String getFullName() {
-        return fullName;
+
+    public String getName() {
+        return name;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setName(String name) {
+        this.name = name;
     }
 
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getTelephoneNumber() {
+        return telephoneNumber;
+    }
+    public void setTelephoneNumber(String telephoneNumber) {
+        this.telephoneNumber = telephoneNumber;
+    }
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getTelephoneNumber() {
-        return telephoneNumber;
-    }
-
-    public void setTelephoneNumber(String telephoneNumber) {
-        this.telephoneNumber = telephoneNumber;
     }
 
     public Preferences getCustomerType() {
@@ -71,10 +78,18 @@ public class Customer {
         this.customerType = customerType;
     }
 
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
     /**
-     * This is a method that prints the details of the customer
+     * This is a method that prints all the customer's details
      */
     public void printCustomerDetails() {
-        System.out.println ( "Name: " + this.fullName + " Email: " + this.email + " Telephone-number: " + this.telephoneNumber + " Preferences: " + this.customerType /*" -" + customerId++*/ );
+        System.out.println ("Customer ID "+this.customerId+" Name: " + this.name +" Surname: "+this.surname+ " Telephone-number: " + this.telephoneNumber +" Email: " + this.email + " Preferences: " + this.customerType);
     }
 }
