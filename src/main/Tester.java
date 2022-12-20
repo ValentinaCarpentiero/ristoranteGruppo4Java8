@@ -29,17 +29,17 @@ public class Tester {
         menu1.addDish(new FirstCourse("First Course", "Spaghetti allo scoglio", Preferences.CARNIVOROUS, DietaryOptions.LOCALLY_PRODUCED, 12.55, "Spaghetti con vongole, cozze, calamari",true));
         menu1.addDish(new SecondCourse("Second Course", "Orata al forno con patate", Preferences.CARNIVOROUS,DietaryOptions.LOCALLY_PRODUCED, 17.00, "Orata","patate, rosmarino, aglio"));
         menu1.addDish(new Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, DietaryOptions.NUT_ALLERGIES, 6.50,"panna, zucchero",true));
-        menu1.addDish(new Drink("Drink", "Vino Lapilli", Preferences.MIXED, 6.00, 15));
+        menu1.addDish(new Drink("Drink", "Vino Lapilli", Preferences.MIXED, 6.00, true, 12.0));
 
         menu2.addDish(new FirstCourse("First Course", "Orecchiette alle cime di rapa", Preferences.VEGETARIAN, DietaryOptions.LOCALLY_PRODUCED, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco",true));
         menu2.addDish(new SecondCourse("Second Course", "Burger di Soia", Preferences.VEGETARIAN, DietaryOptions.LACTOSE_INTOLERANCE, 7.00, "Burger Vegetale alla Soia","Erba"));
         menu2.addDish(new Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, DietaryOptions.PEANUT_ALLERGY ,6.50,"Frutti di bosco",false));
-        menu2.addDish(new Drink("Drink", "Coca Zero", Preferences.MIXED, 6.00, 0));
+        menu2.addDish(new Drink("Drink", "Coca Zero", Preferences.MIXED, 6.00, false));
 
         menu3.addDish(new FirstCourse("First Course", "Paccheri zucca e mandorle ", Preferences.VEGAN, DietaryOptions.LACTOSE_INTOLERANCE, 10.50, "Paccheri , zucca, mandorle",true));
         menu3.addDish(new SecondCourse("Second Course", "Sushi avocado", Preferences.VEGAN, DietaryOptions.GLUTEN_FREE,7.50, "Riso, avocado, Spalmabile alla Soia","Alghe"));
         menu3.addDish(new Dessert("Dessert", "Vegan Souffle", Preferences.VEGAN,DietaryOptions.LACTOSE_INTOLERANCE, 6.20,"Zucchero",false));
-        menu3.addDish(new Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, 0));
+        menu3.addDish(new Drink("Drink", "Coca 0", Preferences.MIXED, 6.00, false));
 
         List<Menu> menus = new ArrayList<>();
         menus.add (menu1);

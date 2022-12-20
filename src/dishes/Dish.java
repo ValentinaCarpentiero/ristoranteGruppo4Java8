@@ -4,7 +4,7 @@ import restaurant.Preferences;
 
 /**
  * This class represents a general Dish
- * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
+ * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 public class Dish {
 

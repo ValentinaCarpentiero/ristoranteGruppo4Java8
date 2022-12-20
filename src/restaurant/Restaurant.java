@@ -18,7 +18,7 @@ public class Restaurant {
 
     public enum TableService {
         BUFFET ("Buffet"),
-        A_LA_CARTE ("A la carte");
+        A_LA_CARTE ("À la carte");
 
         private final String description;
 

@@ -8,7 +8,7 @@ import restaurant.Preferences;
  */
 public class Dessert extends Dish {
 
-private boolean isHomeMade;
+    private boolean isHomeMade;
 
     /**
      * Dessert constructor that takes the following parameters:

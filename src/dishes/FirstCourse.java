@@ -39,11 +39,11 @@ public class FirstCourse extends Dish {
      * Getter and Setter of the instance variable
      * @return boolean isPastaFresca?
      */
-    public boolean isPastaFresca() {
+    public boolean getIsPastaFresca() {
         return isPastaFresca;
     }
 
-    public void setPastaFresca(boolean pastaFresca) {
+    public void setIsPastaFresca(boolean pastaFresca) {
         isPastaFresca = pastaFresca;
     }
 

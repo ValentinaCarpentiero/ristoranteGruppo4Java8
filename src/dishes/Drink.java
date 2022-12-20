@@ -8,29 +8,54 @@ import restaurant.Preferences;
  */
 public class Drink extends Dish {
 
-    private int alcoholicVolume;
+    private double alcoholicVolume;
+    private boolean isAlcoholic;
 
     /**
-     * First course constructor that takes the following parameters:
+     * Alcoholic drink constructor that takes the following parameters:
      * @param course          Course type
-     * @param dishName        Drink name
-     * @param dishType        Drink type
+     * @param drinkName       Drink name
+     * @param drinkType       Drink type
      * @param price           Drink price
+     * @param isAlcoholic     Boolean is alcoholic
      * @param alcoholicVolume Drink's alcohol content
      */
-    public Drink(String course, String dishName, Preferences dishType, double price, int alcoholicVolume) {
-        super(course, dishName, dishType, price);
+    public Drink(String course, String drinkName, Preferences drinkType, double price, boolean isAlcoholic, double alcoholicVolume) {
+        super(course, drinkName, drinkType, price);
+        this.isAlcoholic = isAlcoholic;
         this.alcoholicVolume = alcoholicVolume;
     }
+
     /**
-     * Getter and Setter of the variable
+     * Unalcoholic drink constructor that takes the following parameters:
+     * @param course      Course type
+     * @param drinkName   Drink name
+     * @param drinkType   Drink type
+     * @param price       Drink price
+     *
+    */
+    public Drink(String course, String drinkName, Preferences drinkType, double price, boolean isAlcoholic) {
+        super(course, drinkName, drinkType, price);
+        this.isAlcoholic = false;
+    }
+
+    /**
+     * Getter and Setter of each instance variable
      */
-    public int getAlcoholicVolume() {
+    public double getAlcoholicVolume() {
         return alcoholicVolume;
     }
 
-    public void setAlcoholicVolume(int alcoholicVolume) {
+    public void setAlcoholicVolume(double alcoholicVolume) {
         this.alcoholicVolume = alcoholicVolume;
+    }
+
+    public boolean getIsAlcoholic() {
+        return isAlcoholic;
+    }
+
+    public void setIsAlcoholic(boolean alcoholic) {
+        isAlcoholic = alcoholic;
     }
 
     /**
@@ -39,8 +64,8 @@ public class Drink extends Dish {
     @Override
     public void printDishDetail() {
         System.out.println("### "+super.getCourse()
-                +" ###"+"\n"+super.getDishName()
-                +"\nvol % : "+this.alcoholicVolume
-                +"\nPrice: "+this.getDishPrice());
+                          +" ###"+"\n"+super.getDishName()
+                           +"\n"+((this.isAlcoholic) ? "\nvol % : "+this.alcoholicVolume : "Unalcoholic drink")
+                           +"\nPrice: "+this.getDishPrice());
     }
 }
