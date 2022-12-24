@@ -1,5 +1,6 @@
 package dishes;
 
+import enums.DietaryOptions;
 import enums.Preferences;
 
 /**
@@ -19,7 +20,7 @@ public class SecondCourse extends Dish {
      * @param sideDish  Second's side dish
      */
 
-    public SecondCourse(String course, String dishName,Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, String sideDish) {
+    public SecondCourse(String course, String dishName, Preferences dishType, DietaryOptions dietaryOptions, double price, String ingredients, String sideDish) {
         super(course, dishName, dishType, dietaryOptions, price, ingredients);
         this.sideDish = sideDish;
     }

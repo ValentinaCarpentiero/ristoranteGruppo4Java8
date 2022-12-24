@@ -1,5 +1,6 @@
 package dishes;
 
+import enums.DietaryOptions;
 import enums.Preferences;
 
 /**
@@ -20,7 +21,7 @@ public class Dessert extends Dish {
      * @param isHomeMade     enums.Type of Dessert's production
      */
 
-    public Dessert(String course, String dishName, Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, boolean isHomeMade) {
+    public Dessert(String course, String dishName, Preferences dishType, DietaryOptions dietaryOptions, double price, String ingredients, boolean isHomeMade) {
         super(course, dishName,dishType,dietaryOptions, price, ingredients);
         this.isHomeMade = isHomeMade;
     }

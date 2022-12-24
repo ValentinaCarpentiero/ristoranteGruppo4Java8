@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
-      <change afterPath="$PROJECT_DIR$/src/enums/TableService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/Dessert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/Dish.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/FirstCourse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/SecondCourse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/restaurant/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/restaurant/Restaurant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restaurant/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dessert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/FirstCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/FirstCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dishes/SecondCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/SecondCourse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +86,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="featureDevelhope" />
                       </list>
                     </value>
                   </entry>

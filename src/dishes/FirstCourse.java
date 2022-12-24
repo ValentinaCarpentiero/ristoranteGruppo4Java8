@@ -1,5 +1,6 @@
 package dishes;
 
+import enums.DietaryOptions;
 import enums.Preferences;
 
 /**
@@ -21,7 +22,7 @@ public class FirstCourse extends Dish {
      * @param isPastaFresca Boolean about pasta production
      */
 
-    public FirstCourse(String course, String dishName, Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, boolean isPastaFresca){
+    public FirstCourse(String course, String dishName, Preferences dishType, DietaryOptions dietaryOptions, double price, String ingredients, boolean isPastaFresca){
         super(course, dishName, dishType, dietaryOptions, price, ingredients);
         this.isPastaFresca = isPastaFresca;
 
