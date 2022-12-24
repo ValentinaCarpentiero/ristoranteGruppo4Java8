@@ -5,41 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
-      <change afterPath="$PROJECT_DIR$/src/enums/BasedOn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/TypeOfMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/dishes/Dessert.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/dishes/Dessert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/dishes/Dish.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/dishes/Dish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/dishes/Drink.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/dishes/Drink.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/dishes/FirstCourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/dishes/FirstCourse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/dishes/SecondCourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/dishes/SecondCourse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/dishes/class-use/Dish.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/dishes/class-use/Dish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/main/Tester.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/main/Tester.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/Menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/Menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/Preferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/Preferences.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/Restaurant.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/Restaurant.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/Table.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/Table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/class-use/Preferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/GeneratedJavadoc/restaurant/class-use/Preferences.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/Dish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/Dish.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/Drink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/FirstCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/FirstCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/booking/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/booking/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dessert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/FirstCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/FirstCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/SecondCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/SecondCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restaurant/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restaurant/Preferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/Preferences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/restaurant/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enums/TableService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/Dessert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/Dish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/FirstCourse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/SecondCourse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/restaurant/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/restaurant/Restaurant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/restaurant/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/restaurant/Restaurant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

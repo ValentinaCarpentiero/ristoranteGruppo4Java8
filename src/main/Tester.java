@@ -1,12 +1,13 @@
 package main;
 
 import booking.Customer;
-import dishes.*;
-import enums.BasedOn;
-import enums.TypeOfMenu;
-import restaurant.*;
-import dishes.Dish.DietaryOptions;
-import enums.Preferences;
+import dishes.Dessert;
+import dishes.Drink;
+import dishes.FirstCourse;
+import dishes.SecondCourse;
+import enums.*;
+import restaurant.Menu;
+import restaurant.Restaurant;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,9 +29,9 @@ public class Tester {
         Menu menu2 = new Menu(Preferences.VEGETARIAN, TypeOfMenu.SPECIAL,BasedOn.VEGETABLES);
         Menu menu3 = new Menu(Preferences.VEGAN, TypeOfMenu.TASTING, BasedOn.VEGETABLES);
 
-        menu1.addDish(new FirstCourse("First Course", "Spaghetti allo scoglio", Preferences.CARNIVOROUS, DietaryOptions.LOCALLY_PRODUCED, 12.55, "Spaghetti con vongole, cozze, calamari",true));
+        menu1.addDish(new FirstCourse("First Course", "Spaghetti allo scoglio", Preferences.CARNIVOROUS,DietaryOptions.LOCALLY_PRODUCED, 12.55, "Spaghetti con vongole, cozze, calamari",true));
         menu1.addDish(new SecondCourse("Second Course", "Orata al forno con patate", Preferences.CARNIVOROUS,DietaryOptions.LOCALLY_PRODUCED, 17.00, "Orata","patate, rosmarino, aglio"));
-        menu1.addDish(new Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, DietaryOptions.NUT_ALLERGIES, 6.50,"panna, zucchero",true));
+        menu1.addDish(new Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, 6.50,"panna, zucchero",true));
         menu1.addDish(new Drink("Drink", "Vino Lapilli", Preferences.MIXED, 6.00, true, 12.0));
 
         menu2.addDish(new FirstCourse("First Course", "Orecchiette alle cime di rapa", Preferences.VEGETARIAN, DietaryOptions.LOCALLY_PRODUCED, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco",true));
@@ -47,7 +48,7 @@ public class Tester {
         menus.add (menu1);
         menus.add (menu2);
         menus.add (menu3);
-        Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", "Java 8", menus, menu3.getDishList().get(1).getDishName(), Restaurant.TableService.A_LA_CARTE,32,"Credit Card, WiFi, Air-Conditioning, Wheelchair Accessible, Free Parking",true, false);
+        Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", "Java 8", menus, menu3.getDishList().get(1).getDishName(), TableService.A_LA_CARTE,32,"Credit Card, WiFi, Air-Conditioning, Wheelchair Accessible, Free Parking",true, false);
         restaurant1.printRestaurantDetails();
 
 

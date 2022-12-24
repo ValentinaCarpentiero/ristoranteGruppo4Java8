@@ -1,5 +1,6 @@
 package dishes;
 
+import enums.DietaryOptions;
 import enums.Preferences;
 
 /**
@@ -13,14 +14,7 @@ public class Dish {
      */
 
     //TODO facciamo una classe apposita? e ci mettiamo la descrizione e altri parametri d'info ?
-    public enum DietaryOptions{
-        LACTOSE_INTOLERANCE,
-        GLUTEN_FREE,
-        NUT_ALLERGIES,
-        LOCALLY_PRODUCED,
-        PEANUT_ALLERGY,
-        FISH_ALLERGIES
-    }
+
 
     private double dishPrice;
     private String dishName;

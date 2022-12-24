@@ -2,6 +2,7 @@ package restaurant;
 
 import booking.Customer;
 import dishes.Dish;
+import enums.TableService;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,26 +13,7 @@ import java.util.List;
  */
 public class Restaurant {
 
-    /**
-     * This enum describes how restaurant serves dishes
-     */
 
-    public enum TableService {
-        BUFFET ("Buffet"),
-        A_LA_CARTE ("À la carte");
-
-        private final String description;
-
-        TableService(String description) {
-
-            this.description = description;
-        }
-
-        public String getDescription() {
-            return description;
-        }
-
-    }
     private String restaurantName;
     private String address;
     private List<Menu> menu;
