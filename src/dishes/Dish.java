@@ -1,6 +1,6 @@
 package dishes;
 
-import restaurant.Preferences;
+import enums.Preferences;
 
 /**
  * This class represents a general Dish
@@ -45,7 +45,7 @@ public class Dish {
 
     /**
      * Dish  overloaded constructor that takes this different parameter:
-     * @param dietaryOptions Type of special diets
+     * @param dietaryOptions enums.Type of special diets
      * @param ingredients    Dish ingredients
      */
     //TODO siamo sicuri di fare due costruttori?

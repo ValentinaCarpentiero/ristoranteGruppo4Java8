@@ -1,6 +1,6 @@
 package booking;
 
-import restaurant.Preferences;
+import enums.Preferences;
 
 /**
  * This class represents a Customer

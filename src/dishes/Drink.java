@@ -1,6 +1,6 @@
 package dishes;
 
-import restaurant.Preferences;
+import enums.Preferences;
 
 /**
  * This class represents a drink and extends the Dish class

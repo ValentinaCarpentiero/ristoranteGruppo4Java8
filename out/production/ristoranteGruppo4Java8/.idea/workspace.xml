@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dessert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/FirstCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ristoranteGruppo4Java8/dishes/FirstCourse.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/valentinacarpentiero/ristoranteGruppo4Java8&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/TeamProject4/ristoranteGruppo4Java8&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -87,7 +86,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="developFeature" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>

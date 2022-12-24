@@ -1,6 +1,10 @@
 package restaurant;
 
 import dishes.Dish;
+import enums.BasedOn;
+import enums.Preferences;
+import enums.TypeOfMenu;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,47 +17,21 @@ public class Menu {
     /**
      * This enum describes the base of the menu
      */
-    public enum BasedOn{
-        FISH,
-        MEAT,
-        VEGETABLES
-    }
-
-    /**
-     * This enum describes the type of menu
-     */
-
-    public enum Type {
-        SPECIAL("Special Menu"),
-        CHILDREN("Children Menu"),
-        TASTING("Menu of several bite-sized dishes"),
-        DAILY("Menu of the day");
-
-        private final String description;
-
-        Type(String description) {
-
-            this.description = description;
-        }
-
-        public String getDescription() {
-            return description;
-        }
-    }
 
     private Preferences dietaryOptions;
     private BasedOn basedOn;
-    private Type menuType;
+    private TypeOfMenu menuType;
+
     private boolean isMenuSpecial;
     private List<Dish> dishList;
 
     /**
      *
-     * @param dietaryOptions Type of special diets
-     * @param menuType       Type of menu
+     * @param dietaryOptions enums.Type of special diets
+     * @param menuType       enums.Type of menu
      * @param basedOn        Menu base
      */
-    public Menu(Preferences dietaryOptions, Type menuType, BasedOn basedOn) {
+    public Menu(Preferences dietaryOptions, TypeOfMenu menuType, BasedOn basedOn) {
         this.dietaryOptions = dietaryOptions;
         this.menuType = menuType;
         this.basedOn = basedOn;
@@ -72,11 +50,11 @@ public class Menu {
         this.dishList = dishList;
     }
 
-    public Type getMenuType() {
+    public TypeOfMenu getMenuType() {
         return menuType;
     }
 
-    public void setMenuType(Type menuType) {
+    public void setMenuType(TypeOfMenu menuType) {
         this.menuType = menuType;
     }
 

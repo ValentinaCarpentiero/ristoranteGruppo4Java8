@@ -1,6 +1,6 @@
 package dishes;
 
-import restaurant.Preferences;
+import enums.Preferences;
 
 /**
  * This class represents a first course and extends the Dish class
@@ -32,7 +32,7 @@ public class FirstCourse extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("Type of pasta: "+((isPastaFresca) ? "Pasta fresca":"Not home made pasta"));
+        System.out.println("enums.Type of pasta: "+((isPastaFresca) ? "Pasta fresca":"Not home made pasta"));
     }
 
     /**
