@@ -3,7 +3,7 @@ interface IPrintable: { print }
 AbstractGoods class:
 	private double price;
 	private String name;
-	private String type;
+	private String tablePosition;
 
 //public abstract void gnegne() la mettiamo nell'interface
 

@@ -1,17 +1,15 @@
 package enums;
 /**
- * This enum describes the base of the menu
+ * This enum provides the position of the table
  * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
-
-public enum BasedOn {
-    FISH ("Menu di pesce"),
-    MEAT("Menu di carne"),
-    VEGETABLES("Menu di verdure");
+public enum TablePosition {
+    INDOOR ("Tavolo all'interno"),
+    OUTDOOR("Tavolo all'esterno");
 
     private final String description;
 
-    BasedOn(String description) {
+    TablePosition(String description) {
 
         this.description = description;
     }

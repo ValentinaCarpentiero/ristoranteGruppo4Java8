@@ -5,19 +5,20 @@ package enums;
  */
 public enum Preferences {
 
-    //TODO arricchiamo di informazioni
-    CARNIVOROUS,
-    VEGETARIAN,
-    VEGAN,
-    MIXED,
-    ;
 
-    //private String carnivoro;
+    CARNIVOROUS ("Carnivoro"),
+    VEGETARIAN("Vegetariano"),
+    VEGAN("Vegano"),
+    MIXED("Senza preferenze specifiche");
 
-   /* Preferences(String carnivoro) {
-        this.carnivoro = carnivoro;
+    private final String description;
+
+    Preferences(String description) {
+
+        this.description = description;
     }
-    public String getCarnivoro() {
-        return carnivoro;
-    }*/
+
+    public String getDescription() {
+        return description;
+    }
 }

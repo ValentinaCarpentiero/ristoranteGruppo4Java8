@@ -1,5 +1,6 @@
 package dishes;
 
+import enums.DietaryOptions;
 import enums.Preferences;
 
 /**
@@ -16,32 +17,18 @@ public class Drink extends Dish {
      * @param course          Course type
      * @param drinkName       Drink name
      * @param drinkType       Drink type
-     * @param price           Drink price
-     * @param isAlcoholic     Boolean is alcoholic
+     * @param drinkPrice      Drink price
+     * @param isAlcoholic     Boolean about alcohol presence
      * @param alcoholicVolume Drink's alcohol content
      */
-    public Drink(String course, String drinkName, Preferences drinkType, double price, boolean isAlcoholic, double alcoholicVolume) {
-        super(course, drinkName, drinkType, price);
-        this.isAlcoholic = isAlcoholic;
+    public Drink(String course, String drinkName, Preferences drinkType, DietaryOptions dietaryOptions, String ingredients, double drinkPrice, double alcoholicVolume, boolean isAlcoholic) {
+        super(course, drinkName, drinkType, dietaryOptions, ingredients, drinkPrice);
         this.alcoholicVolume = alcoholicVolume;
+        this.isAlcoholic = isAlcoholic;
     }
 
     /**
-     * Unalcoholic drink constructor that takes the following parameters:
-     * @param course      Course type
-     * @param drinkName   Drink name
-     * @param drinkType   Drink type
-     * @param price       Drink price
-     *
-    */
-    //TODO rivedere questi costruttori
-    public Drink(String course, String drinkName, Preferences drinkType, double price, boolean isAlcoholic) {
-        super(course, drinkName, drinkType, price);
-        this.isAlcoholic = false;
-    }
-
-    /**
-     * Getter and Setter of each instance variable
+     * Getter and Setter of each variable
      */
     public double getAlcoholicVolume() {
         return alcoholicVolume;

@@ -23,7 +23,7 @@ public class FirstCourse extends Dish {
      */
 
     public FirstCourse(String course, String dishName, Preferences dishType, DietaryOptions dietaryOptions, double price, String ingredients, boolean isPastaFresca){
-        super(course, dishName, dishType, dietaryOptions, price, ingredients);
+        super(course, dishName, dishType, dietaryOptions, ingredients, price);
         this.isPastaFresca = isPastaFresca;
 
     }
@@ -33,7 +33,7 @@ public class FirstCourse extends Dish {
     @Override
     public void printDishDetail() {
         super.printDishDetail();
-        System.out.println("enums.Type of pasta: "+((isPastaFresca) ? "Pasta fresca":"Not home made pasta"));
+        System.out.println("Type of pasta: "+((isPastaFresca) ? "Pasta fresca":"Not home made pasta"));
     }
 
     /**

@@ -21,7 +21,7 @@ public class SecondCourse extends Dish {
      */
 
     public SecondCourse(String course, String dishName, Preferences dishType, DietaryOptions dietaryOptions, double price, String ingredients, String sideDish) {
-        super(course, dishName, dishType, dietaryOptions, price, ingredients);
+        super(course, dishName, dishType, dietaryOptions, ingredients, price);
         this.sideDish = sideDish;
     }
 

@@ -1,7 +1,6 @@
 package restaurant;
 
-import booking.Customer;
-import enums.Type;
+import enums.TablePosition;
 
 /**
  * This class represents a Table
@@ -12,20 +11,20 @@ public class Table {
 
     private int idTable;
     private int seatsNumber;
-    private Type type;
+    private TablePosition tablePosition;
     private boolean isAvailable;
 
 
     /**
      * Table constructor that takes the following parameters and assigns the true value to the boolean isAvailable:
-     * @param idTable     Table ID
-     * @param seatsNumber Table's number of seats
-     * @param type        enums.Type of table
+     * @param idTable       Table ID
+     * @param seatsNumber   Table's number of seats
+     * @param tablePosition Position of table
      */
-    public Table(int idTable, int seatsNumber,Type type){
+    public Table(int idTable, int seatsNumber, TablePosition tablePosition){
         this.idTable = idTable;
         this.seatsNumber = seatsNumber;
-        this.type = type;
+        this.tablePosition = tablePosition;
         this.isAvailable = true;
     }
     /**
@@ -55,12 +54,12 @@ public class Table {
         isAvailable = available;
     }
 
-    public Type getType() {
-        return type;
+    public TablePosition getType() {
+        return tablePosition;
     }
 
-    public void setType(Type type) {
-        this.type = type;
+    public void setType(TablePosition tablePosition) {
+        this.tablePosition = tablePosition;
     }
 }
 

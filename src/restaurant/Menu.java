@@ -14,9 +14,6 @@ import java.util.List;
  */
 public class Menu {
 
-    /**
-     * This enum describes the base of the menu
-     */
 
     private Preferences dietaryOptions;
     private BasedOn basedOn;
@@ -27,8 +24,8 @@ public class Menu {
 
     /**
      *
-     * @param dietaryOptions enums.Type of special diets
-     * @param menuType       enums.Type of menu
+     * @param dietaryOptions Type of special diets
+     * @param menuType       Type of menu
      * @param basedOn        Menu base
      */
     public Menu(Preferences dietaryOptions, TypeOfMenu menuType, BasedOn basedOn) {
