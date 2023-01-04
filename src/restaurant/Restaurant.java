@@ -163,7 +163,7 @@ public class Restaurant {
 
     public void printMenu(Customer customer) {
         for (Menu singleMenu : menu){
-            if (singleMenu.getDietaryOptions() == customer.getCustomerType()) {
+            if (singleMenu.getMenuPreferences() == customer.getCustomerPreferences()) {
                 singleMenu.printMenu();
             }
         }

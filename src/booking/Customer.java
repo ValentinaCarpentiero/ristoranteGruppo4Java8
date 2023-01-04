@@ -13,7 +13,7 @@ public class Customer {
     private String surname;
     private String telephoneNumber;
     private String email;
-    private Preferences customerType;
+    private Preferences customerPreferences;
     private int customerId;
 
     /**
@@ -23,16 +23,16 @@ public class Customer {
      * @param surname         Customer surname
      * @param telephoneNumber Customer telephone number
      * @param email           Customer email
-     * @param customerType    Customer's food preferences
+     * @param customerPreferences    Customer's food preferences
      * @param customerId      Customer identification number
      */
 
-    public Customer(String name, String surname, String telephoneNumber, String email, Preferences customerType, int customerId) {
+    public Customer(String name, String surname, String telephoneNumber, String email, Preferences customerPreferences, int customerId) {
         this.name = name;
         this.surname = surname;
         this.telephoneNumber = telephoneNumber;
         this.email = email;
-        this.customerType = customerType;
+        this.customerPreferences = customerPreferences;
         this.customerId = customerId;
     }
 
@@ -70,12 +70,12 @@ public class Customer {
         this.email = email;
     }
 
-    public Preferences getCustomerType() {
-        return customerType;
+    public Preferences getCustomerPreferences() {
+        return customerPreferences;
     }
 
-    public void setCustomerType(Preferences customerType) {
-        this.customerType = customerType;
+    public void setCustomerPreferences(Preferences customerPreferences) {
+        this.customerPreferences = customerPreferences;
     }
 
     public int getCustomerId() {
@@ -90,6 +90,6 @@ public class Customer {
      * This is a method that prints all the customer's details
      */
     public void printCustomerDetails() {
-        System.out.println ("Customer ID "+this.customerId+"- Name: " + this.name +" Surname: "+this.surname+ " Telephone-number: " + this.telephoneNumber +" Email: " + this.email + " Preferences: " + this.customerType);
+        System.out.println ("Customer ID "+this.customerId+"- Name: " + this.name +" Surname: "+this.surname+ " Telephone-number: " + this.telephoneNumber +" Email: " + this.email + " Preferences: " + this.customerPreferences);
     }
 }

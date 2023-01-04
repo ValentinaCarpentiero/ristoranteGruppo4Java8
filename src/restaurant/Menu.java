@@ -15,7 +15,7 @@ import java.util.List;
 public class Menu {
 
 
-    private Preferences dietaryOptions;
+    private Preferences menuPreferences;
     private BasedOn basedOn;
     private TypeOfMenu menuType;
 
@@ -24,14 +24,15 @@ public class Menu {
 
     /**
      *
-     * @param dietaryOptions Type of special diets
+     * @param menuPreferences Type of special diets
      * @param menuType       Type of menu
      * @param basedOn        Menu base
      */
-    public Menu(Preferences dietaryOptions, TypeOfMenu menuType, BasedOn basedOn) {
-        this.dietaryOptions = dietaryOptions;
+    public Menu(Preferences menuPreferences, TypeOfMenu menuType, BasedOn basedOn) {
+        this.menuPreferences = menuPreferences;
         this.menuType = menuType;
         this.basedOn = basedOn;
+        //TODO decidere se inizializzare la lista di menù di Restaurant nel costruttore come abbiamo fatto qui, creando anche i metodi add e remove qui
         this.dishList = new ArrayList<>();
     }
 
@@ -55,12 +56,12 @@ public class Menu {
         this.menuType = menuType;
     }
 
-    public Preferences getDietaryOptions() {
-        return dietaryOptions;
+    public Preferences getMenuPreferences() {
+        return menuPreferences;
     }
 
-    public void setDietaryOptions(Preferences dietaryOptions) {
-        this.dietaryOptions = dietaryOptions;
+    public void setMenuPreferences(Preferences menuPreferences) {
+        this.menuPreferences = menuPreferences;
     }
 
     public BasedOn getBasedOn() {
@@ -97,7 +98,7 @@ public class Menu {
         System.out.println(this.menuType
                            +"\n"+ this.menuType.getDescription()
                            +"\nMenu based on "+this.basedOn.toString().toLowerCase()
-                           +"\nDietary options: "+this.dietaryOptions.toString().toLowerCase()+"\n"
+                           +"\nDietary options: "+this.menuPreferences.toString().toLowerCase()+"\n"
                            );
         for (Dish dish : dishList) {
             dish.printDishDetail();

@@ -5,12 +5,13 @@ package enums;
  */
 
 public enum DietaryOptions {
-    LACTOSE_INTOLERANCE ("Privo di lattosio"),
+    LACTOSE_FREE("Privo di lattosio"),
+    DAIRY_FREE("Privo di latte e dei suoi derivati"),
     GLUTEN_FREE("Privo di glutine"),
-    NUT_ALLERGIES ("Privo di frutta a guscio"),
-    LOCALLY_PRODUCED ("Produzione locale"),
-    PEANUT_ALLERGY("Privo di arachidi"),
-    FISH_ALLERGIES("Privo di pesci, crostacei e molluschi");
+    NUT_FREE("Privo di frutta a guscio"),
+    PEANUT_FREE("Privo di arachidi"),
+    SEAFOOD_FREE("Privo di pesci, crostacei e molluschi"),
+    LOCALLY_PRODUCED ("Produzione locale");
 
     private final String description;
 
