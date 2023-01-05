@@ -1,6 +1,7 @@
 package booking;
 
 import restaurant.Restaurant;
+
 import java.time.LocalDateTime;
 import java.util.Random;
 
@@ -57,19 +58,20 @@ public class Booking {
 
     /**
      * This is a method that creates a random booking ID
+     *
      * @return random id
      */
-    private int createRandomBookingId(){
+    private int createRandomBookingId() {
         Random random = new Random();
-        return random.nextInt(0,500);
+        return random.nextInt(0, 500);
     }
 
     /**
      * This is a method that prints all the booking's details
      */
     public void printBookingDetails() {
-        System.out.println("Booking nr." + getBookingId()+
-                " - restaurant: " +restaurant.getRestaurantName() +
+        System.out.println("Booking nr." + getBookingId() +
+                " - restaurant: " + restaurant.getRestaurantName() +
                 " - customer Id: " + customerId +
                 " - date: " + bookingDate +
                 " - optional message: " + optionalMessage);

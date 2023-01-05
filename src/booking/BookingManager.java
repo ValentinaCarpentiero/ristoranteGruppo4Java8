@@ -32,6 +32,7 @@ public class BookingManager {
             System.out.println("Booking nr "+booking.getBookingId()+
                               " under the name "+customer.getName()+" "+customer.getSurname()+
                               " successfully done.");
+
             this.capacityAvailable.put(bookingDate, groupSize);
             this.bookingList.put(customer, booking);
         } else {
@@ -45,10 +46,10 @@ public class BookingManager {
             if (bookingToDelete.getBookingDate() == bookingDate) {
                 bookingList.remove(customer);
                 capacityAvailable.remove(bookingToDelete.getBookingDate());
-                System.out.format("Booking nr %d under the name %s on %tD deleted",
-                                   bookingToDelete.getBookingId(),
-                                   customer.getSurname(),
-                                   bookingToDelete.getBookingDate()
+                System.out.format("Booking nr "+bookingToDelete.getBookingId()+
+                                  " under the name "+ customer.getSurname()+
+                                  " on date "+ bookingToDelete.getBookingDate()+
+                                  " deleted."
                 );
             }
         }
