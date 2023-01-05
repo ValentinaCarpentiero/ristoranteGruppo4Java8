@@ -14,26 +14,22 @@ import java.util.List;
  */
 public class Menu {
 
-
     private Preferences menuPreferences;
     private BasedOn basedOn;
     private TypeOfMenu menuType;
-
-    private boolean isMenuSpecial;
     private List<Dish> dishList;
 
     /**
      *
      * @param menuPreferences Type of special diets
-     * @param menuType       Type of menu
-     * @param basedOn        Menu base
+     * @param menuType        Type of menu
+     * @param basedOn         Menu base
      */
-    public Menu(Preferences menuPreferences, TypeOfMenu menuType, BasedOn basedOn) {
+    public Menu(Preferences menuPreferences, TypeOfMenu menuType, BasedOn basedOn, List<Dish> dishList) {
         this.menuPreferences = menuPreferences;
         this.menuType = menuType;
         this.basedOn = basedOn;
-        //TODO decidere se inizializzare la lista di menù di Restaurant nel costruttore come abbiamo fatto qui, creando anche i metodi add e remove qui
-        this.dishList = new ArrayList<>();
+        this.dishList = dishList;
     }
 
     /**
@@ -70,24 +66,6 @@ public class Menu {
 
     public void setBasedOn(BasedOn basedOn) {
         this.basedOn = basedOn;
-    }
-
-    /**
-     * This method add a dish to the dish list and takes a parameter
-     * @param dish dish to add
-     */
-
-    public void addDish(Dish dish){
-        dishList.add(dish);
-    }
-
-    /**
-     * This method remove a dish to the dish list and takes a parameter
-     * @param dish dish to remove
-     */
-
-    public void removeDish(Dish dish){
-        dishList.remove(dish);
     }
 
     /**

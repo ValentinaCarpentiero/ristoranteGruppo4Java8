@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.util.Random;
 
 public class Booking {
-    private int bookingId;
+    private static int bookingId;
     private int customerId;
     private Restaurant restaurant;
     private LocalDateTime bookingDate;
@@ -17,7 +17,7 @@ public class Booking {
         this.customerId = customerId;
         this.bookingDate = bookingDate;
         this.optionalMessage = optionalMessage;
-        this.bookingId = createRandomBookingId();
+        bookingId++;
     }
 
     public long getBookingId() {
@@ -58,13 +58,12 @@ public class Booking {
 
     /**
      * This is a method that creates a random booking ID
-     *
      * @return random id
      */
-    private int createRandomBookingId() {
-        Random random = new Random();
-        return random.nextInt(0, 500);
-    }
+//    private int createRandomBookingId() {
+//        Random random = new Random();
+//        return random.nextInt(0, 500);
+//    }
 
     /**
      * This is a method that prints all the booking's details

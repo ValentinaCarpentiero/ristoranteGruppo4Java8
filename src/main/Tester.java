@@ -2,10 +2,7 @@ package main;
 
 import booking.BookingManager;
 import booking.Customer;
-import dishes.Dessert;
-import dishes.Drink;
-import dishes.FirstCourse;
-import dishes.SecondCourse;
+import dishes.*;
 import enums.*;
 import restaurant.Menu;
 import restaurant.Restaurant;
@@ -28,37 +25,57 @@ public class Tester {
      */
     public static void main(String[] args) {
 
+        /**
+         *  DISH LISTS CREATION
+         */
 
-        Menu menu1 = new Menu(Preferences.CARNIVOROUS, TypeOfMenu.DAILY, BasedOn.FISH);
-        Menu menu2 = new Menu(Preferences.VEGETARIAN, TypeOfMenu.SPECIAL,BasedOn.VEGETABLES);
-        Menu menu3 = new Menu(Preferences.VEGAN, TypeOfMenu.TASTING, BasedOn.VEGETABLES);
+        List<Dish> dishList1 = new ArrayList<>();
+        dishList1.add(new FirstCourse("First Course", "Spaghetti allo scoglio", Preferences.CARNIVOROUS,DietaryOptions.LOCALLY_PRODUCED, 12.55, "Spaghetti con vongole, cozze, calamari",true));
+        dishList1.add(new SecondCourse("Second Course", "Orata al forno con patate", Preferences.CARNIVOROUS,DietaryOptions.LOCALLY_PRODUCED, 17.00, "Orata","patate, rosmarino, aglio"));
+        dishList1.add(new Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, 6.50,"panna, zucchero",true));
+        dishList1.add(new Drink("Drink", "Vino Lapilli", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, "Base di chardonnay vinificato insieme ad altri vitigni della zona che conferiscono sapidità.", 16.00, 12.5,true));
+        
+        List<Dish> dishList2 = new ArrayList<>();
+        dishList2.add(new FirstCourse("First Course", "Orecchiette alle cime di rapa", Preferences.VEGETARIAN, DietaryOptions.LOCALLY_PRODUCED, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco",true));
+        dishList2.add(new SecondCourse("Second Course", "Burger di Soia", Preferences.VEGETARIAN, DietaryOptions.LACTOSE_FREE, 7.00, "Burger Vegetale alla Soia","Erba"));
+        dishList2.add(new Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, DietaryOptions.PEANUT_FREE,6.50,"Frutti di bosco",false));
+        dishList2.add(new Drink("Drink", "Coca Zero", Preferences.MIXED,DietaryOptions.LOCALLY_PRODUCED, "Coca cola senza zuccheri", 6.00, 0,false));
+        
+        List<Dish> dishList3 = new ArrayList<>();
+        dishList3.add(new FirstCourse("First Course", "Paccheri zucca e mandorle ", Preferences.VEGAN, DietaryOptions.LACTOSE_FREE, 10.50, "Paccheri , zucca, mandorle",true));
+        dishList3.add(new SecondCourse("Second Course", "Sushi avocado", Preferences.VEGAN, DietaryOptions.GLUTEN_FREE,7.50, "Riso, avocado, Spalmabile alla Soia","Alghe"));
+        dishList3.add(new Dessert("Dessert", "Vegan Souffle", Preferences.VEGAN,DietaryOptions.LACTOSE_FREE, 6.20,"Zucchero",false));
+        dishList3.add(new Drink("Drink", "Coca 0", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, "Coca cola senza zuccheri", 6.00, 0,false));
 
-        menu1.addDish(new FirstCourse("First Course", "Spaghetti allo scoglio", Preferences.CARNIVOROUS,DietaryOptions.LOCALLY_PRODUCED, 12.55, "Spaghetti con vongole, cozze, calamari",true));
-        menu1.addDish(new SecondCourse("Second Course", "Orata al forno con patate", Preferences.CARNIVOROUS,DietaryOptions.LOCALLY_PRODUCED, 17.00, "Orata","patate, rosmarino, aglio"));
-        menu1.addDish(new Dessert("Dessert", "Torta al cioccolato", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, 6.50,"panna, zucchero",true));
-        menu1.addDish(new Drink("Drink", "Vino Lapilli", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, "Base di chardonnay vinificato insieme ad altri vitigni della zona che conferiscono sapidità.", 16.00, 12.5,true));
+        /**
+         *  MENUS CREATION
+         */
 
-        menu2.addDish(new FirstCourse("First Course", "Orecchiette alle cime di rapa", Preferences.VEGETARIAN, DietaryOptions.LOCALLY_PRODUCED, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco",true));
-        menu2.addDish(new SecondCourse("Second Course", "Burger di Soia", Preferences.VEGETARIAN, DietaryOptions.LACTOSE_FREE, 7.00, "Burger Vegetale alla Soia","Erba"));
-        menu2.addDish(new Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, DietaryOptions.PEANUT_FREE,6.50,"Frutti di bosco",false));
-        menu2.addDish(new Drink("Drink", "Coca Zero", Preferences.MIXED,DietaryOptions.LOCALLY_PRODUCED, "Coca cola senza zuccheri", 6.00, 0,false));
-
-        menu3.addDish(new FirstCourse("First Course", "Paccheri zucca e mandorle ", Preferences.VEGAN, DietaryOptions.LACTOSE_FREE, 10.50, "Paccheri , zucca, mandorle",true));
-        menu3.addDish(new SecondCourse("Second Course", "Sushi avocado", Preferences.VEGAN, DietaryOptions.GLUTEN_FREE,7.50, "Riso, avocado, Spalmabile alla Soia","Alghe"));
-        menu3.addDish(new Dessert("Dessert", "Vegan Souffle", Preferences.VEGAN,DietaryOptions.LACTOSE_FREE, 6.20,"Zucchero",false));
-        menu3.addDish(new Drink("Drink", "Coca 0", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, "Coca cola senza zuccheri", 6.00, 0,false));
-
+        Menu menu1 = new Menu(Preferences.CARNIVOROUS, TypeOfMenu.DAILY, BasedOn.FISH,dishList1);
+        Menu menu2 = new Menu(Preferences.VEGETARIAN, TypeOfMenu.SPECIAL,BasedOn.VEGETABLES,dishList2);
+        Menu menu3 = new Menu(Preferences.VEGAN, TypeOfMenu.TASTING, BasedOn.VEGETABLES,dishList3);
+        
         List<Menu> menus = new ArrayList<>();
         menus.add(menu1);
         menus.add(menu2);
         menus.add(menu3);
+
+        /**
+         *  RESTAURANTS CREATION
+         */
+
         Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", "Java 8", menus, menu3.getDishList().get(1).getDishName(), 100,TableService.A_LA_CARTE,32,"Credit Card, WiFi, Air-Conditioning, Wheelchair Accessible, Free Parking",true, false);
         restaurant1.printRestaurantDetails();
 
+        /**
+         *  CUSTOMERS CREATION
+         */
 
         Customer customer= new Customer("Lebron", "James","345545741","TacoThursday66@gmail.com",Preferences.VEGETARIAN);
         Customer customer1= new Customer("Roger","Federer","334525458", "backmaster@gmail.nadal",Preferences.CARNIVOROUS);
         Customer customer2= new Customer("Ciro","Mertens","332253545","ciro@hotmail.com",Preferences.VEGAN);
+
+
         System.out.println();
         System.out.println("✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩");
 
@@ -82,16 +99,19 @@ public class Tester {
                 "░░░▀▀▄░░░░░░░░▄▐▄▄▄▀░░░\n" +
                 "░░░░░░░░░░░░░░░░░░░░░░░");
 
-       LocalDateTime today = LocalDateTime.now();
-       LocalDateTime tomorrow = today.plusDays(1);
 
-       BookingManager bookingManager = BookingManager.getInstance();
-       bookingManager.createBooking(customer1,restaurant1,today,7,"Nessuna richiesta");
-       bookingManager.createBooking(customer2,restaurant1,tomorrow,10,"Nessuna richiesta");
-       bookingManager.createBooking(customer,restaurant1,today,10,"Tavolo interno");
-       bookingManager.deleteBooking(customer2,today);
+        /**
+         *  BOOKINGS CREATION
+         */
 
-       bookingManager.printBookingList();
+        BookingManager bookingManager = BookingManager.getInstance();
+        bookingManager.createBooking(customer1, restaurant1, java.time.LocalDateTime.now(), 7, "Nessuna richiesta");
+        bookingManager.createBooking(customer2, restaurant1, java.time.LocalDateTime.of(2023,1,7,20,30,0), 10, "Nessuna richiesta");
+        bookingManager.createBooking(customer, restaurant1, java.time.LocalDateTime.of(2023,1,6,21,0,0), 10, "Tavolo interno");
+        bookingManager.printBookingList();
+        bookingManager.deleteBooking(customer1, java.time.LocalDateTime.now());
+
+//        bookingManager.printBookingList();
 
     }
 }
