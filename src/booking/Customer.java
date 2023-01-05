@@ -2,6 +2,8 @@ package booking;
 
 import enums.Preferences;
 
+import java.util.Random;
+
 /**
  * This class represents a Customer
  * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
@@ -27,13 +29,13 @@ public class Customer {
      * @param customerId      Customer identification number
      */
 
-    public Customer(String name, String surname, String telephoneNumber, String email, Preferences customerType, int customerId) {
+    public Customer(String name, String surname, String telephoneNumber, String email, Preferences customerType) {
         this.name = name;
         this.surname = surname;
         this.telephoneNumber = telephoneNumber;
         this.email = email;
         this.customerType = customerType;
-        this.customerId = customerId;
+        this.customerId = createRandomCustomerId();
     }
 
     /**
@@ -85,6 +87,16 @@ public class Customer {
     public void setCustomerId(int customerId) {
         this.customerId = customerId;
     }
+
+    /**
+     * This is a method that creates a random customer ID
+     * @return random id
+     */
+    private int createRandomCustomerId(){
+        Random random = new Random();
+        return random.nextInt(0,Integer.MAX_VALUE);
+    }
+
 
     /**
      * This is a method that prints all the customer's details

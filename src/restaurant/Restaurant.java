@@ -17,6 +17,7 @@ public class Restaurant {
     private boolean isOpen;
     private double averagePrice;
     private String recommendedDish;
+    private int seatingCapacity;
     private TableService tableService;
     private String services;
     private boolean hasHomeDelivery;
@@ -28,6 +29,7 @@ public class Restaurant {
      * @param address         Restaurant address
      * @param menu            Restaurant menu list
      * @param recommendedDish Restaurant chef's choice
+     * @param seatingCapacity Restaurant seating capacity
      * @param tableService    Restaurant plates service
      * @param averagePrice    Restaurant average bill's cost
      * @param services        Restaurant's services
@@ -35,13 +37,14 @@ public class Restaurant {
      * @param hasAllYouCanEat Boolean about restaurant all-you-can-eat form
      */
 
-    public Restaurant(String restaurantName, String address, List<Menu> menu, String recommendedDish, TableService tableService, double averagePrice, String services, boolean hasHomeDelivery, boolean hasAllYouCanEat) {
+    public Restaurant(String restaurantName, String address, List<Menu> menu, String recommendedDish,int seatingCapacity, TableService tableService, double averagePrice, String services, boolean hasHomeDelivery, boolean hasAllYouCanEat) {
         this.restaurantName = restaurantName;
         this.address = address;
         this.menu = menu;
         this.isOpen = true;
         this.averagePrice = averagePrice;
         this.recommendedDish = recommendedDish;
+        this.seatingCapacity = seatingCapacity;
         this.tableService = tableService;
         this.services = services;
         this.hasHomeDelivery = hasHomeDelivery;
@@ -138,6 +141,14 @@ public class Restaurant {
 
     public void setIsOpen(boolean open){
         isOpen = open;
+    }
+
+    public int getSeatingCapacity() {
+        return seatingCapacity;
+    }
+
+    public void setSeatingCapacity(int seatingCapacity) {
+        this.seatingCapacity = seatingCapacity;
     }
 
     /**

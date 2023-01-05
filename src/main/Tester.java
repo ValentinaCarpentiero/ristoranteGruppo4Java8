@@ -1,5 +1,6 @@
 package main;
 
+import booking.BookingManager;
 import booking.Customer;
 import dishes.Dessert;
 import dishes.Drink;
@@ -9,7 +10,10 @@ import enums.*;
 import restaurant.Menu;
 import restaurant.Restaurant;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -45,16 +49,16 @@ public class Tester {
         menu3.addDish(new Drink("Drink", "Coca 0", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, "Coca cola senza zuccheri", 6.00, 0,false));
 
         List<Menu> menus = new ArrayList<>();
-        menus.add (menu1);
-        menus.add (menu2);
-        menus.add (menu3);
-        Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", "Java 8", menus, menu3.getDishList().get(1).getDishName(), TableService.A_LA_CARTE,32,"Credit Card, WiFi, Air-Conditioning, Wheelchair Accessible, Free Parking",true, false);
+        menus.add(menu1);
+        menus.add(menu2);
+        menus.add(menu3);
+        Restaurant restaurant1 = new Restaurant("Ristorante Gruppo 4", "Java 8", menus, menu3.getDishList().get(1).getDishName(), 100,TableService.A_LA_CARTE,32,"Credit Card, WiFi, Air-Conditioning, Wheelchair Accessible, Free Parking",true, false);
         restaurant1.printRestaurantDetails();
 
 
-        Customer customer = new Customer("Lebron", "James","345545741","TacoThursday66@gmail.com",Preferences.VEGETARIAN, 12);
-        Customer customer1= new Customer ( "Roger","Federer","334525458", "backmaster@gmail.nadal",Preferences.CARNIVOROUS,342);
-        Customer customer2= new Customer ( "Ciro","Mertens","332253545","ciro@hotmail.com",Preferences.VEGAN,666);
+        Customer customer= new Customer("Lebron", "James","345545741","TacoThursday66@gmail.com",Preferences.VEGETARIAN);
+        Customer customer1= new Customer("Roger","Federer","334525458", "backmaster@gmail.nadal",Preferences.CARNIVOROUS);
+        Customer customer2= new Customer("Ciro","Mertens","332253545","ciro@hotmail.com",Preferences.VEGAN);
         System.out.println();
         System.out.println("✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩ ✩｡:*•.─────  ❁ ❁  ─────.•*:｡✩");
 
@@ -77,6 +81,17 @@ public class Tester {
                 "░░▐█▐▄░░▀░░░░░░▐░█▄▄░░░\n" +
                 "░░░▀▀▄░░░░░░░░▄▐▄▄▄▀░░░\n" +
                 "░░░░░░░░░░░░░░░░░░░░░░░");
+
+       LocalDateTime today = LocalDateTime.now();
+       LocalDateTime tomorrow = today.plusDays(1);
+
+       BookingManager bookingManager = BookingManager.getInstance();
+       bookingManager.createBooking(customer1,restaurant1,today,7,"Nessuna richiesta");
+       bookingManager.createBooking(customer2,restaurant1,tomorrow,10,"Nessuna richiesta");
+       bookingManager.createBooking(customer,restaurant1,today,10,"Tavolo interno");
+       bookingManager.deleteBooking(customer2,today);
+
+       bookingManager.printBookingList();
 
     }
 }
