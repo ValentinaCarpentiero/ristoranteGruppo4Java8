@@ -39,13 +39,13 @@ public class Tester {
         menu1.addDish(new Drink("Drink", "Vino Lapilli", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, "Base di chardonnay vinificato insieme ad altri vitigni della zona che conferiscono sapidità.", 16.00, 12.5,true));
 
         menu2.addDish(new FirstCourse("First Course", "Orecchiette alle cime di rapa", Preferences.VEGETARIAN, DietaryOptions.LOCALLY_PRODUCED, 10.50, "Orecchiette, Aglio, Cime di Rapa,Peperone Crusco",true));
-        menu2.addDish(new SecondCourse("Second Course", "Burger di Soia", Preferences.VEGETARIAN, DietaryOptions.LACTOSE_INTOLERANCE, 7.00, "Burger Vegetale alla Soia","Erba"));
-        menu2.addDish(new Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, DietaryOptions.PEANUT_ALLERGY ,6.50,"Frutti di bosco",false));
+        menu2.addDish(new SecondCourse("Second Course", "Burger di Soia", Preferences.VEGETARIAN, DietaryOptions.LACTOSE_FREE, 7.00, "Burger Vegetale alla Soia","Erba"));
+        menu2.addDish(new Dessert("Dessert", "Cheesecake Frutti di Bosco", Preferences.MIXED, DietaryOptions.PEANUT_FREE,6.50,"Frutti di bosco",false));
         menu2.addDish(new Drink("Drink", "Coca Zero", Preferences.MIXED,DietaryOptions.LOCALLY_PRODUCED, "Coca cola senza zuccheri", 6.00, 0,false));
 
-        menu3.addDish(new FirstCourse("First Course", "Paccheri zucca e mandorle ", Preferences.VEGAN, DietaryOptions.LACTOSE_INTOLERANCE, 10.50, "Paccheri , zucca, mandorle",true));
+        menu3.addDish(new FirstCourse("First Course", "Paccheri zucca e mandorle ", Preferences.VEGAN, DietaryOptions.LACTOSE_FREE, 10.50, "Paccheri , zucca, mandorle",true));
         menu3.addDish(new SecondCourse("Second Course", "Sushi avocado", Preferences.VEGAN, DietaryOptions.GLUTEN_FREE,7.50, "Riso, avocado, Spalmabile alla Soia","Alghe"));
-        menu3.addDish(new Dessert("Dessert", "Vegan Souffle", Preferences.VEGAN,DietaryOptions.LACTOSE_INTOLERANCE, 6.20,"Zucchero",false));
+        menu3.addDish(new Dessert("Dessert", "Vegan Souffle", Preferences.VEGAN,DietaryOptions.LACTOSE_FREE, 6.20,"Zucchero",false));
         menu3.addDish(new Drink("Drink", "Coca 0", Preferences.MIXED, DietaryOptions.LOCALLY_PRODUCED, "Coca cola senza zuccheri", 6.00, 0,false));
 
         List<Menu> menus = new ArrayList<>();
