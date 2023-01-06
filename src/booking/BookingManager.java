@@ -87,15 +87,14 @@ public class BookingManager {
 
     // Metodo per ottenere il numero di posti disponibili per una determinata data e ristorante
     public int getAvailableSeats(LocalDateTime time, Restaurant restaurant) {
-        int bookedTables = 0; // Contatore per il numero di tavoli prenotati
+        int bookedSeats = 0; // Contatore per il numero di posti prenotati
         for (Booking booking : bookingList) { // Per ogni prenotazione nella lista
             if (booking.getBookingDate().equals(time)) { // Se la prenotazione ha luogo nella data specificata
-                bookedTables += booking.getGroupSize(); // Aggiungi il numero di persone del gruppo della prenotazione al contatore
+                bookedSeats += booking.getGroupSize(); // Aggiungi il numero di persone del gruppo della prenotazione al contatore
             }
         }
-        return restaurant.getSeatingCapacity() - bookedTables; // Restituisci la capienza del ristorante meno il numero di tavoli prenotati
+        return restaurant.getSeatingCapacity() - bookedSeats; // Restituisci la capienza del ristorante meno il numero di posti prenotati
     }
-
 
     public void printBookingList(){
         System.out.println("BOOKING LIST.\nBookings present: "+bookingList.size());
