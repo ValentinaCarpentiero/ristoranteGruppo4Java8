@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/booking/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/booking/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/booking/BookingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/booking/BookingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/booking/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/booking/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,13 +43,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/TeamProject4/ristoranteGruppo4Java8&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/valen/IdeaProjects/ristoranteGruppo4Java8"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\valen\IdeaProjects\ristoranteGruppo4Java8\.idea" />
@@ -101,19 +105,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fixed TODO in Menu class" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/booking/BookingManager.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="restaurant.Restaurant" memberName="menu" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="restaurant.seatingCapacity" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

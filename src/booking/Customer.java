@@ -90,14 +90,15 @@ public class Customer {
     }
 
     /**
-     * This is a method that creates a random customer ID
-     * @return random id
+     * Generates and returns a random customer identifier.
+     *
+     * @return the random cistp,er identifier
      */
+
     private int createRandomCustomerId(){
         Random random = new Random();
         return random.nextInt(0,Integer.MAX_VALUE);
     }
-
 
     /**
      * This is a method that prints all the customer's details

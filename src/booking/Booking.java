@@ -6,19 +6,38 @@ import java.time.LocalDateTime;
 import java.util.Random;
 
 public class Booking {
-    private static int bookingId;
+    private int bookingId;
     private int customerId;
     private Restaurant restaurant;
     private LocalDateTime bookingDate;
+    private int groupSize;
     private String optionalMessage;
 
-    public Booking(Restaurant restaurant, int customerId, LocalDateTime bookingDate, String optionalMessage) {
+
+    /**
+     * Booking constructor that takes the following parameters:
+     *
+     * @param restaurant      the restaurant where the booking was made
+     * @param customerId      the unique identifier of the customer who made the booking
+     * @param bookingDate     the date and time of the booking
+     * @param groupSize       the number of people in the group for this booking
+     * @param optionalMessage an optional message associated with this booking
+     */
+
+
+    public Booking(Restaurant restaurant, int customerId, LocalDateTime bookingDate, int groupSize, String optionalMessage) {
         this.restaurant = restaurant;
         this.customerId = customerId;
         this.bookingDate = bookingDate;
+        this.groupSize = groupSize;
         this.optionalMessage = optionalMessage;
-        bookingId++;
+        this.bookingId = createRandomBookingId();
     }
+
+    /**
+     *The following methods are getters and setters for each variable
+     */
+
 
     public long getBookingId() {
         return bookingId;
@@ -56,18 +75,33 @@ public class Booking {
         this.optionalMessage = optionalMessage;
     }
 
+    public void setBookingId(int bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public int getGroupSize() {
+        return groupSize;
+    }
+
+    public void setGroupSize(int groupSize) {
+        this.groupSize = groupSize;
+    }
+
     /**
-     * This is a method that creates a random booking ID
-     * @return random id
+     * Generates and returns a random booking identifier.
+     *
+     * @return the random booking identifier
      */
-//    private int createRandomBookingId() {
-//        Random random = new Random();
-//        return random.nextInt(0, 500);
-//    }
+
+    private int createRandomBookingId() {
+        Random random = new Random();
+        return random.nextInt(0, 500);
+    }
 
     /**
      * This is a method that prints all the booking's details
      */
+
     public void printBookingDetails() {
         System.out.println("Booking nr." + getBookingId() +
                 " - restaurant: " + restaurant.getRestaurantName() +
