@@ -46,14 +46,16 @@ public class BookingManager {
             if (bookingToDelete.getBookingDate() == bookingDate) {
                 bookingList.remove(customer);
                 capacityAvailable.remove(bookingToDelete.getBookingDate());
-                System.out.format("Booking nr "+bookingToDelete.getBookingId()+
+                System.out.println("Booking nr "+bookingToDelete.getBookingId()+
                                   " under the name "+ customer.getSurname()+
                                   " on date "+ bookingToDelete.getBookingDate()+
                                   " deleted."
                 );
+            }else {
+                System.out.println("Booking not found.");
             }
         }
-        System.out.println("Booking not found.");
+
     }
 
 

@@ -104,14 +104,16 @@ public class Tester {
          *  BOOKINGS CREATION
          */
 
-        BookingManager bookingManager = BookingManager.getInstance();
-        bookingManager.createBooking(customer1, restaurant1, java.time.LocalDateTime.now(), 7, "Nessuna richiesta");
-        bookingManager.createBooking(customer2, restaurant1, java.time.LocalDateTime.of(2023,1,7,20,30,0), 10, "Nessuna richiesta");
-        bookingManager.createBooking(customer, restaurant1, java.time.LocalDateTime.of(2023,1,6,21,0,0), 10, "Tavolo interno");
-        bookingManager.printBookingList();
-        bookingManager.deleteBooking(customer1, java.time.LocalDateTime.now());
+        LocalDateTime today = LocalDateTime.now();
+        LocalDateTime tomorrow = today.plusDays(1);
 
-//        bookingManager.printBookingList();
+        BookingManager bookingManager = BookingManager.getInstance();
+        bookingManager.createBooking(customer1, restaurant1, today , 7, "Nessuna richiesta");
+        bookingManager.createBooking(customer2, restaurant1, tomorrow, 10, "Nessuna richiesta");
+        bookingManager.createBooking(customer, restaurant1,today , 10, "Tavolo interno");
+        bookingManager.deleteBooking(customer1, today);
+
+        bookingManager.printBookingList();
 
     }
 }
