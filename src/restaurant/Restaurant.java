@@ -1,9 +1,7 @@
 package restaurant;
 
 import booking.Customer;
-import dishes.Dish;
-
-import java.util.Arrays;
+import enums.TableService;
 import java.util.List;
 
 /**
@@ -12,32 +10,14 @@ import java.util.List;
  */
 public class Restaurant {
 
-    /**
-     * This enum describes how restaurant serves dishes
-     */
 
-    public enum TableService {
-        BUFFET ("Buffet"),
-        A_LA_CARTE ("À la carte");
-
-        private final String description;
-
-        TableService(String description) {
-
-            this.description = description;
-        }
-
-        public String getDescription() {
-            return description;
-        }
-
-    }
     private String restaurantName;
     private String address;
     private List<Menu> menu;
     private boolean isOpen;
     private double averagePrice;
     private String recommendedDish;
+    private int seatingCapacity;
     private TableService tableService;
     private String services;
     private boolean hasHomeDelivery;
@@ -49,6 +29,7 @@ public class Restaurant {
      * @param address         Restaurant address
      * @param menu            Restaurant menu list
      * @param recommendedDish Restaurant chef's choice
+     * @param seatingCapacity Restaurant seating capacity
      * @param tableService    Restaurant plates service
      * @param averagePrice    Restaurant average bill's cost
      * @param services        Restaurant's services
@@ -56,13 +37,14 @@ public class Restaurant {
      * @param hasAllYouCanEat Boolean about restaurant all-you-can-eat form
      */
 
-    public Restaurant(String restaurantName, String address, List<Menu> menu, String recommendedDish, TableService tableService, double averagePrice, String services, boolean hasHomeDelivery, boolean hasAllYouCanEat) {
+    public Restaurant(String restaurantName, String address, List<Menu> menu, String recommendedDish,int seatingCapacity, TableService tableService, double averagePrice, String services, boolean hasHomeDelivery, boolean hasAllYouCanEat) {
         this.restaurantName = restaurantName;
         this.address = address;
         this.menu = menu;
         this.isOpen = true;
         this.averagePrice = averagePrice;
         this.recommendedDish = recommendedDish;
+        this.seatingCapacity = seatingCapacity;
         this.tableService = tableService;
         this.services = services;
         this.hasHomeDelivery = hasHomeDelivery;
@@ -161,6 +143,14 @@ public class Restaurant {
         isOpen = open;
     }
 
+    public int getSeatingCapacity() {
+        return seatingCapacity;
+    }
+
+    public void setSeatingCapacity(int seatingCapacity) {
+        this.seatingCapacity = seatingCapacity;
+    }
+
     /**
      * This is a method that prints the details of the restaurant
      */
@@ -184,7 +174,7 @@ public class Restaurant {
 
     public void printMenu(Customer customer) {
         for (Menu singleMenu : menu){
-            if (singleMenu.getDietaryOptions() == customer.getCustomerType()) {
+            if (singleMenu.getMenuPreferences() == customer.getCustomerPreferences()) {
                 singleMenu.printMenu();
             }
         }

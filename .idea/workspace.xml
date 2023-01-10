@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="989113cf-6555-43c3-8d71-3c78238548c4" name="Changes" comment="Fixed out source">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dessert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dessert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dishes/FirstCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dishes/FirstCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/booking/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/booking/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/booking/BookingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/booking/BookingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/booking/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/booking/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="featureDevelhope" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,13 +43,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/valentinacarpentiero/ristoranteGruppo4Java8&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/valen/IdeaProjects/ristoranteGruppo4Java8"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\valen\IdeaProjects\ristoranteGruppo4Java8\.idea" />
@@ -89,7 +88,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="developFeature" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -111,5 +110,10 @@
         <PinnedItemInfo parentTag="restaurant.Restaurant" memberName="menu" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="restaurant.seatingCapacity" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

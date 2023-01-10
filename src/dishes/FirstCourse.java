@@ -1,6 +1,7 @@
 package dishes;
 
-import restaurant.Preferences;
+import enums.DietaryOptions;
+import enums.Preferences;
 
 /**
  * This class represents a first course and extends the Dish class
@@ -21,8 +22,8 @@ public class FirstCourse extends Dish {
      * @param isPastaFresca Boolean about pasta production
      */
 
-    public FirstCourse(String course, String dishName, Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, boolean isPastaFresca){
-        super(course, dishName, dishType, dietaryOptions, price, ingredients);
+    public FirstCourse(String course, String dishName, Preferences dishType, DietaryOptions dietaryOptions, double price, String ingredients, boolean isPastaFresca){
+        super(course, dishName, dishType, dietaryOptions, ingredients, price);
         this.isPastaFresca = isPastaFresca;
 
     }

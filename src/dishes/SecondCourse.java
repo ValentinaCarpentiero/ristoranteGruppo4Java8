@@ -1,6 +1,7 @@
 package dishes;
 
-import restaurant.Preferences;
+import enums.DietaryOptions;
+import enums.Preferences;
 
 /**
  * This class represents a second course and extends the Dish class
@@ -19,8 +20,8 @@ public class SecondCourse extends Dish {
      * @param sideDish  Second's side dish
      */
 
-    public SecondCourse(String course, String dishName,Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, String sideDish) {
-        super(course, dishName, dishType, dietaryOptions, price, ingredients);
+    public SecondCourse(String course, String dishName, Preferences dishType, DietaryOptions dietaryOptions, double price, String ingredients, String sideDish) {
+        super(course, dishName, dishType, dietaryOptions, ingredients, price);
         this.sideDish = sideDish;
     }
 

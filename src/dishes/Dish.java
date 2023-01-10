@@ -1,26 +1,13 @@
 package dishes;
 
-import restaurant.Preferences;
+import enums.DietaryOptions;
+import enums.Preferences;
 
 /**
  * This class represents a general Dish
  * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 public class Dish {
-
-    /**
-     * This enum provides type of special diets
-     */
-
-    //TODO facciamo una classe apposita? e ci mettiamo la descrizione e altri parametri d'info ?
-    public enum DietaryOptions{
-        LACTOSE_INTOLERANCE,
-        GLUTEN_FREE,
-        NUT_ALLERGIES,
-        LOCALLY_PRODUCED,
-        PEANUT_ALLERGY,
-        FISH_ALLERGIES
-    }
 
     private double dishPrice;
     private String dishName;
@@ -31,25 +18,15 @@ public class Dish {
 
     /**
      * Dish constructor that takes the following parameters:
-     * @param course Course type
-     * @param dishName Dish name
-     * @param dishType Dish type
-     * @param dishPrice Dish price
-     */
-    public Dish(String course,String dishName, Preferences dishType, double dishPrice){
-        this.course = course;
-        this.dishName = dishName;
-        this.dishType = dishType;
-        this.dishPrice = dishPrice;
-    }
-
-    /**
-     * Dish  overloaded constructor that takes this different parameter:
+     * @param course         Course type
+     * @param dishName       Dish name
+     * @param dishType       Dish type
+     * @param dishPrice      Dish price
      * @param dietaryOptions Type of special diets
      * @param ingredients    Dish ingredients
      */
-    //TODO siamo sicuri di fare due costruttori?
-    public Dish(String course, String dishName,Preferences dishType, DietaryOptions dietaryOptions, double dishPrice,String ingredients){
+
+    public Dish(String course, String dishName,Preferences dishType, DietaryOptions dietaryOptions, String ingredients, double dishPrice){
         this.dishPrice = dishPrice;
         this.dishName = dishName;
         this.dishType = dishType;
@@ -59,7 +36,7 @@ public class Dish {
     }
 
     /**
-     *The following methods are getters and setters for each instance variables
+     *The following methods are getters and setters for each variable
      */
     public double getDishPrice() {
         return dishPrice;
@@ -109,7 +86,7 @@ public class Dish {
     }
 
     /**
-     * This is a method that prints the details of the dish that will be overridden
+     * This is a method that prints the details of the dish that will be overridden in the subclasses
      */
     public void printDishDetail() {
         System.out.println("### "+this.course

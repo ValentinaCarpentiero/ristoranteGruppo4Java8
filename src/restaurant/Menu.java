@@ -1,6 +1,10 @@
 package restaurant;
 
 import dishes.Dish;
+import enums.BasedOn;
+import enums.Preferences;
+import enums.TypeOfMenu;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,54 +14,22 @@ import java.util.List;
  */
 public class Menu {
 
-    /**
-     * This enum describes the base of the menu
-     */
-    public enum BasedOn{
-        FISH,
-        MEAT,
-        VEGETABLES
-    }
-
-    /**
-     * This enum describes the type of menu
-     */
-
-    public enum Type {
-        SPECIAL("Special Menu"),
-        CHILDREN("Children Menu"),
-        TASTING("Menu of several bite-sized dishes"),
-        DAILY("Menu of the day");
-
-        private final String description;
-
-        Type(String description) {
-
-            this.description = description;
-        }
-
-        public String getDescription() {
-            return description;
-        }
-    }
-
-    private Preferences dietaryOptions;
+    private Preferences menuPreferences;
     private BasedOn basedOn;
-    private Type menuType;
-    private boolean isMenuSpecial;
+    private TypeOfMenu menuType;
     private List<Dish> dishList;
 
     /**
      *
-     * @param dietaryOptions Type of special diets
-     * @param menuType       Type of menu
-     * @param basedOn        Menu base
+     * @param menuPreferences Type of special diets
+     * @param menuType        Type of menu
+     * @param basedOn         Menu base
      */
-    public Menu(Preferences dietaryOptions, Type menuType, BasedOn basedOn) {
-        this.dietaryOptions = dietaryOptions;
+    public Menu(Preferences menuPreferences, TypeOfMenu menuType, BasedOn basedOn, List<Dish> dishList) {
+        this.menuPreferences = menuPreferences;
         this.menuType = menuType;
         this.basedOn = basedOn;
-        this.dishList = new ArrayList<>();
+        this.dishList = dishList;
     }
 
     /**
@@ -72,20 +44,20 @@ public class Menu {
         this.dishList = dishList;
     }
 
-    public Type getMenuType() {
+    public TypeOfMenu getMenuType() {
         return menuType;
     }
 
-    public void setMenuType(Type menuType) {
+    public void setMenuType(TypeOfMenu menuType) {
         this.menuType = menuType;
     }
 
-    public Preferences getDietaryOptions() {
-        return dietaryOptions;
+    public Preferences getMenuPreferences() {
+        return menuPreferences;
     }
 
-    public void setDietaryOptions(Preferences dietaryOptions) {
-        this.dietaryOptions = dietaryOptions;
+    public void setMenuPreferences(Preferences menuPreferences) {
+        this.menuPreferences = menuPreferences;
     }
 
     public BasedOn getBasedOn() {
@@ -97,24 +69,6 @@ public class Menu {
     }
 
     /**
-     * This method add a dish to the dish list and takes a parameter
-     * @param dish dish to add
-     */
-
-    public void addDish(Dish dish){
-        dishList.add(dish);
-    }
-
-    /**
-     * This method remove a dish to the dish list and takes a parameter
-     * @param dish dish to remove
-     */
-
-    public void removeDish(Dish dish){
-        dishList.remove(dish);
-    }
-
-    /**
      * This method prints all menu's details and each dish
      */
 
@@ -122,7 +76,7 @@ public class Menu {
         System.out.println(this.menuType
                            +"\n"+ this.menuType.getDescription()
                            +"\nMenu based on "+this.basedOn.toString().toLowerCase()
-                           +"\nDietary options: "+this.dietaryOptions.toString().toLowerCase()+"\n"
+                           +"\nDietary options: "+this.menuPreferences.toString().toLowerCase()+"\n"
                            );
         for (Dish dish : dishList) {
             dish.printDishDetail();

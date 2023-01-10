@@ -1,10 +1,11 @@
 package dishes;
 
-import restaurant.Preferences;
+import enums.DietaryOptions;
+import enums.Preferences;
 
 /**
  * This class represents a Dessert and extends the Dish class
- * @author Valentina Carpentiero , Alvise Zingales , Daniele Caramanica
+ * @author Valentina Carpentiero, Alvise Zingales, Daniele Caramanica
  */
 public class Dessert extends Dish {
 
@@ -20,13 +21,13 @@ public class Dessert extends Dish {
      * @param isHomeMade     Type of Dessert's production
      */
 
-    public Dessert(String course, String dishName, Preferences dishType,DietaryOptions dietaryOptions, double price, String ingredients, boolean isHomeMade) {
-        super(course, dishName,dishType,dietaryOptions, price, ingredients);
+    public Dessert(String course, String dishName, Preferences dishType, DietaryOptions dietaryOptions, double price, String ingredients, boolean isHomeMade) {
+        super(course, dishName,dishType,dietaryOptions,ingredients, price);
         this.isHomeMade = isHomeMade;
     }
 
     /**
-     * This is an override method from the Dish class that prints the details of the dish
+     * This is an override method from the Dish class that prints the details of the dessert
      */
     @Override
     public void printDishDetail() {
