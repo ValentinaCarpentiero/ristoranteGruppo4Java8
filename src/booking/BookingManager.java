@@ -93,7 +93,7 @@ public class BookingManager {
                 bookedSeats += booking.getGroupSize(); // Aggiungi il numero di persone del gruppo della prenotazione al contatore
             }
         }
-        return restaurant.getSeatingCapacity() - bookedSeats; // Restituisci la capienza del ristorante meno il numero di posti prenotati
+        return restaurant.getMaxTableCapacity() - bookedSeats; // Restituisci la capienza del ristorante meno il numero di posti prenotati
     }
 
     public void printBookingList(){

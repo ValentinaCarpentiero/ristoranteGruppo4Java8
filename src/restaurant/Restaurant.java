@@ -1,7 +1,11 @@
 package restaurant;
 
+import booking.Booking;
 import booking.Customer;
+import enums.TablePosition;
 import enums.TableService;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,6 +14,7 @@ import java.util.List;
  */
 public class Restaurant {
 
+    private static Integer idTavolo = 0;
 
     private String restaurantName;
     private String address;
@@ -17,11 +22,17 @@ public class Restaurant {
     private boolean isOpen;
     private double averagePrice;
     private String recommendedDish;
-    private int seatingCapacity;
     private TableService tableService;
     private String services;
     private boolean hasHomeDelivery;
     private boolean hasAllYouCanEat;
+
+    private List<Customer> customerList = new ArrayList<>();
+
+    private List<Table> tableList = new ArrayList<>();
+
+    //TODO guardare a giro e sistemare
+    private Integer maxTableCapacity;
 
     /**
      * Restaurant constructor that takes the following parameters:
@@ -44,7 +55,7 @@ public class Restaurant {
         this.isOpen = true;
         this.averagePrice = averagePrice;
         this.recommendedDish = recommendedDish;
-        this.seatingCapacity = seatingCapacity;
+        this.maxTableCapacity = seatingCapacity;
         this.tableService = tableService;
         this.services = services;
         this.hasHomeDelivery = hasHomeDelivery;
@@ -143,12 +154,12 @@ public class Restaurant {
         isOpen = open;
     }
 
-    public int getSeatingCapacity() {
-        return seatingCapacity;
+    public int getMaxTableCapacity() {
+        return maxTableCapacity;
     }
 
-    public void setSeatingCapacity(int seatingCapacity) {
-        this.seatingCapacity = seatingCapacity;
+    public void setMaxTableCapacity(int maxTableCapacity) {
+        this.maxTableCapacity = maxTableCapacity;
     }
 
     /**
@@ -178,6 +189,26 @@ public class Restaurant {
                 singleMenu.printMenu();
             }
         }
+    }
+
+    public void prenota(Customer customer){
+
+        if (tableList.size() < maxTableCapacity){
+            Table table = new Table(idTavolo,customer.getNumberOfPeople(), TablePosition.INDOOR);
+            tableList.add(table);
+            customerList.add(customer);
+            idTavolo++;
+            //TODO completare
+            Booking booking = new Booking();
+            bookingList.add(booking);
+        }
+    }
+
+    public void pagaConto(Customer cliente){
+
+        customerList.remove(cliente);
+
+
     }
 }
 
