@@ -18,21 +18,19 @@ public class Restaurant {
 
     private String restaurantName;
     private String address;
-    private List<Menu> menu;
     private boolean isOpen;
+    private int seatingCapacity;
     private double averagePrice;
     private String recommendedDish;
     private TableService tableService;
     private String services;
     private boolean hasHomeDelivery;
     private boolean hasAllYouCanEat;
-
+    private List<Menu> menu;
     private List<Customer> customerList = new ArrayList<>();
-
+    private List<Booking> bookingList;
     private List<Table> tableList = new ArrayList<>();
 
-    //TODO guardare a giro e sistemare
-    private Integer maxTableCapacity;
 
     /**
      * Restaurant constructor that takes the following parameters:
@@ -55,7 +53,7 @@ public class Restaurant {
         this.isOpen = true;
         this.averagePrice = averagePrice;
         this.recommendedDish = recommendedDish;
-        this.maxTableCapacity = seatingCapacity;
+        this.seatingCapacity = seatingCapacity;
         this.tableService = tableService;
         this.services = services;
         this.hasHomeDelivery = hasHomeDelivery;
@@ -154,12 +152,16 @@ public class Restaurant {
         isOpen = open;
     }
 
-    public int getMaxTableCapacity() {
-        return maxTableCapacity;
+    public int getSeatingCapacity() {
+        return seatingCapacity;
     }
 
-    public void setMaxTableCapacity(int maxTableCapacity) {
-        this.maxTableCapacity = maxTableCapacity;
+    public void setSeatingCapacity(int seatingCapacity) {
+        this.seatingCapacity = seatingCapacity;
+    }
+
+    public void setBookingList(List<Booking> bookingList) {
+        this.bookingList = bookingList;
     }
 
     /**
@@ -193,8 +195,8 @@ public class Restaurant {
 
     public void prenota(Customer customer){
 
-        if (tableList.size() < maxTableCapacity){
-            Table table = new Table(idTavolo,customer.getNumberOfPeople(), TablePosition.INDOOR);
+        if (tableList.size() < seatingCapacity){
+            Table table = new Table(idTavolo, customer.getGroupSize(), TablePosition.INDOOR);
             tableList.add(table);
             customerList.add(customer);
             idTavolo++;

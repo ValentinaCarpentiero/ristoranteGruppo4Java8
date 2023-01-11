@@ -17,6 +17,7 @@ public class Customer {
     private String email;
     private Preferences customerPreferences;
     private int customerId;
+    private int groupSize;
 
     /**
      * Customer constructor that takes the following parameters:
@@ -26,16 +27,18 @@ public class Customer {
      * @param telephoneNumber      Customer telephone number
      * @param email                Customer email
      * @param customerPreferences  Customer's food preferences
+     *
 
      */
 
 
-    public Customer(String name, String surname, String telephoneNumber, String email, Preferences customerPreferences) {
+    public Customer(String name, String surname, String telephoneNumber, String email, Preferences customerPreferences, int groupSize) {
         this.name = name;
         this.surname = surname;
         this.telephoneNumber = telephoneNumber;
         this.email = email;
         this.customerPreferences = customerPreferences;
+        this.groupSize = groupSize;
         this.customerId = createRandomCustomerId();
     }
 
@@ -89,6 +92,14 @@ public class Customer {
         this.customerId = customerId;
     }
 
+    public int getGroupSize() {
+        return groupSize;
+    }
+
+    public void setGroupSize(int groupSize) {
+        this.groupSize = groupSize;
+    }
+
     /**
      * Generates and returns a random customer identifier.
      *
@@ -107,8 +118,4 @@ public class Customer {
         System.out.println ("Customer ID "+this.customerId+"- Name: " + this.name +" Surname: "+this.surname+ " Telephone-number: " + this.telephoneNumber +" Email: " + this.email + " Preferences: " + this.customerPreferences);
     }
 
-    //TODO creare un nuovo field
-    public Integer getNumberOfPeople() {
-        return 0;
-    }
 }
