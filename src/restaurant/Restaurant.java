@@ -212,7 +212,19 @@ public class Restaurant {
     public void payCount(Customer customer){
         System.out.println ("€€€€€€ Thanks €€€€€€ have a good day!" + customer.getName ()+ " " + customer.getSurname ());
         customerList.remove(customer);
+    }
 
+    public void deleteBooking(Customer customer) {
+        for (int i = 0; i < bookingList.size (); i++){
+            Booking bookingToDelete = bookingList.get(i);
+            if (bookingToDelete.getCustomerId () == customer.getCustomerId ()){
+                bookingList.remove(i);
+                System.out.println ("Booking nr " + bookingToDelete.getBookingId () +
+                        " under the name " + customer.getSurname () +
+                        " on date " + bookingToDelete.getBookingDate () +
+                        " deleted.");
+            }
+        }
     }
 }
 
