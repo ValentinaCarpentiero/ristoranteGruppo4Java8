@@ -1,6 +1,5 @@
 package main;
 
-import booking.BookingManager;
 import booking.Customer;
 import dishes.*;
 import enums.*;
@@ -71,9 +70,9 @@ public class Tester {
          *  CUSTOMERS CREATION
          */
 
-        Customer customer= new Customer("Lebron", "James","345545741","TacoThursday66@gmail.com",Preferences.VEGETARIAN);
-        Customer customer1= new Customer("Roger","Federer","334525458", "backmaster@gmail.nadal",Preferences.CARNIVOROUS);
-        Customer customer2= new Customer("Ciro","Mertens","332253545","ciro@hotmail.com",Preferences.VEGAN);
+        Customer customer= new Customer("Lebron", "James","345545741","TacoThursday66@gmail.com",Preferences.VEGETARIAN,5);
+        Customer customer1= new Customer("Roger","Federer","334525458", "backmaster@gmail.nadal",Preferences.CARNIVOROUS,7);
+        Customer customer2= new Customer("Ciro","Mertens","332253545","ciro@hotmail.com",Preferences.VEGAN,8);
 
 
         System.out.println();
@@ -104,7 +103,9 @@ public class Tester {
          *  BOOKINGS CREATION
          */
 
-        LocalDateTime today = LocalDateTime.now();
+        restaurant1.prenotation (customer1);
+        
+       /* LocalDateTime today = LocalDateTime.now();
         LocalDateTime tomorrow = today.plusDays(1);
 
         BookingManager bookingManager = BookingManager.getInstance();
@@ -119,6 +120,10 @@ public class Tester {
         bookingManager.modifyBooking(customer,today,tomorrow,10);
         System.out.println(bookingManager.getAvailableSeats(today,restaurant1));;
         bookingManager.printBookingList();
+
+        */
+
+
 
     }
 }

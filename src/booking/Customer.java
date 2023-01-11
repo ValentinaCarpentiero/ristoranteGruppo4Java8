@@ -17,8 +17,6 @@ public class Customer {
     private String telephoneNumber;
     private String email;
     private Preferences customerPreferences;
-
-    private Payement payementType;
     private int customerId;
     private int groupSize;
 
@@ -120,5 +118,6 @@ public class Customer {
     public void printCustomerDetails() {
         System.out.println ("Customer ID "+this.customerId+"- Name: " + this.name +" Surname: "+this.surname+ " Telephone-number: " + this.telephoneNumber +" Email: " + this.email + " Preferences: " + this.customerPreferences);
     }
+
 
 }

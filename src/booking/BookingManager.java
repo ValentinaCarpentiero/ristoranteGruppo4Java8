@@ -1,3 +1,4 @@
+/*
 package booking;
 
 import booking.Booking;
@@ -105,3 +106,6 @@ public class BookingManager {
         }
     }
 }
+
+*/
+

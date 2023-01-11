@@ -5,6 +5,7 @@ import booking.Customer;
 import enums.TablePosition;
 import enums.TableService;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,8 +29,10 @@ public class Restaurant {
     private boolean hasAllYouCanEat;
     private List<Menu> menu;
     private List<Customer> customerList = new ArrayList<>();
-    private List<Booking> bookingList;
+    private List<Booking> bookingList = new ArrayList<> ();
     private List<Table> tableList = new ArrayList<>();
+
+    private LocalDateTime today = LocalDateTime.now();
 
 
     /**
@@ -193,24 +196,22 @@ public class Restaurant {
         }
     }
 
-    public void prenota(Customer customer){
-
-        if (tableList.size() < seatingCapacity){
-            Table table = new Table(idTavolo, customer.getGroupSize(), TablePosition.INDOOR);
-            tableList.add(table);
-            customerList.add(customer);
+    public void prenotation(Customer customer) {
+        if (tableList.size () < seatingCapacity) {
+            Table table = new Table ( idTavolo, customer.getGroupSize (), TablePosition.INDOOR );
+            tableList.add ( table );
+            customerList.add ( customer );
             idTavolo++;
-            //TODO completare
-            Booking booking = new Booking();
+            Booking booking = new Booking(customer.getCustomerId(),today,customer.getGroupSize());
             bookingList.add(booking);
+            System.out.println ("A new prenotation was created");
+            booking.printBookingDetails();
         }
     }
 
-    public void pagaConto(Customer cliente){
 
-        customerList.remove(cliente);
-
-
+    public void payCount(Customer customer){
+        customerList.remove(customer);
     }
 }
 

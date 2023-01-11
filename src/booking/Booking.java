@@ -11,26 +11,21 @@ public class Booking {
     private Restaurant restaurant;
     private LocalDateTime bookingDate;
     private int groupSize;
-    private String optionalMessage;
 
 
     /**
      * Booking constructor that takes the following parameters:
      *
-     * @param restaurant      the restaurant where the booking was made
      * @param customerId      the unique identifier of the customer who made the booking
      * @param bookingDate     the date and time of the booking
      * @param groupSize       the number of people in the group for this booking
-     * @param optionalMessage an optional message associated with this booking
      */
 
 
-    public Booking(Restaurant restaurant, int customerId, LocalDateTime bookingDate, int groupSize, String optionalMessage) {
-        this.restaurant = restaurant;
+    public Booking( int customerId, LocalDateTime bookingDate, int groupSize){
         this.customerId = customerId;
         this.bookingDate = bookingDate;
         this.groupSize = groupSize;
-        this.optionalMessage = optionalMessage;
         this.bookingId = createRandomBookingId();
     }
 
@@ -67,13 +62,6 @@ public class Booking {
         this.bookingDate = bookingDate;
     }
 
-    public String getOptionalMessage() {
-        return optionalMessage;
-    }
-
-    public void setOptionalMessage(String optionalMessage) {
-        this.optionalMessage = optionalMessage;
-    }
 
     public void setBookingId(int bookingId) {
         this.bookingId = bookingId;
@@ -104,9 +92,7 @@ public class Booking {
 
     public void printBookingDetails() {
         System.out.println("Booking nr." + getBookingId() +
-                " - restaurant: " + restaurant.getRestaurantName() +
                 " - customer Id: " + customerId +
-                " - date: " + bookingDate +
-                " - optional message: " + optionalMessage);
+                " - date: " + bookingDate);
     }
 }
