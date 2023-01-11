@@ -29,7 +29,7 @@ public class Restaurant {
     private boolean hasAllYouCanEat;
     private List<Menu> menu;
     private List<Customer> customerList = new ArrayList<>();
-    private List<Booking> bookingList = new ArrayList<> ();
+    private List<Booking> bookingList = new ArrayList<>();
     private List<Table> tableList = new ArrayList<>();
 
     private LocalDateTime today = LocalDateTime.now();
@@ -199,19 +199,20 @@ public class Restaurant {
     public void prenotation(Customer customer) {
         if (tableList.size () < seatingCapacity) {
             Table table = new Table ( idTavolo, customer.getGroupSize (), TablePosition.INDOOR );
-            tableList.add ( table );
-            customerList.add ( customer );
+            tableList.add (table);
+            customerList.add (customer);
             idTavolo++;
             Booking booking = new Booking(customer.getCustomerId(),today,customer.getGroupSize());
             bookingList.add(booking);
-            System.out.println ("A new prenotation was created");
-            booking.printBookingDetails();
+            System.out.println("Booking nr "+booking.getBookingId()+ " under the name "+customer.getName()+ " " +customer.getSurname()+ " successfully done for " + customer.getGroupSize () + " people.");
         }
     }
 
 
     public void payCount(Customer customer){
+        System.out.println ("€€€€€€ Thanks €€€€€€ have a good day!" + customer.getName ()+ " " + customer.getSurname ());
         customerList.remove(customer);
+
     }
 }
 

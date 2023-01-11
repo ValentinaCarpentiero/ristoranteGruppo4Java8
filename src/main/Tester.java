@@ -103,8 +103,10 @@ public class Tester {
          *  BOOKINGS CREATION
          */
 
-        restaurant1.prenotation (customer1);
-        
+        restaurant1.prenotation(customer1);
+        restaurant1.payCount(customer1);
+
+
        /* LocalDateTime today = LocalDateTime.now();
         LocalDateTime tomorrow = today.plusDays(1);
 

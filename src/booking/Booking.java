@@ -86,6 +86,8 @@ public class Booking {
         return random.nextInt(0, 500);
     }
 
+
+
     /**
      * This is a method that prints all the booking's details
      */
