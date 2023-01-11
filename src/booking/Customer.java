@@ -1,5 +1,6 @@
 package booking;
 
+import enums.Payement;
 import enums.Preferences;
 
 import java.util.Random;
@@ -16,6 +17,8 @@ public class Customer {
     private String telephoneNumber;
     private String email;
     private Preferences customerPreferences;
+
+    private Payement payementType;
     private int customerId;
 
     /**
